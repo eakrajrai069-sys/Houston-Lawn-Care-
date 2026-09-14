@@ -1,3 +1,4 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -73,219 +74,237 @@
     }
 
     /* =========================
-       NAVIGATION — MATCHED TO REFERENCE
+       NAVIGATION
     ========================= */
 
-    .site-header{
-      position:fixed;
-      top:0;
-      left:0;
-      width:100%;
-      z-index:9998;
-      background:rgba(248,247,241,.94);
-      backdrop-filter:blur(16px);
-      -webkit-backdrop-filter:blur(16px);
-      border-bottom:1px solid rgba(20,38,29,.10);
-      transition:background .3s ease,box-shadow .3s ease;
+    .site-header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 9998;
+      background: rgba(248, 247, 241, 0.94);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border-bottom: 1px solid rgba(20, 38, 29, 0.10);
+      transition: background 0.3s ease, box-shadow 0.3s ease;
     }
 
-    .site-header.scrolled{
-      background:rgba(255,255,255,.97);
-      box-shadow:0 12px 35px rgba(8,55,31,.09);
+    .site-header.scrolled {
+      background: rgba(255, 255, 255, 0.97);
+      box-shadow: 0 12px 35px rgba(8, 55, 31, 0.09);
     }
 
-    .nav-wrap{
-      min-height:78px;
-      display:flex;
-      align-items:center;
-      justify-content:space-between;
-      gap:20px;
+    .nav-wrap {
+      min-height: 78px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
     }
 
-    .logo{
-      display:flex;
-      align-items:center;
-      gap:11px;
-      font-size:1.18rem;
-      font-weight:950;
-      color:#14261d;
-      letter-spacing:-.04em;
-      white-space:nowrap;
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 11px;
+      font-size: 1.18rem;
+      font-weight: 950;
+      color: #14261d;
+      letter-spacing: -0.04em;
+      white-space: nowrap;
     }
 
-    .logo-mark{
-      width:44px;
-      height:44px;
-      border-radius:14px;
-      background:linear-gradient(145deg,#20915a,#0b4f2f);
-      color:#fff;
-      display:grid;
-      place-items:center;
-      box-shadow:0 10px 24px rgba(15,92,53,.22);
-      flex:0 0 44px;
-      transition:transform .3s ease,box-shadow .3s ease;
+    .logo-mark {
+      width: 44px;
+      height: 44px;
+      border-radius: 14px;
+      background: linear-gradient(145deg, #20915a, #0b4f2f);
+      color: #fff;
+      display: grid;
+      place-items: center;
+      box-shadow: 0 10px 24px rgba(15, 92, 53, 0.22);
+      flex: 0 0 44px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
 
-    .logo:hover .logo-mark{
-      transform:translateY(-2px) rotate(-3deg);
-      box-shadow:0 16px 30px rgba(15,92,53,.28);
+    .logo:hover .logo-mark {
+      transform: translateY(-2px) rotate(-3deg);
+      box-shadow: 0 16px 30px rgba(15, 92, 53, 0.28);
     }
 
-    .logo-mark svg{
-      width:25px;
-      height:25px;
+    .logo-mark svg {
+      width: 25px;
+      height: 25px;
     }
 
-    .main-nav{
-      display:flex;
-      align-items:center;
-      gap:4px;
+    .main-nav {
+      display: flex;
+      align-items: center;
+      gap: 4px;
     }
 
-    .main-nav > a, .drop-btn{
-      display:flex;
-      align-items:center;
-      gap:6px;
-      padding:11px 12px;
-      border-radius:12px;
-      color:#365145;
-      font-size:.92rem;
-      font-weight:750;
-      border:0;
-      background:transparent;
-      cursor:pointer;
-      font-family:inherit;
-      transition:background .3s ease,color .3s ease,transform .3s ease;
+    .main-nav > a,
+    .drop-btn {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      padding: 11px 12px;
+      border-radius: 12px;
+      color: #365145;
+      font-size: 0.92rem;
+      font-weight: 750;
+      border: 0;
+      background: transparent;
+      cursor: pointer;
+      font-family: inherit;
+      transition:
+        background 0.3s ease,
+        color 0.3s ease,
+        transform 0.3s ease;
     }
 
-    .main-nav > a:hover, .drop-btn:hover{
-      background:#eaf6ee;
-      color:#0f5c35;
-      transform:translateY(-2px);
+    .main-nav > a:hover,
+    .drop-btn:hover {
+      background: #eaf6ee;
+      color: #0f5c35;
+      transform: translateY(-2px);
     }
 
-    .drop-btn::after{
-      content:'⌄';
-      font-size:.75rem;
-      transition:transform .25s ease;
+    .drop-btn::after {
+      content: "⌄";
+      font-size: 0.75rem;
+      transition: transform 0.25s ease;
     }
 
     .dropdown:hover .drop-btn::after,
-    .dropdown:focus-within .drop-btn::after{
-      transform:rotate(180deg);
+    .dropdown:focus-within .drop-btn::after {
+      transform: rotate(180deg);
     }
 
-    .dropdown{position:relative;}
+    .dropdown {
+      position: relative;
+    }
 
-    .dropdown-menu{
-      position:absolute;
-      top:calc(100% + 12px);
-      left:0;
-      width:330px;
-      max-height:540px;
-      overflow-y:auto;
-      padding:10px;
-      border-radius:18px;
-      background:#fff;
-      border:1px solid rgba(20,38,29,.11);
-      box-shadow:0 24px 55px rgba(11,48,28,.15);
-      opacity:0;
-      visibility:hidden;
-      pointer-events:none;
-      transform:translateY(10px) scale(.97);
-      transition:opacity .3s ease,visibility .3s ease,transform .3s ease;
+    .dropdown-menu {
+      position: absolute;
+      top: calc(100% + 12px);
+      left: 0;
+      width: 330px;
+      max-height: 540px;
+      overflow-y: auto;
+      padding: 10px;
+      border-radius: 18px;
+      background: #fff;
+      border: 1px solid rgba(20, 38, 29, 0.11);
+      box-shadow: 0 24px 55px rgba(11, 48, 28, 0.15);
+      opacity: 0;
+      visibility: hidden;
+      pointer-events: none;
+      transform: translateY(10px) scale(0.97);
+      transition:
+        opacity 0.3s ease,
+        visibility 0.3s ease,
+        transform 0.3s ease;
     }
 
     .dropdown:hover .dropdown-menu,
-    .dropdown:focus-within .dropdown-menu{
-      opacity:1;
-      visibility:visible;
-      pointer-events:auto;
-      transform:translateY(0) scale(1);
+    .dropdown:focus-within .dropdown-menu {
+      opacity: 1;
+      visibility: visible;
+      pointer-events: auto;
+      transform: translateY(0) scale(1);
     }
 
-    .dropdown-menu a{
-      display:block;
-      padding:10px 12px;
-      border-radius:10px;
-      color:#365145;
-      font-size:.87rem;
-      font-weight:700;
-      transition:background .25s ease,color .25s ease,transform .25s ease;
+    .dropdown-menu a {
+      display: block;
+      padding: 10px 12px;
+      border-radius: 10px;
+      color: #365145;
+      font-size: 0.87rem;
+      font-weight: 700;
+      transition:
+        background 0.25s ease,
+        color 0.25s ease,
+        transform 0.25s ease;
     }
 
-    .dropdown-menu a:hover{
-      background:#eaf6ee;
-      color:#0f5c35;
-      transform:translateX(4px);
+    .dropdown-menu a:hover {
+      background: #eaf6ee;
+      color: #0f5c35;
+      transform: translateX(4px);
     }
 
-    .quote-nav{
-      background:#0f5c35 !important;
-      color:#fff !important;
-      padding:14px 16px !important;
-      margin-left:4px;
-      border-radius:14px !important;
-      box-shadow:0 10px 24px rgba(15,92,53,.22);
+    .quote-nav {
+      background: #0f5c35 !important;
+      color: #fff !important;
+      padding: 14px 16px !important;
+      margin-left: 4px;
+      border-radius: 14px !important;
+      box-shadow: 0 10px 24px rgba(15, 92, 53, 0.22);
     }
 
-    .quote-nav:hover{
-      background:#0b4829 !important;
-      color:#fff !important;
+    .quote-nav:hover {
+      background: #0b4829 !important;
+      color: #fff !important;
     }
 
-    .mobile-toggle{
-      display:none;
-      width:44px;
-      height:44px;
-      border:0;
-      border-radius:12px;
-      background:#eaf6ee;
-      color:#0f5c35;
-      cursor:pointer;
-      font-size:1.25rem;
+    .mobile-toggle {
+      display: none;
+      width: 44px;
+      height: 44px;
+      border: 0;
+      border-radius: 12px;
+      background: #eaf6ee;
+      color: #0f5c35;
+      cursor: pointer;
+      font-size: 1.25rem;
     }
 
-    .mobile-nav{
-      display:none;
-      background:#fff;
-      border-top:1px solid rgba(20,38,29,.08);
-      box-shadow:0 18px 40px rgba(15,92,53,.08);
-      max-height:calc(100vh - 78px);
-      overflow-y:auto;
+    .mobile-nav {
+      display: none;
+      background: #fff;
+      border-top: 1px solid rgba(20, 38, 29, 0.08);
+      box-shadow: 0 18px 40px rgba(15, 92, 53, 0.08);
+      max-height: calc(100vh - 78px);
+      overflow-y: auto;
     }
 
-    .mobile-nav.open{display:block;}
-
-    .mobile-nav-inner{padding:12px 0 18px;}
-
-    .mobile-nav a,.mobile-group-title{
-      display:block;
-      color:#365145;
-      padding:11px 0;
-      font-weight:750;
-      font-size:.95rem;
+    .mobile-nav.open {
+      display: block;
     }
 
-    .mobile-group-title{
-      color:#0f5c35;
-      text-transform:uppercase;
-      letter-spacing:.08em;
-      font-size:.76rem;
-      padding-top:16px;
+    .mobile-nav-inner {
+      padding: 12px 0 18px;
     }
 
-    .mobile-submenu{
-      padding-left:16px;
-      border-left:1px solid #dcebe0;
-      margin-bottom:8px;
+    .mobile-nav a,
+    .mobile-group-title {
+      display: block;
+      color: #365145;
+      padding: 11px 0;
+      font-weight: 750;
+      font-size: 0.95rem;
     }
 
-    .mobile-submenu a{
-      color:#5b7061;
-      font-weight:650;
-      font-size:.9rem;
-      padding:8px 0;
+    .mobile-group-title {
+      color: #0f5c35;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      font-size: 0.76rem;
+      padding-top: 16px;
+    }
+
+    .mobile-submenu {
+      padding-left: 16px;
+      border-left: 1px solid #dcebe0;
+      margin-bottom: 8px;
+    }
+
+    .mobile-submenu a {
+      color: #5b7061;
+      font-weight: 650;
+      font-size: 0.9rem;
+      padding: 8px 0;
     }
 
     /* =========================
@@ -363,8 +382,8 @@
       align-items: center;
       padding: 9px 17px;
       border-radius: 999px;
-      background: rgba(255,255,255,0.1);
-      border: 1px solid rgba(255,255,255,0.28);
+      background: rgba(255, 255, 255, 0.1);
+      border: 1px solid rgba(255, 255, 255, 0.28);
       backdrop-filter: blur(12px);
       font-size: 0.82rem;
       font-weight: 800;
@@ -378,13 +397,13 @@
       line-height: 1.03;
       letter-spacing: -2px;
       margin-bottom: 23px;
-      text-shadow: 0 10px 28px rgba(0,0,0,0.25);
+      text-shadow: 0 10px 28px rgba(0, 0, 0, 0.25);
     }
 
     .hero p {
       max-width: 760px;
       font-size: 1.12rem;
-      color: rgba(255,255,255,0.9);
+      color: rgba(255, 255, 255, 0.9);
       margin-bottom: 31px;
     }
 
@@ -410,24 +429,24 @@
     .btn-primary {
       background: #22c55e;
       color: #08351a;
-      box-shadow: 0 15px 32px rgba(34,197,94,0.26);
+      box-shadow: 0 15px 32px rgba(34, 197, 94, 0.26);
     }
 
     .btn-primary:hover {
       transform: translateY(-4px);
-      box-shadow: 0 22px 40px rgba(34,197,94,0.4);
+      box-shadow: 0 22px 40px rgba(34, 197, 94, 0.4);
     }
 
     .btn-light {
       color: #fff;
-      background: rgba(255,255,255,0.1);
-      border: 1px solid rgba(255,255,255,0.32);
+      background: rgba(255, 255, 255, 0.1);
+      border: 1px solid rgba(255, 255, 255, 0.32);
       backdrop-filter: blur(12px);
     }
 
     .btn-light:hover {
       transform: translateY(-4px);
-      background: rgba(255,255,255,0.18);
+      background: rgba(255, 255, 255, 0.18);
     }
 
     .orb {
@@ -472,10 +491,10 @@
 
     .quick-card {
       padding: 28px;
-      background: rgba(255,255,255,0.94);
+      background: rgba(255, 255, 255, 0.94);
       border: 1px solid #dceee0;
       border-radius: 24px;
-      box-shadow: 0 20px 45px rgba(13,60,25,0.1);
+      box-shadow: 0 20px 45px rgba(13, 60, 25, 0.1);
       transition:
         transform 0.35s ease,
         box-shadow 0.35s ease;
@@ -487,7 +506,7 @@
         translateY(-10px)
         rotateX(2deg)
         rotateY(-2deg);
-      box-shadow: 0 30px 60px rgba(13,60,25,0.15);
+      box-shadow: 0 30px 60px rgba(13, 60, 25, 0.15);
     }
 
     .quick-icon {
@@ -520,17 +539,17 @@
 
     .content-grid {
       display: grid;
-      grid-template-columns: minmax(0,1fr) 340px;
+      grid-template-columns: minmax(0, 1fr) 340px;
       gap: 42px;
       align-items: start;
     }
 
     .article {
-      background: rgba(255,255,255,0.84);
+      background: rgba(255, 255, 255, 0.84);
       border: 1px solid #e0ece2;
       border-radius: 30px;
       padding: 42px;
-      box-shadow: 0 24px 60px rgba(18,58,26,0.07);
+      box-shadow: 0 24px 60px rgba(18, 58, 26, 0.07);
     }
 
     .article h2 {
@@ -564,7 +583,7 @@
       overflow: hidden;
       border-radius: 24px;
       margin: 27px 0 35px;
-      box-shadow: 0 18px 40px rgba(12,60,25,0.12);
+      box-shadow: 0 18px 40px rgba(12, 60, 25, 0.12);
     }
 
     .service-image img {
@@ -580,7 +599,7 @@
 
     .service-grid {
       display: grid;
-      grid-template-columns: repeat(2,minmax(0,1fr));
+      grid-template-columns: repeat(2, minmax(0, 1fr));
       gap: 16px;
       margin-top: 20px;
     }
@@ -599,7 +618,7 @@
     .service-item:hover {
       transform: translateY(-6px);
       background: #ecfdf1;
-      box-shadow: 0 15px 30px rgba(22,101,52,0.08);
+      box-shadow: 0 15px 30px rgba(22, 101, 52, 0.08);
     }
 
     .service-item h4 {
@@ -616,7 +635,7 @@
       margin-top: 25px;
       padding: 25px;
       border-radius: 20px;
-      background: linear-gradient(135deg,#edfff1,#f8fff9);
+      background: linear-gradient(135deg, #edfff1, #f8fff9);
       border: 1px solid #d7eddc;
     }
 
@@ -638,7 +657,7 @@
       background: #fff;
       border: 1px solid #dfece1;
       border-radius: 24px;
-      box-shadow: 0 18px 40px rgba(13,60,25,0.08);
+      box-shadow: 0 18px 40px rgba(13, 60, 25, 0.08);
       margin-bottom: 20px;
     }
 
@@ -704,7 +723,7 @@
 
     .stats-grid {
       display: grid;
-      grid-template-columns: repeat(3,1fr);
+      grid-template-columns: repeat(3, 1fr);
       gap: 14px;
       margin-top: 22px;
     }
@@ -758,7 +777,7 @@
 
     .area-grid {
       display: grid;
-      grid-template-columns: repeat(4,1fr);
+      grid-template-columns: repeat(4, 1fr);
       gap: 16px;
     }
 
@@ -777,7 +796,7 @@
 
     .area:hover {
       transform: translateY(-6px);
-      box-shadow: 0 16px 30px rgba(15,80,30,0.09);
+      box-shadow: 0 16px 30px rgba(15, 80, 30, 0.09);
     }
 
     /* =========================
@@ -799,7 +818,7 @@
       border: 1px solid #dfece1;
       border-radius: 18px;
       margin-bottom: 14px;
-      box-shadow: 0 8px 24px rgba(14,60,28,0.04);
+      box-shadow: 0 8px 24px rgba(14, 60, 28, 0.04);
     }
 
     .faq-question {
@@ -851,8 +870,8 @@
       color: white;
       background:
         linear-gradient(
-          rgba(5,35,15,0.79),
-          rgba(5,35,15,0.83)
+          rgba(5, 35, 15, 0.79),
+          rgba(5, 35, 15, 0.83)
         ),
         url("https://images.pexels.com/photos/11400235/pexels-photo-11400235.jpeg?auto=compress&cs=tinysrgb&w=1900")
         center / cover no-repeat;
@@ -867,13 +886,13 @@
     }
 
     .cta h2 {
-      font-size: clamp(2rem,4vw,3.5rem);
+      font-size: clamp(2rem, 4vw, 3.5rem);
       line-height: 1.1;
       margin-bottom: 17px;
     }
 
     .cta p {
-      color: rgba(255,255,255,0.86);
+      color: rgba(255, 255, 255, 0.86);
       font-size: 1.05rem;
       margin-bottom: 29px;
     }
@@ -905,7 +924,7 @@
     }
 
     .copyright {
-      border-top: 1px solid rgba(255,255,255,0.1);
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
       margin-top: 28px;
       padding-top: 20px;
       text-align: center;
@@ -952,8 +971,7 @@
     .service-item,
     .area,
     .faq-item,
-    .side-card,
-    .benefit-card {
+    .side-card {
       will-change: transform;
     }
 
@@ -967,36 +985,16 @@
 
     @keyframes softSettle {
       0% {
-        box-shadow: 0 7px 18px rgba(13,60,25,.04);
+        box-shadow: 0 7px 18px rgba(13, 60, 25, 0.04);
       }
+
       100% {
-        box-shadow: 0 20px 45px rgba(13,60,25,.10);
+        box-shadow: 0 20px 45px rgba(13, 60, 25, 0.10);
       }
-    }
-
-    .scroll-shift {
-      will-change: transform;
-      transition: transform .18s linear;
-    }
-
-    .hero-content > *,
-    .hero-card {
-      will-change: transform, opacity;
-    }
-
-    .section-title,
-    .section-heading,
-    .cta-content {
-      will-change: transform, opacity;
     }
 
     [id] {
       scroll-margin-top: 112px;
-    }
-
-    @keyframes mobileDrop {
-      from { opacity: 0; transform: translateY(-8px); }
-      to { opacity: 1; transform: translateY(0); }
     }
 
     @keyframes heroIn {
@@ -1021,23 +1019,14 @@
       }
     }
 
-    /* =========================
-       SCROLL DEPTH MOTION
-    ========================= */
-
-    .scroll-scene {
-      transform: translate3d(0, var(--scene-y, 0px), 0);
-      transition: transform .12s linear;
-      will-change: transform;
-    }
-
-    body.scroll-depth-strong .hero::before {
-      opacity: .22;
-    }
-
     @media (prefers-reduced-motion: reduce) {
-      html { scroll-behavior: auto; }
-      *, *::before, *::after {
+      html {
+        scroll-behavior: auto;
+      }
+
+      *,
+      *::before,
+      *::after {
         animation-duration: .01ms !important;
         animation-iteration-count: 1 !important;
         transition-duration: .01ms !important;
@@ -1081,7 +1070,7 @@
       }
 
       .area-grid {
-        grid-template-columns: repeat(2,1fr);
+        grid-template-columns: repeat(2, 1fr);
       }
 
       .footer-grid {
@@ -1128,7 +1117,14 @@
       }
 
       .logo {
-        font-size: 1.35rem;
+        font-size: 1.2rem;
+      }
+
+      .logo-mark {
+        width: 40px;
+        height: 40px;
+        flex-basis: 40px;
+        border-radius: 12px;
       }
     }
   </style>
@@ -1144,15 +1140,40 @@
 
     <div class="container nav-wrap">
 
-      <a href="index.html" class="logo" aria-label="Lawn Trim LLC home">
-        <span class="logo-mark" aria-hidden="true">
-          <svg viewBox="0 0 24 24" fill="none">
-            <path d="M12 20c0-6.5 1.2-11.2 6.7-15.5C18.8 10.7 16.1 15.4 12 17.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
-            <path d="M11.8 20C9 14.4 6.5 11.8 2.8 9.7c.6 5.8 3.2 9 9 10.3Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>
+      <a
+        href="index.html"
+        class="logo"
+        aria-label="Lawn Trim LLC home"
+      >
+        <span
+          class="logo-mark"
+          aria-hidden="true"
+        >
+          <svg
+            viewBox="0 0 24 24"
+            fill="none"
+          >
+            <path
+              d="M12 20c0-6.5 1.2-11.2 6.7-15.5C18.8 10.7 16.1 15.4 12 17.5"
+              stroke="currentColor"
+              stroke-width="1.8"
+              stroke-linecap="round"
+            />
+
+            <path
+              d="M11.8 20C9 14.4 6.5 11.8 2.8 9.7c.6 5.8 3.2 9 9 10.3Z"
+              stroke="currentColor"
+              stroke-width="1.8"
+              stroke-linejoin="round"
+            />
           </svg>
         </span>
-        <span class="logo-text">Houston Lawn Care</span>
+
+        <span class="logo-text">
+          Houston Lawn Care
+        </span>
       </a>
+
 
       <nav class="main-nav">
 
@@ -1173,11 +1194,11 @@
               Lawn Care Service
             </a>
 
-            <a href="lawnmovingservice.html">
+            <a href="lawnmowingservice.html">
               Lawn Mowing Service
             </a>
 
-            <a href="lawnedgingservice.html">
+            <a href="lawn-edging-service.html">
               Lawn Edging Service
             </a>
 
@@ -1270,6 +1291,8 @@
           </div>
 
         </div>
+
+
         <a href="reviews.html">
           Reviews
         </a>
@@ -1323,11 +1346,11 @@
             Lawn Care Service
           </a>
 
-          <a href="lawnmovingservice.html">
+          <a href="lawnmowingservice.html">
             Lawn Mowing Service
           </a>
 
-          <a href="lawnedgingservice.html">
+          <a href="lawn-edging-service.html">
             Lawn Edging Service
           </a>
 
@@ -1376,6 +1399,8 @@
           </a>
 
         </div>
+
+
         <div class="mobile-group-title">
           Service Areas
         </div>
@@ -1566,7 +1591,10 @@
        MAIN ARTICLE
   ========================= -->
 
-  <section class="main-section" id="main-content">
+  <section
+    class="main-section"
+    id="main-content"
+  >
 
     <div class="container">
 
@@ -1624,46 +1652,57 @@
 
             <div class="service-item">
               <h4>Sidewalk Edging</h4>
+
               <p>
                 Create a clear line between your lawn and sidewalk
                 for a cleaner walkway appearance.
               </p>
             </div>
 
+
             <div class="service-item">
               <h4>Driveway Edging</h4>
+
               <p>
                 Keep grass from spreading over driveway edges and
                 help give the entrance to your property a cleaner look.
               </p>
             </div>
 
+
             <div class="service-item">
               <h4>Flower Bed Edging</h4>
+
               <p>
                 Define landscape beds and keep the transition between
                 grass and planting areas neat.
               </p>
             </div>
 
+
             <div class="service-item">
               <h4>Walkway Edging</h4>
+
               <p>
                 Maintain crisp lawn borders around pathways and
                 frequently used outdoor walkways.
               </p>
             </div>
 
+
             <div class="service-item">
               <h4>Curb Edging</h4>
+
               <p>
                 Keep the grass line along street curbs looking
                 organized and maintained.
               </p>
             </div>
 
+
             <div class="service-item">
               <h4>Property Border Edging</h4>
+
               <p>
                 Create cleaner transitions around other lawn and
                 landscape areas throughout the property.
@@ -1896,6 +1935,7 @@
 
               </ul>
 
+
               <div class="contact-box">
 
                 <strong>
@@ -1909,7 +1949,9 @@
                 </p>
 
                 <p>
-                  LawnTrimllc@gmail.com
+                  <a href="mailto:LawnTrimllc@gmail.com">
+                    LawnTrimllc@gmail.com
+                  </a>
                 </p>
 
                 <p>
@@ -2103,8 +2145,10 @@
 
         <div class="faq-item reveal">
 
-          <button class="faq-question">
-
+          <button
+            class="faq-question"
+            type="button"
+          >
             What does lawn edging do?
 
             <span>
@@ -2114,11 +2158,9 @@
           </button>
 
           <div class="faq-answer">
-
             Lawn edging creates a clean boundary between grass and
             sidewalks, driveways, landscape beds, curbs and other
             surfaces.
-
           </div>
 
         </div>
@@ -2126,8 +2168,10 @@
 
         <div class="faq-item reveal">
 
-          <button class="faq-question">
-
+          <button
+            class="faq-question"
+            type="button"
+          >
             Does Lawn Trim LLC offer one-time service?
 
             <span>
@@ -2137,10 +2181,8 @@
           </button>
 
           <div class="faq-answer">
-
             Yes. Lawn Trim LLC's website states that customers can
             choose between one-time or recurring lawn care service.
-
           </div>
 
         </div>
@@ -2148,8 +2190,10 @@
 
         <div class="faq-item reveal">
 
-          <button class="faq-question">
-
+          <button
+            class="faq-question"
+            type="button"
+          >
             Does Lawn Trim LLC offer recurring lawn service?
 
             <span>
@@ -2159,10 +2203,8 @@
           </button>
 
           <div class="faq-answer">
-
             Yes. Recurring service is one of the options listed on
             the company's website.
-
           </div>
 
         </div>
@@ -2170,8 +2212,10 @@
 
         <div class="faq-item reveal">
 
-          <button class="faq-question">
-
+          <button
+            class="faq-question"
+            type="button"
+          >
             How does Lawn Trim LLC price service?
 
             <span>
@@ -2181,11 +2225,9 @@
           </button>
 
           <div class="faq-answer">
-
             Lawn Trim LLC states that quotes are priced according to
             lawn size and customers can enter their address and lawn
             size to see their price.
-
           </div>
 
         </div>
@@ -2193,8 +2235,10 @@
 
         <div class="faq-item reveal">
 
-          <button class="faq-question">
-
+          <button
+            class="faq-question"
+            type="button"
+          >
             What areas does Lawn Trim LLC serve?
 
             <span>
@@ -2204,11 +2248,9 @@
           </button>
 
           <div class="faq-answer">
-
             The service-area links on this website include Houston,
             East Houston, Northside, Kashmere Gardens, Denver Harbor
             and Greater Fifth Ward.
-
           </div>
 
         </div>
@@ -2216,8 +2258,10 @@
 
         <div class="faq-item reveal">
 
-          <button class="faq-question">
-
+          <button
+            class="faq-question"
+            type="button"
+          >
             How can I contact Lawn Trim LLC?
 
             <span>
@@ -2227,11 +2271,9 @@
           </button>
 
           <div class="faq-answer">
-
             Lawn Trim LLC lists 346-656-5111,
             LawnTrimllc@gmail.com and Houston, Texas as contact
             information.
-
           </div>
 
         </div>
@@ -2302,7 +2344,6 @@
 
       <div class="footer-grid">
 
-
         <div>
 
           <h3>
@@ -2366,15 +2407,12 @@
 
         </div>
 
-
       </div>
 
 
       <div class="copyright">
-
         © 2026 Lawn Trim LLC.
         All Rights Reserved.
-
       </div>
 
     </div>
@@ -2393,61 +2431,70 @@
     const progress = document.getElementById("progress");
     const header = document.querySelector(".site-header");
     const heroBg = document.getElementById("heroBg");
+
     let ticking = false;
 
-    function updateScrollUI(){
-      const y = window.scrollY || window.pageYOffset;
-      const documentHeight = document.documentElement.scrollHeight - window.innerHeight;
-      const percent = documentHeight > 0 ? (y / documentHeight) * 100 : 0;
+    function updateScrollUI() {
 
-      if(progress){
-        progress.style.width = percent + "%";
+      const y =
+        window.scrollY ||
+        window.pageYOffset;
+
+      const documentHeight =
+        document.documentElement.scrollHeight -
+        window.innerHeight;
+
+      const percent =
+        documentHeight > 0
+          ? (y / documentHeight) * 100
+          : 0;
+
+      if (progress) {
+        progress.style.width =
+          percent + "%";
       }
 
-      if(header){
-        header.classList.toggle("scrolled", y > 18);
+      if (header) {
+        header.classList.toggle(
+          "scrolled",
+          y > 18
+        );
       }
 
-      if(heroBg){
+      if (heroBg) {
         heroBg.style.transform =
-          "scale(1.08) translate3d(0," + (y * 0.09) + "px,0)";
+          "scale(1.08) translate3d(0," +
+          (y * 0.09) +
+          "px,0)";
       }
-
-      ticking = false;
     }
 
-    const motionTargets = document.querySelectorAll(
-      ".quick-card, .service-item, .area, .faq-item, .side-card, .section-title, .section-heading, .cta-content, .why-box, .stats-grid"
+
+    window.addEventListener(
+      "scroll",
+      () => {
+
+        if (!ticking) {
+
+          window.requestAnimationFrame(
+            () => {
+
+              updateScrollUI();
+
+              ticking = false;
+
+            }
+          );
+
+          ticking = true;
+        }
+
+      },
+      { passive: true }
     );
 
-    function updateScrollMotion(){
-      const viewportH = window.innerHeight || 1;
-      motionTargets.forEach((el) => {
-        const rect = el.getBoundingClientRect();
-        const center = rect.top + rect.height / 2;
-        const distance = (center - viewportH / 2) / viewportH;
-        const shift = Math.max(-10, Math.min(10, -distance * 9));
-        el.style.setProperty("--scene-y", shift.toFixed(2) + "px");
-        el.style.translate = `0 ${shift.toFixed(2)}px`;
-      });
-
-      document.body.classList.toggle("scroll-depth-strong", window.scrollY > 500);
-    }
-
-    window.addEventListener("scroll", () => {
-      if(!ticking){
-        window.requestAnimationFrame(() => {
-          updateScrollUI();
-          updateScrollMotion();
-          ticking = false;
-        });
-        ticking = true;
-      }
-    }, { passive:true });
 
     updateScrollUI();
-    updateScrollMotion();
-    window.addEventListener("resize", updateScrollMotion, { passive:true });
 
 
     /* REVEAL ANIMATION */
@@ -2479,16 +2526,23 @@
 
         },
         {
-          threshold: [0.08, 0.18, 0.34],
-          rootMargin: "0px 0px -8% 0px"
+          threshold: 0.12,
+          rootMargin:
+            "0px 0px -8% 0px"
         }
       );
 
 
-    revealElements.forEach((element, index) => {
-      element.style.transitionDelay = ((index % 5) * 85) + "ms";
-      observer.observe(element);
-    });
+    revealElements.forEach(
+      (element, index) => {
+
+        element.style.transitionDelay =
+          ((index % 5) * 85) + "ms";
+
+        observer.observe(element);
+
+      }
+    );
 
 
     /* FAQ */
@@ -2498,40 +2552,46 @@
         ".faq-question"
       );
 
-    questions.forEach((question) => {
+    questions.forEach(
+      (question) => {
 
-      question.addEventListener(
-        "click",
-        () => {
+        question.addEventListener(
+          "click",
+          () => {
 
-          const item =
-            question.closest(
-              ".faq-item"
+            const item =
+              question.closest(
+                ".faq-item"
+              );
+
+            document
+              .querySelectorAll(
+                ".faq-item"
+              )
+              .forEach(
+                (other) => {
+
+                  if (other !== item) {
+
+                    other.classList.remove(
+                      "active"
+                    );
+
+                  }
+
+                }
+              );
+
+
+            item.classList.toggle(
+              "active"
             );
 
-          document
-            .querySelectorAll(".faq-item")
-            .forEach((other) => {
+          }
+        );
 
-              if (other !== item) {
-
-                other.classList.remove(
-                  "active"
-                );
-
-              }
-
-            });
-
-
-          item.classList.toggle(
-            "active"
-          );
-
-        }
-      );
-
-    });
+      }
+    );
 
 
     /* 3D CARD EFFECT */
@@ -2541,54 +2601,61 @@
         ".quick-card, .service-item"
       );
 
-    cards.forEach((card) => {
+    cards.forEach(
+      (card) => {
 
-      card.addEventListener(
-        "mousemove",
-        (event) => {
+        card.addEventListener(
+          "mousemove",
+          (event) => {
 
-          const rect =
-            card.getBoundingClientRect();
+            const rect =
+              card.getBoundingClientRect();
 
-          const x =
-            event.clientX - rect.left;
+            const x =
+              event.clientX -
+              rect.left;
 
-          const y =
-            event.clientY - rect.top;
+            const y =
+              event.clientY -
+              rect.top;
 
-          const centerX =
-            rect.width / 2;
+            const centerX =
+              rect.width / 2;
 
-          const centerY =
-            rect.height / 2;
+            const centerY =
+              rect.height / 2;
 
-          const rotateX =
-            ((y - centerY) / centerY) * -3;
+            const rotateX =
+              ((y - centerY) /
+                centerY) * -3;
 
-          const rotateY =
-            ((x - centerX) / centerX) * 3;
+            const rotateY =
+              ((x - centerX) /
+                centerX) * 3;
 
-          card.style.transform =
-            "translateY(-7px) rotateX(" +
-            rotateX +
-            "deg) rotateY(" +
-            rotateY +
-            "deg)";
+            card.style.transform =
+              "translateY(-7px) " +
+              "rotateX(" +
+              rotateX +
+              "deg) rotateY(" +
+              rotateY +
+              "deg)";
 
-        }
-      );
+          }
+        );
 
 
-      card.addEventListener(
-        "mouseleave",
-        () => {
+        card.addEventListener(
+          "mouseleave",
+          () => {
 
-          card.style.transform = "";
+            card.style.transform = "";
 
-        }
-      );
+          }
+        );
 
-    });
+      }
+    );
 
 
     /* MOBILE MENU */
@@ -2603,6 +2670,7 @@
         "mobileNav"
       );
 
+
     mobileToggle.addEventListener(
       "click",
       () => {
@@ -2615,26 +2683,28 @@
     );
 
 
-    /* CLOSE MOBILE MENU AFTER LINK CLICK */
+    /* CLOSE MOBILE MENU */
 
     document
       .querySelectorAll(
         ".mobile-nav a"
       )
-      .forEach((link) => {
+      .forEach(
+        (link) => {
 
-        link.addEventListener(
-          "click",
-          () => {
+          link.addEventListener(
+            "click",
+            () => {
 
-            mobileNav.classList.remove(
-              "open"
-            );
+              mobileNav.classList.remove(
+                "open"
+              );
 
-          }
-        );
+            }
+          );
 
-      });
+        }
+      );
 
   </script>
 
@@ -2644,7 +2714,6 @@
   ========================= -->
 
   <script type="application/ld+json">
-
   {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
@@ -2668,7 +2737,6 @@
       "Greater Fifth Ward, TX"
     ]
   }
-
   </script>
 
 
@@ -2677,7 +2745,6 @@
   ========================= -->
 
   <script type="application/ld+json">
-
   {
     "@context": "https://schema.org",
     "@type": "Service",
@@ -2698,7 +2765,6 @@
       "Greater Fifth Ward, TX"
     ]
   }
-
   </script>
 
 
@@ -2707,12 +2773,10 @@
   ========================= -->
 
   <script type="application/ld+json">
-
   {
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-
       {
         "@type": "Question",
         "name": "What does lawn edging do?",
@@ -2721,7 +2785,6 @@
           "text": "Lawn edging creates a clean boundary between grass and sidewalks, driveways, landscape beds, curbs and other surfaces."
         }
       },
-
       {
         "@type": "Question",
         "name": "Does Lawn Trim LLC offer one-time service?",
@@ -2730,7 +2793,6 @@
           "text": "Yes. Lawn Trim LLC states that customers can choose between one-time or recurring lawn care service."
         }
       },
-
       {
         "@type": "Question",
         "name": "Does Lawn Trim LLC offer recurring lawn service?",
@@ -2739,7 +2801,6 @@
           "text": "Yes. Recurring service is one of the options listed by Lawn Trim LLC."
         }
       },
-
       {
         "@type": "Question",
         "name": "How does Lawn Trim LLC price service?",
@@ -2748,16 +2809,14 @@
           "text": "Lawn Trim LLC states that quotes are priced according to lawn size."
         }
       },
-
       {
         "@type": "Question",
-        "name": "What areas are included in the navigation?",
+        "name": "What areas does Lawn Trim LLC serve?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "The navigation includes Houston, East Houston, Northside, Kashmere Gardens, Denver Harbor and Greater Fifth Ward."
+          "text": "The service-area links on this website include Houston, East Houston, Northside, Kashmere Gardens, Denver Harbor and Greater Fifth Ward."
         }
       },
-
       {
         "@type": "Question",
         "name": "How can I contact Lawn Trim LLC?",
@@ -2766,11 +2825,10 @@
           "text": "Lawn Trim LLC lists 346-656-5111, LawnTrimllc@gmail.com and Houston, Texas as contact information."
         }
       }
-
     ]
   }
-
   </script>
 
 </body>
 </html>
+```
