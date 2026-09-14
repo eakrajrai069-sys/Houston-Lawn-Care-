@@ -1,4 +1,4 @@
-
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -25,7 +25,6 @@
 
 <!-- =========================================================
      WEB / SOCIAL THUMBNAIL
-     Uses the same clean Houston lawn image as the hero.
 ========================================================= -->
 
 <meta
@@ -101,45 +100,23 @@
 
 <style>
 
-/* =========================================================
-   ROOT
-========================================================= */
-
 :root{
-
   --green:#0f5c35;
   --green-dark:#062515;
   --green-deep:#031b0e;
-
   --green-soft:#eaf6ee;
-
   --lime:#b9dc52;
   --lime-light:#dff39a;
-
   --cream:#f8f7f1;
   --white:#ffffff;
-
   --ink:#14261d;
   --muted:#637268;
-
   --line:rgba(20,38,29,.11);
-
-  --shadow:
-    0 22px 60px rgba(11,48,28,.12);
-
-  --shadow-lg:
-    0 35px 90px rgba(5,32,18,.18);
-
+  --shadow:0 22px 60px rgba(11,48,28,.12);
+  --shadow-lg:0 35px 90px rgba(5,32,18,.18);
   --max:1180px;
-
   --ease:cubic-bezier(.22,1,.36,1);
-
 }
-
-
-/* =========================================================
-   RESET
-========================================================= */
 
 *{
   box-sizing:border-box;
@@ -147,783 +124,241 @@
   padding:0;
 }
 
-
 html{
-
   scroll-behavior:smooth;
-
 }
-
 
 body{
-
-  font-family:
-    Inter,
-    Arial,
-    Helvetica,
-    sans-serif;
-
+  font-family:Inter,Arial,Helvetica,sans-serif;
   color:var(--ink);
-
   background:var(--cream);
-
   line-height:1.65;
-
   overflow-x:hidden;
-
 }
-
-
-body::selection{
-
-  background:var(--lime);
-
-  color:var(--green-deep);
-
-}
-
 
 a{
-
   text-decoration:none;
-
   color:inherit;
-
 }
-
 
 img{
-
   display:block;
-
   width:100%;
-
   max-width:100%;
-
 }
-
 
 button,
 input,
 select{
-
   font:inherit;
-
 }
-
 
 .container{
-
   width:min(var(--max),92%);
-
   margin:auto;
-
 }
-
-
-/* =========================================================
-   SCROLL PROGRESS
-========================================================= */
 
 .scroll-progress{
-
   position:fixed;
-
   top:0;
-
   left:0;
-
-  width:0%;
-
+  width:0;
   height:4px;
-
-  background:
-    linear-gradient(
-      90deg,
-      var(--lime),
-      #efffae
-    );
-
-  box-shadow:
-    0 0 18px
-    rgba(185,220,82,.6);
-
+  background:linear-gradient(90deg,var(--lime),#efffae);
+  box-shadow:0 0 18px rgba(185,220,82,.6);
   z-index:6000;
-
 }
-
-
-/* =========================================================
-   FLOATING BACKGROUND PARTICLES
-========================================================= */
-
-.page-particles{
-
-  position:fixed;
-
-  inset:0;
-
-  pointer-events:none;
-
-  overflow:hidden;
-
-  z-index:-1;
-
-}
-
-
-.particle{
-
-  position:absolute;
-
-  width:7px;
-
-  height:7px;
-
-  border-radius:50%;
-
-  background:rgba(15,92,53,.13);
-
-  animation:
-    particleFloat
-    14s
-    infinite
-    ease-in-out;
-
-}
-
-
-.particle:nth-child(1){
-
-  left:7%;
-
-  top:20%;
-
-  animation-delay:-4s;
-
-}
-
-
-.particle:nth-child(2){
-
-  left:18%;
-
-  top:70%;
-
-  width:5px;
-
-  height:5px;
-
-  animation-delay:-9s;
-
-}
-
-
-.particle:nth-child(3){
-
-  right:16%;
-
-  top:34%;
-
-  width:9px;
-
-  height:9px;
-
-  animation-delay:-2s;
-
-}
-
-
-.particle:nth-child(4){
-
-  right:6%;
-
-  top:75%;
-
-  width:6px;
-
-  height:6px;
-
-  animation-delay:-7s;
-
-}
-
-
-@keyframes particleFloat{
-
-  0%{
-
-    transform:
-      translate3d(0,0,0)
-      scale(1);
-
-    opacity:.2;
-
-  }
-
-  25%{
-
-    transform:
-      translate3d(20px,-35px,0)
-      scale(1.25);
-
-    opacity:.6;
-
-  }
-
-  50%{
-
-    transform:
-      translate3d(-15px,-65px,0)
-      scale(.85);
-
-    opacity:.3;
-
-  }
-
-  75%{
-
-    transform:
-      translate3d(30px,-90px,0)
-      scale(1.15);
-
-    opacity:.55;
-
-  }
-
-  100%{
-
-    transform:
-      translate3d(0,-130px,0)
-      scale:1;
-
-    opacity:0;
-
-  }
-
-}
-
-
-/* =========================================================
-   TOP BAR
-========================================================= */
 
 .topbar{
-
-  background:
-    linear-gradient(
-      100deg,
-      #062515,
-      #0a3c23,
-      #062515
-    );
-
+  background:linear-gradient(100deg,#062515,#0a3c23,#062515);
   background-size:200% 100%;
-
-  animation:
-    topBarFlow
-    10s
-    infinite
-    linear;
-
+  animation:topBarFlow 10s infinite linear;
   color:#e9f7ef;
-
   font-size:.88rem;
-
 }
-
 
 @keyframes topBarFlow{
-
-  0%{
-
-    background-position:0% 50%;
-
-  }
-
-  50%{
-
-    background-position:100% 50%;
-
-  }
-
-  100%{
-
-    background-position:0% 50%;
-
-  }
-
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
 }
-
 
 .topbar-inner{
-
   min-height:42px;
-
   display:flex;
-
   align-items:center;
-
   justify-content:space-between;
-
   gap:20px;
-
 }
-
 
 .topbar a{
-
   color:#fff;
-
   font-weight:800;
-
   transition:.3s ease;
-
 }
-
 
 .topbar a:hover{
-
   color:var(--lime-light);
-
   transform:translateX(4px);
-
 }
-
-
-/* =========================================================
-   HEADER
-========================================================= */
 
 header{
-
   position:sticky;
-
   top:0;
-
   z-index:1000;
-
-  background:
-    rgba(248,247,241,.90);
-
+  background:rgba(248,247,241,.90);
   backdrop-filter:blur(16px);
-
   -webkit-backdrop-filter:blur(16px);
-
-  border-bottom:
-    1px solid
-    var(--line);
-
-  transition:
-    background .35s ease,
-    box-shadow .35s ease,
-    transform .4s ease;
-
+  border-bottom:1px solid var(--line);
+  transition:background .35s ease,box-shadow .35s ease;
 }
-
 
 header.scrolled{
-
-  background:
-    rgba(255,255,255,.95);
-
-  box-shadow:
-    0 12px 35px
-    rgba(8,55,31,.09);
-
+  background:rgba(255,255,255,.95);
+  box-shadow:0 12px 35px rgba(8,55,31,.09);
 }
-
 
 .nav{
-
   min-height:78px;
-
   display:flex;
-
   align-items:center;
-
   justify-content:space-between;
-
 }
-
 
 .brand{
-
   display:flex;
-
   align-items:center;
-
   gap:11px;
-
   font-weight:950;
-
   letter-spacing:-.04em;
-
   white-space:nowrap;
-
 }
-
 
 .logo{
-
   width:44px;
-
   height:44px;
-
   border-radius:14px;
-
-  background:
-    linear-gradient(
-      145deg,
-      #20915a,
-      #0b4f2f
-    );
-
+  background:linear-gradient(145deg,#20915a,#0b4f2f);
   color:#fff;
-
   display:grid;
-
   place-items:center;
-
-  box-shadow:
-    0 10px 25px
-    rgba(15,92,53,.22);
-
-  transition:
-    transform .5s var(--ease),
-    box-shadow .5s ease;
-
-  animation:
-    logoFloat
-    5s
-    infinite
-    ease-in-out;
-
+  box-shadow:0 10px 25px rgba(15,92,53,.22);
 }
-
-
-@keyframes logoFloat{
-
-  0%,
-  100%{
-
-    transform:translateY(0)
-      rotate(0deg);
-
-  }
-
-  50%{
-
-    transform:
-      translateY(-3px)
-      rotate(-3deg);
-
-  }
-
-}
-
-
-.brand:hover .logo{
-
-  transform:
-    rotate(-10deg)
-    scale(1.1);
-
-  box-shadow:
-    0 14px 32px
-    rgba(15,92,53,.30);
-
-}
-
 
 .logo svg{
-
   width:25px;
-
   height:25px;
-
 }
-
 
 .nav-links{
-
   display:flex;
-
   align-items:center;
-
   gap:4px;
-
   list-style:none;
-
 }
-
 
 .nav-links>li{
-
   position:relative;
-
 }
-
 
 .nav-links>li>a{
-
   display:flex;
-
   align-items:center;
-
   gap:6px;
-
   padding:11px 12px;
-
   border-radius:12px;
-
   color:#365145;
-
   font-size:.92rem;
-
   font-weight:750;
-
-  transition:
-    background .3s ease,
-    color .3s ease,
-    transform .3s var(--ease);
-
+  transition:.3s ease;
 }
-
 
 .nav-links>li>a:hover{
-
   background:var(--green-soft);
-
   color:var(--green);
-
   transform:translateY(-3px);
-
 }
-
 
 .nav-links .quote{
-
   background:var(--green);
-
   color:#fff;
-
-  box-shadow:
-    0 8px 20px
-    rgba(15,92,53,.18);
-
-  position:relative;
-
-  overflow:hidden;
-
+  box-shadow:0 8px 20px rgba(15,92,53,.18);
 }
-
-
-.nav-links .quote::after{
-
-  content:"";
-
-  position:absolute;
-
-  top:0;
-
-  left:-120%;
-
-  width:80%;
-
-  height:100%;
-
-  background:
-    linear-gradient(
-      100deg,
-      transparent,
-      rgba(255,255,255,.28),
-      transparent
-    );
-
-  transform:skewX(-20deg);
-
-  transition:left .65s ease;
-
-}
-
-
-.nav-links .quote:hover::after{
-
-  left:140%;
-
-}
-
 
 .nav-links .quote:hover{
-
   background:#0b4829;
-
   color:#fff;
-
 }
 
-
 .dropdown-toggle span{
-
   font-size:.75rem;
-
   transition:.3s ease;
-
 }
 
-
-.dropdown:hover
-.dropdown-toggle span{
-
-  transform:
-    rotate(180deg)
-    translateY(-1px);
-
+.dropdown:hover .dropdown-toggle span{
+  transform:rotate(180deg);
 }
-
-
-/* =========================================================
-   DROPDOWN
-========================================================= */
 
 .dropdown-menu{
-
   position:absolute;
-
   top:calc(100% + 12px);
-
   left:0;
-
   background:#fff;
-
-  border:
-    1px solid
-    var(--line);
-
+  border:1px solid var(--line);
   border-radius:18px;
-
-  box-shadow:
-    0 24px 55px
-    rgba(11,48,28,.15);
-
+  box-shadow:0 24px 55px rgba(11,48,28,.15);
   padding:10px;
-
   opacity:0;
-
   visibility:hidden;
-
-  transform:
-    translateY(10px)
-    scale(.96);
-
-  transition:
-    opacity .3s ease,
-    transform .4s var(--ease),
-    visibility .3s ease;
-
+  pointer-events:none;
+  transform:translateY(10px) scale(.96);
+  transition:.3s ease;
   z-index:300;
-
 }
 
-
-.dropdown:hover
-.dropdown-menu{
-
+.dropdown:hover .dropdown-menu{
   opacity:1;
-
   visibility:visible;
-
-  transform:
-    translateY(0)
-    scale(1);
-
+  pointer-events:auto;
+  transform:translateY(0) scale(1);
 }
-
 
 .services-menu{
-
   width:340px;
-
   max-height:560px;
-
   overflow-y:auto;
-
 }
-
 
 .areas-menu{
-
   width:250px;
-
 }
-
 
 .dropdown-menu a{
-
   display:block;
-
   padding:10px 12px;
-
   border-radius:10px;
-
   color:#365145;
-
   font-size:.87rem;
-
   font-weight:700;
-
-  transition:
-    background .25s ease,
-    color .25s ease,
-    transform .25s ease;
-
+  transition:.25s ease;
 }
-
 
 .dropdown-menu a:hover{
-
   background:var(--green-soft);
-
   color:var(--green);
-
-  transform:
-    translateX(5px);
-
+  transform:translateX(5px);
 }
-
 
 .menu{
-
   display:none;
-
   width:44px;
-
   height:44px;
-
   border:0;
-
   border-radius:12px;
-
   background:var(--green-soft);
-
   color:var(--green);
-
   font-size:1.25rem;
-
   cursor:pointer;
-
-  transition:
-    transform .3s ease,
-    background .3s ease;
-
-}
-
-
-.menu:hover{
-
-  transform:rotate(5deg) scale(1.04);
-
 }
 
 
@@ -932,17 +367,11 @@ header.scrolled{
 ========================================================= */
 
 .hero{
-
   min-height:720px;
-
   display:flex;
-
   align-items:center;
-
   position:relative;
-
   overflow:hidden;
-
   background:
     linear-gradient(
       90deg,
@@ -952,636 +381,173 @@ header.scrolled{
     ),
     url("https://images.unsplash.com/photo-1558904541-efa843a96f01?auto=format&fit=crop&w=2200&q=90")
     center/cover no-repeat;
-
 }
-
 
 .hero::before{
-
   content:"";
-
   position:absolute;
-
   width:430px;
-
   height:430px;
-
   border-radius:50%;
-
-  background:
-    rgba(185,220,82,.12);
-
+  background:rgba(185,220,82,.12);
   filter:blur(75px);
-
   right:-100px;
-
   top:60px;
-
-  animation:
-    glowMove
-    8s
-    infinite
-    alternate
-    ease-in-out;
-
+  animation:glowMove 8s infinite alternate ease-in-out;
 }
-
-
-.hero::after{
-
-  content:"";
-
-  position:absolute;
-
-  inset:0;
-
-  background:
-    radial-gradient(
-      circle at 70% 40%,
-      rgba(185,220,82,.12),
-      transparent 25%
-    ),
-    linear-gradient(
-      180deg,
-      transparent 55%,
-      rgba(3,18,10,.3)
-    );
-
-  pointer-events:none;
-
-}
-
 
 @keyframes glowMove{
-
-  from{
-
-    transform:
-      translate3d(0,0,0)
-      scale(1);
-
-  }
-
-  to{
-
-    transform:
-      translate3d(-75px,45px,0)
-      scale(1.25);
-
-  }
-
+  from{transform:translate3d(0,0,0) scale(1);}
+  to{transform:translate3d(-75px,45px,0) scale(1.25);}
 }
-
 
 .hero-grid{
-
   width:100%;
-
   display:grid;
-
-  grid-template-columns:
-    1.13fr .87fr;
-
+  grid-template-columns:1.13fr .87fr;
   gap:46px;
-
   align-items:center;
-
   position:relative;
-
   z-index:2;
-
 }
-
 
 .eyebrow{
-
   display:inline-flex;
-
   padding:8px 12px;
-
   border-radius:99px;
-
-  background:
-    rgba(255,255,255,.12);
-
-  border:
-    1px solid
-    rgba(255,255,255,.2);
-
+  background:rgba(255,255,255,.12);
+  border:1px solid rgba(255,255,255,.2);
   color:#effff4;
-
   font-size:.76rem;
-
   font-weight:800;
-
   text-transform:uppercase;
-
   letter-spacing:.12em;
-
   backdrop-filter:blur(8px);
-
-  animation:
-    heroEyebrow
-    1s
-    .05s
-    var(--ease)
-    both;
-
 }
-
-
-@keyframes heroEyebrow{
-
-  from{
-
-    opacity:0;
-
-    transform:
-      translateY(22px)
-      scale(.94);
-
-  }
-
-  to{
-
-    opacity:1;
-
-    transform:
-      translateY(0)
-      scale(1);
-
-  }
-
-}
-
 
 .hero h1{
-
   margin:20px 0 17px;
-
   color:#fff;
-
-  font-size:
-    clamp(
-      3rem,
-      6vw,
-      5.35rem
-    );
-
+  font-size:clamp(3rem,6vw,5.35rem);
   line-height:.98;
-
   letter-spacing:-.065em;
-
-  animation:
-    heroText
-    1.15s
-    .12s
-    var(--ease)
-    both;
-
 }
-
-
-@keyframes heroText{
-
-  from{
-
-    opacity:0;
-
-    transform:
-      translateY(45px);
-
-    filter:blur(8px);
-
-  }
-
-  to{
-
-    opacity:1;
-
-    transform:
-      translateY(0);
-
-    filter:blur(0);
-
-  }
-
-}
-
 
 .hero h1 span{
-
   color:#d7ef81;
-
-  display:inline-block;
-
-  animation:
-    greenTextPulse
-    4s
-    1.4s
-    infinite
-    ease-in-out;
-
 }
-
-
-@keyframes greenTextPulse{
-
-  0%,
-  100%{
-
-    text-shadow:
-      0 0 0
-      rgba(215,239,129,0);
-
-  }
-
-  50%{
-
-    text-shadow:
-      0 0 25px
-      rgba(215,239,129,.20);
-
-  }
-
-}
-
 
 .hero p{
-
   max-width:690px;
-
   color:#e4efe8;
-
   font-size:1.08rem;
-
-  animation:
-    fadeUp
-    1s
-    .25s
-    var(--ease)
-    both;
-
 }
-
 
 .actions{
-
   display:flex;
-
   flex-wrap:wrap;
-
   gap:12px;
-
   margin-top:28px;
-
-  animation:
-    fadeUp
-    1s
-    .34s
-    var(--ease)
-    both;
-
 }
-
 
 .btn{
-
   display:inline-flex;
-
   align-items:center;
-
   justify-content:center;
-
   gap:8px;
-
   padding:14px 20px;
-
   border-radius:14px;
-
   border:0;
-
   font-weight:850;
-
-  transition:
-    transform .4s var(--ease),
-    box-shadow .4s ease,
-    background .3s ease;
-
+  transition:transform .4s var(--ease),box-shadow .4s ease,background .3s ease;
   cursor:pointer;
-
   position:relative;
-
   overflow:hidden;
-
 }
-
-
-.btn::after{
-
-  content:"";
-
-  position:absolute;
-
-  top:-30%;
-
-  left:-130%;
-
-  width:80%;
-
-  height:160%;
-
-  background:
-    linear-gradient(
-      100deg,
-      transparent,
-      rgba(255,255,255,.38),
-      transparent
-    );
-
-  transform:skewX(-20deg);
-
-  transition:left .7s ease;
-
-}
-
-
-.btn:hover::after{
-
-  left:150%;
-
-}
-
 
 .btn:hover{
-
-  transform:
-    translateY(-6px)
-    scale(1.015);
-
+  transform:translateY(-6px) scale(1.015);
 }
-
 
 .btn-primary{
-
   background:var(--lime);
-
   color:#193007;
-
-  box-shadow:
-    0 12px 28px
-    rgba(185,220,82,.22);
-
+  box-shadow:0 12px 28px rgba(185,220,82,.22);
 }
-
 
 .btn-primary:hover{
-
   background:#d1eb70;
-
-  box-shadow:
-    0 20px 40px
-    rgba(185,220,82,.32);
-
+  box-shadow:0 20px 40px rgba(185,220,82,.32);
 }
-
 
 .btn-dark{
-
-  background:
-    rgba(255,255,255,.1);
-
-  border:
-    1px solid
-    rgba(255,255,255,.3);
-
+  background:rgba(255,255,255,.1);
+  border:1px solid rgba(255,255,255,.3);
   color:#fff;
-
   backdrop-filter:blur(8px);
-
 }
-
 
 .btn-dark:hover{
-
-  background:
-    rgba(255,255,255,.18);
-
+  background:rgba(255,255,255,.18);
 }
-
 
 .hero-trust{
-
   display:flex;
-
   flex-wrap:wrap;
-
   gap:10px;
-
   margin-top:22px;
-
   color:#e8f4ec;
-
   font-size:.88rem;
-
-  animation:
-    fadeUp
-    1s
-    .42s
-    var(--ease)
-    both;
-
 }
-
 
 .trust-pill{
-
   padding:8px 11px;
-
   border-radius:999px;
-
-  background:
-    rgba(255,255,255,.09);
-
-  border:
-    1px solid
-    rgba(255,255,255,.16);
-
-  backdrop-filter:blur(8px);
-
-  transition:
-    transform .3s var(--ease),
-    background .3s ease;
-
+  background:rgba(255,255,255,.09);
+  border:1px solid rgba(255,255,255,.16);
 }
-
-
-.trust-pill:hover{
-
-  transform:
-    translateY(-4px)
-    scale(1.03);
-
-  background:
-    rgba(255,255,255,.15);
-
-}
-
-
-/* =========================================================
-   QUOTE CARD
-========================================================= */
 
 .quote-card{
-
-  background:
-    rgba(255,255,255,.96);
-
+  background:rgba(255,255,255,.96);
   border-radius:28px;
-
   padding:28px;
-
-  box-shadow:
-    0 32px 80px
-    rgba(0,0,0,.26);
-
-  transition:
-    transform .6s var(--ease),
-    box-shadow .5s ease;
-
-  animation:
-    quoteAppear
-    1.2s
-    .18s
-    var(--ease)
-    both;
-
+  box-shadow:0 32px 80px rgba(0,0,0,.26);
 }
-
-
-@keyframes quoteAppear{
-
-  from{
-
-    opacity:0;
-
-    transform:
-      translateY(55px)
-      rotateX(10deg)
-      scale(.94);
-
-  }
-
-  to{
-
-    opacity:1;
-
-    transform:
-      translateY(0)
-      rotateX(0)
-      scale(1);
-
-  }
-
-}
-
-
-.quote-card:hover{
-
-  transform:
-    translateY(-10px)
-    rotateX(1deg);
-
-  box-shadow:
-    0 45px 100px
-    rgba(0,0,0,.30);
-
-}
-
 
 .quote-card h2{
-
   font-size:1.55rem;
-
   line-height:1.15;
-
 }
-
 
 .quote-card p{
-
   color:var(--muted);
-
   font-size:.91rem;
-
   margin:8px 0 20px;
-
 }
-
 
 .quick{
-
   display:grid;
-
   gap:11px;
-
 }
-
 
 .field{
-
   width:100%;
-
   padding:13px 14px;
-
-  border:
-    1px solid
-    var(--line);
-
+  border:1px solid var(--line);
   border-radius:12px;
-
   background:#fcfdfb;
-
   outline:0;
-
-  transition:
-    border-color .3s ease,
-    box-shadow .3s ease,
-    transform .3s ease;
-
 }
-
-
-.field:hover{
-
-  transform:
-    translateY(-2px);
-
-}
-
 
 .field:focus{
-
   border-color:var(--green);
-
-  box-shadow:
-    0 0 0 4px
-    rgba(15,92,53,.08);
-
-  transform:
-    translateY(-2px);
-
+  box-shadow:0 0 0 4px rgba(15,92,53,.08);
 }
 
-
 .form-note{
-
   margin-top:11px;
-
   color:#7a887f;
-
   font-size:.76rem;
-
 }
 
 
@@ -1590,79 +556,34 @@ header.scrolled{
 ========================================================= */
 
 .stats{
-
   margin-top:-54px;
-
   position:relative;
-
   z-index:4;
-
 }
-
 
 .stats-grid{
-
   display:grid;
-
-  grid-template-columns:
-    repeat(4,1fr);
-
+  grid-template-columns:repeat(4,1fr);
   gap:12px;
-
 }
-
 
 .stat{
-
   background:#fff;
-
-  border:
-    1px solid
-    var(--line);
-
+  border:1px solid var(--line);
   border-radius:18px;
-
   padding:22px 18px;
-
   box-shadow:var(--shadow);
-
-  transition:
-    transform .55s var(--ease),
-    box-shadow .45s ease;
-
 }
-
-
-.stat:hover{
-
-  transform:
-    translateY(-10px)
-    scale(1.015);
-
-  box-shadow:
-    0 30px 60px
-    rgba(11,48,28,.16);
-
-}
-
 
 .stat strong{
-
   display:block;
-
   font-size:1.35rem;
-
   color:var(--green);
-
 }
 
-
 .stat span{
-
   color:var(--muted);
-
   font-size:.88rem;
-
 }
 
 
@@ -1671,118 +592,34 @@ header.scrolled{
 ========================================================= */
 
 .section{
-
   padding:100px 0;
-
   position:relative;
-
 }
-
-
-.section:nth-of-type(even)::before{
-
-  content:"";
-
-  position:absolute;
-
-  width:260px;
-
-  height:260px;
-
-  border-radius:50%;
-
-  background:
-    rgba(185,220,82,.05);
-
-  filter:blur(60px);
-
-  left:-120px;
-
-  top:20%;
-
-  animation:
-    sectionGlow
-    9s
-    infinite
-    alternate
-    ease-in-out;
-
-  pointer-events:none;
-
-}
-
-
-@keyframes sectionGlow{
-
-  from{
-
-    transform:
-      translateY(0)
-      scale(1);
-
-  }
-
-  to{
-
-    transform:
-      translateY(80px)
-      scale(1.25);
-
-  }
-
-}
-
 
 .section-head{
-
   max-width:760px;
-
   margin-bottom:34px;
-
 }
-
 
 .kicker{
-
   display:inline-block;
-
   color:var(--green);
-
   font-weight:900;
-
   font-size:.77rem;
-
   letter-spacing:.12em;
-
   text-transform:uppercase;
-
   margin-bottom:8px;
-
 }
-
 
 .section-head h2{
-
-  font-size:
-    clamp(
-      2.2rem,
-      4vw,
-      3.5rem
-    );
-
+  font-size:clamp(2.2rem,4vw,3.5rem);
   line-height:1.04;
-
   letter-spacing:-.055em;
-
 }
 
-
 .section-head p{
-
   color:var(--muted);
-
   margin-top:12px;
-
 }
 
 
@@ -1791,221 +628,74 @@ header.scrolled{
 ========================================================= */
 
 .services-grid{
-
   display:grid;
-
-  grid-template-columns:
-    repeat(4,1fr);
-
+  grid-template-columns:repeat(4,1fr);
   gap:18px;
-
-  perspective:1200px;
-
 }
-
 
 .service-card{
-
   background:#fff;
-
-  border:
-    1px solid
-    var(--line);
-
+  border:1px solid var(--line);
   border-radius:20px;
-
   overflow:hidden;
-
-  box-shadow:
-    0 12px 35px
-    rgba(11,48,28,.07);
-
-  transition:
-    transform .6s var(--ease),
-    box-shadow .5s ease;
-
-  transform-style:preserve-3d;
-
+  box-shadow:0 12px 35px rgba(11,48,28,.07);
+  transition:transform .6s var(--ease),box-shadow .5s ease;
 }
-
 
 .service-card:hover{
-
-  transform:
-    translateY(-14px)
-    rotateX(2deg)
-    rotateY(-2deg);
-
-  box-shadow:
-    0 30px 65px
-    rgba(11,48,28,.17);
-
+  transform:translateY(-14px) rotateX(2deg) rotateY(-2deg);
+  box-shadow:0 30px 65px rgba(11,48,28,.17);
 }
-
 
 .service-image{
-
   position:relative;
-
   height:180px;
-
   overflow:hidden;
-
-  background:
-    linear-gradient(
-      135deg,
-      #0f5c35,
-      #8dbb3e
-    );
-
 }
-
-
-.service-image::after{
-
-  content:"";
-
-  position:absolute;
-
-  inset:0;
-
-  background:
-    linear-gradient(
-      180deg,
-      transparent 45%,
-      rgba(3,20,11,.22)
-    );
-
-  opacity:0;
-
-  transition:
-    opacity .4s ease;
-
-}
-
-
-.service-card:hover
-.service-image::after{
-
-  opacity:1;
-
-}
-
 
 .service-card img{
-
   width:100%;
-
   height:100%;
-
   object-fit:cover;
-
-  transition:
-    transform 1s var(--ease),
-    filter .6s ease;
-
+  transition:transform 1s var(--ease);
 }
-
 
 .service-card:hover img{
-
-  transform:
-    scale(1.12);
-
-  filter:
-    saturate(1.08)
-    brightness(1.04);
-
+  transform:scale(1.12);
 }
-
 
 .service-body{
-
   padding:18px;
-
 }
 
-
 .service-icon{
-
   width:40px;
-
   height:40px;
-
   border-radius:12px;
-
   background:var(--green-soft);
-
   display:grid;
-
   place-items:center;
-
   color:var(--green);
-
   font-weight:900;
-
   margin-bottom:13px;
-
-  transition:
-    transform .4s var(--ease),
-    background .3s ease;
-
 }
-
-
-.service-card:hover
-.service-icon{
-
-  transform:
-    rotate(-6deg)
-    scale(1.08);
-
-  background:#def0e4;
-
-}
-
 
 .service-body h3{
-
   font-size:1.08rem;
-
 }
-
 
 .service-body p{
-
   color:var(--muted);
-
   font-size:.9rem;
-
   margin-top:5px;
-
 }
-
 
 .service-link{
-
   display:inline-block;
-
   margin-top:13px;
-
   color:var(--green);
-
   font-weight:850;
-
   font-size:.87rem;
-
-  transition:
-    transform .3s ease;
-
-}
-
-
-.service-link:hover{
-
-  transform:
-    translateX(7px);
-
 }
 
 
@@ -2014,7 +704,6 @@ header.scrolled{
 ========================================================= */
 
 .feature{
-
   background:
     radial-gradient(
       circle at 20% 20%,
@@ -2022,254 +711,64 @@ header.scrolled{
       transparent 25%
     ),
     var(--green-dark);
-
   color:#fff;
-
-  overflow:hidden;
-
 }
-
-
-.feature::before{
-
-  content:"";
-
-  position:absolute;
-
-  width:500px;
-
-  height:500px;
-
-  right:-200px;
-
-  bottom:-200px;
-
-  border-radius:50%;
-
-  background:
-    rgba(185,220,82,.06);
-
-  filter:blur(30px);
-
-  animation:
-    featureGlow
-    10s
-    infinite
-    alternate
-    ease-in-out;
-
-}
-
-
-@keyframes featureGlow{
-
-  from{
-
-    transform:
-      scale(1)
-      rotate(0deg);
-
-  }
-
-  to{
-
-    transform:
-      scale(1.35)
-      rotate(20deg);
-
-  }
-
-}
-
 
 .feature-grid{
-
   display:grid;
-
-  grid-template-columns:
-    .9fr 1.1fr;
-
+  grid-template-columns:.9fr 1.1fr;
   gap:50px;
-
   align-items:center;
-
-  position:relative;
-
-  z-index:2;
-
 }
-
 
 .feature-img{
-
   border-radius:28px;
-
   overflow:hidden;
-
-  box-shadow:
-    0 30px 70px
-    rgba(0,0,0,.28);
-
-  transform-style:preserve-3d;
-
-  transition:
-    transform .7s var(--ease);
-
+  box-shadow:0 30px 70px rgba(0,0,0,.28);
 }
-
-
-.feature-img:hover{
-
-  transform:
-    perspective(1000px)
-    rotateY(-3deg)
-    translateY(-8px);
-
-}
-
 
 .feature-img img{
-
   height:520px;
-
   object-fit:cover;
-
-  transition:
-    transform 1.1s var(--ease);
-
 }
-
-
-.feature-img:hover img{
-
-  transform:
-    scale(1.06);
-
-}
-
 
 .feature .kicker{
-
   color:#c9e476;
-
 }
-
 
 .feature h2{
-
-  font-size:
-    clamp(
-      2.2rem,
-      4vw,
-      3.65rem
-    );
-
+  font-size:clamp(2.2rem,4vw,3.65rem);
   line-height:1.03;
-
 }
-
 
 .feature p{
-
   color:#c9d8cf;
-
   margin-top:15px;
-
 }
-
 
 .bullets{
-
   display:grid;
-
   gap:12px;
-
   margin:24px 0;
-
 }
-
 
 .bullet{
-
   display:flex;
-
   gap:12px;
-
   padding:14px 0;
-
-  border-bottom:
-    1px solid
-    rgba(255,255,255,.1);
-
-  transition:
-    transform .35s ease,
-    padding-left .35s ease;
-
+  border-bottom:1px solid rgba(255,255,255,.1);
 }
-
-
-.bullet:hover{
-
-  transform:
-    translateX(7px);
-
-  padding-left:5px;
-
-}
-
-
-.bullet strong{
-
-  display:block;
-
-}
-
-
-.bullet span{
-
-  display:block;
-
-  color:#bfd0c6;
-
-  margin-top:2px;
-
-  font-size:.93rem;
-
-}
-
 
 .check{
-
   flex:0 0 28px;
-
   width:28px;
-
   height:28px;
-
   border-radius:50%;
-
   display:grid;
-
   place-items:center;
-
   background:#c9e476;
-
   color:#173305;
-
   font-weight:900;
-
-  transition:
-    transform .4s var(--ease);
-
-}
-
-
-.bullet:hover .check{
-
-  transform:
-    rotate(360deg)
-    scale(1.12);
-
 }
 
 
@@ -2278,146 +777,44 @@ header.scrolled{
 ========================================================= */
 
 .process-grid{
-
   display:grid;
-
-  grid-template-columns:
-    repeat(4,1fr);
-
+  grid-template-columns:repeat(4,1fr);
   gap:16px;
-
 }
-
 
 .step{
-
   background:#fff;
-
-  border:
-    1px solid
-    var(--line);
-
+  border:1px solid var(--line);
   border-radius:20px;
-
   padding:24px;
-
-  transition:
-    transform .55s var(--ease),
-    box-shadow .45s ease;
-
-  position:relative;
-
-  overflow:hidden;
-
+  transition:transform .55s var(--ease),box-shadow .45s ease;
 }
-
-
-.step::before{
-
-  content:"";
-
-  position:absolute;
-
-  top:0;
-
-  left:0;
-
-  width:100%;
-
-  height:3px;
-
-  background:
-    linear-gradient(
-      90deg,
-      transparent,
-      var(--lime),
-      transparent
-    );
-
-  transform:
-    translateX(-100%);
-
-  transition:
-    transform .7s ease;
-
-}
-
-
-.step:hover::before{
-
-  transform:
-    translateX(100%);
-
-}
-
 
 .step:hover{
-
-  transform:
-    translateY(-10px);
-
-  box-shadow:
-    0 25px 55px
-    rgba(11,48,28,.13);
-
+  transform:translateY(-10px);
+  box-shadow:0 25px 55px rgba(11,48,28,.13);
 }
-
 
 .step-num{
-
   width:40px;
-
   height:40px;
-
   border-radius:13px;
-
   background:var(--green);
-
   color:#fff;
-
   display:grid;
-
   place-items:center;
-
   font-weight:900;
-
   margin-bottom:18px;
-
-  transition:
-    transform .45s var(--ease),
-    box-shadow .4s ease;
-
 }
-
-
-.step:hover .step-num{
-
-  transform:
-    scale(1.12)
-    rotate(8deg);
-
-  box-shadow:
-    0 10px 22px
-    rgba(15,92,53,.22);
-
-}
-
 
 .step h3{
-
   font-size:1.05rem;
-
 }
 
-
 .step p{
-
   color:var(--muted);
-
   font-size:.9rem;
-
   margin-top:6px;
-
 }
 
 
@@ -2426,178 +823,48 @@ header.scrolled{
 ========================================================= */
 
 .areas{
-
   background:#edf6ef;
-
-  overflow:hidden;
-
 }
-
-
-.areas::after{
-
-  content:"";
-
-  position:absolute;
-
-  width:340px;
-
-  height:340px;
-
-  border-radius:50%;
-
-  right:-170px;
-
-  top:-120px;
-
-  background:
-    rgba(15,92,53,.07);
-
-  filter:blur(20px);
-
-  animation:
-    areaFloat
-    11s
-    infinite
-    alternate
-    ease-in-out;
-
-}
-
-
-@keyframes areaFloat{
-
-  from{
-
-    transform:
-      translate3d(0,0,0);
-
-  }
-
-  to{
-
-    transform:
-      translate3d(-80px,70px,0);
-
-  }
-
-}
-
 
 .area-grid{
-
   display:grid;
-
-  grid-template-columns:
-    1.25fr .75fr;
-
+  grid-template-columns:1.25fr .75fr;
   gap:24px;
-
-  position:relative;
-
-  z-index:2;
-
 }
-
 
 .area-main,
 .area-side{
-
   background:#fff;
-
-  border:
-    1px solid
-    var(--line);
-
+  border:1px solid var(--line);
   border-radius:24px;
-
   padding:26px;
-
-  transition:
-    transform .5s var(--ease),
-    box-shadow .4s ease;
-
 }
-
-
-.area-main:hover,
-.area-side:hover{
-
-  transform:
-    translateY(-9px);
-
-  box-shadow:
-    0 28px 55px
-    rgba(11,48,28,.12);
-
-}
-
 
 .area-main h3,
 .area-side h3{
-
   font-size:1.25rem;
-
 }
-
 
 .area-main p,
 .area-side p{
-
   color:var(--muted);
-
   margin-top:6px;
-
 }
-
 
 .area-tags{
-
   display:flex;
-
   flex-wrap:wrap;
-
   gap:10px;
-
   margin-top:18px;
-
 }
-
 
 .area-tag{
-
   padding:9px 13px;
-
   border-radius:999px;
-
   background:var(--green-soft);
-
   color:var(--green);
-
   font-size:.86rem;
-
   font-weight:800;
-
-  transition:
-    transform .35s var(--ease),
-    background .3s ease,
-    box-shadow .3s ease;
-
-}
-
-
-.area-tag:hover{
-
-  transform:
-    translateY(-5px)
-    scale(1.04);
-
-  background:#dcefe2;
-
-  box-shadow:
-    0 8px 20px
-    rgba(15,92,53,.10);
-
 }
 
 
@@ -2606,275 +873,88 @@ header.scrolled{
 ========================================================= */
 
 .contact-section{
-
   padding:100px 0;
-
   background:#fff;
-
 }
-
 
 .contact-grid{
-
   display:grid;
-
-  grid-template-columns:
-    1fr 1fr;
-
+  grid-template-columns:1fr 1fr;
   gap:22px;
-
 }
-
 
 .contact-card{
-
-  background:
-    linear-gradient(
-      145deg,
-      #f4f9f4,
-      #fff
-    );
-
-  border:
-    1px solid
-    var(--line);
-
+  background:linear-gradient(145deg,#f4f9f4,#fff);
+  border:1px solid var(--line);
   border-radius:24px;
-
   padding:28px;
-
-  box-shadow:
-    0 18px 48px
-    rgba(11,48,28,.08);
-
-  transition:
-    transform .5s var(--ease),
-    box-shadow .45s ease;
-
-  position:relative;
-
-  overflow:hidden;
-
+  box-shadow:0 18px 48px rgba(11,48,28,.08);
 }
-
-
-.contact-card::before{
-
-  content:"";
-
-  position:absolute;
-
-  width:170px;
-
-  height:170px;
-
-  right:-80px;
-
-  top:-80px;
-
-  border-radius:50%;
-
-  background:
-    rgba(185,220,82,.09);
-
-  transition:
-    transform .7s ease;
-
-}
-
-
-.contact-card:hover::before{
-
-  transform:
-    scale(1.8);
-
-}
-
-
-.contact-card:hover{
-
-  transform:
-    translateY(-9px);
-
-  box-shadow:
-    0 30px 60px
-    rgba(11,48,28,.12);
-
-}
-
 
 .contact-card h3{
-
   font-size:1.35rem;
-
   margin-bottom:15px;
-
-  position:relative;
-
-  z-index:2;
-
 }
-
 
 .contact-item{
-
   display:flex;
-
   gap:12px;
-
   align-items:flex-start;
-
   padding:12px 0;
-
-  border-bottom:
-    1px solid
-    var(--line);
-
-  position:relative;
-
-  z-index:2;
-
-  transition:
-    transform .35s ease;
-
+  border-bottom:1px solid var(--line);
 }
-
-
-.contact-item:hover{
-
-  transform:
-    translateX(5px);
-
-}
-
 
 .contact-item:last-child{
-
   border-bottom:0;
-
 }
 
-
 .contact-icon{
-
   width:40px;
-
   height:40px;
-
   flex:0 0 40px;
-
   border-radius:12px;
-
   background:var(--green-soft);
-
   color:var(--green);
-
   display:grid;
-
   place-items:center;
-
   font-weight:900;
-
-  transition:
-    transform .4s var(--ease);
-
 }
-
-
-.contact-item:hover
-.contact-icon{
-
-  transform:
-    rotate(-8deg)
-    scale(1.08);
-
-}
-
 
 .contact-item strong{
-
   display:block;
-
   font-size:.84rem;
-
   color:#728178;
-
   text-transform:uppercase;
-
   letter-spacing:.08em;
-
 }
-
 
 .contact-item a,
 .contact-item span{
-
   display:block;
-
   margin-top:2px;
-
   color:var(--ink);
-
   font-weight:800;
-
 }
-
-
-.contact-item a:hover{
-
-  color:var(--green);
-
-}
-
 
 .hours{
-
   margin-top:6px;
-
-  color:var(--muted)
-  !important;
-
+  color:var(--muted)!important;
 }
-
 
 .service-locations{
-
   display:flex;
-
   flex-wrap:wrap;
-
   gap:10px;
-
   margin-top:17px;
-
 }
-
 
 .location-tag{
-
   padding:9px 13px;
-
   background:var(--green-soft);
-
   color:var(--green);
-
   border-radius:999px;
-
   font-weight:800;
-
   font-size:.86rem;
-
-  transition:
-    transform .3s var(--ease);
-
-}
-
-
-.location-tag:hover{
-
-  transform:
-    translateY(-4px);
-
 }
 
 
@@ -2883,73 +963,12 @@ header.scrolled{
 ========================================================= */
 
 .cta{
-
   padding:90px 0;
-
-  position:relative;
-
-  overflow:hidden;
-
 }
-
-
-.cta::before{
-
-  content:"";
-
-  position:absolute;
-
-  width:430px;
-
-  height:430px;
-
-  left:-250px;
-
-  bottom:-200px;
-
-  border-radius:50%;
-
-  background:
-    rgba(185,220,82,.08);
-
-  filter:blur(40px);
-
-  animation:
-    ctaGlow
-    9s
-    infinite
-    alternate
-    ease-in-out;
-
-}
-
-
-@keyframes ctaGlow{
-
-  from{
-
-    transform:
-      scale(1);
-
-  }
-
-  to{
-
-    transform:
-      scale(1.3)
-      translateX(90px);
-
-  }
-
-}
-
 
 .cta-box{
-
   border-radius:30px;
-
   padding:48px;
-
   background:
     linear-gradient(
       120deg,
@@ -2958,101 +977,25 @@ header.scrolled{
     ),
     url("https://images.unsplash.com/photo-1598902108854-10e335adac99?auto=format&fit=crop&w=1600&q=85")
     center/cover;
-
   color:#fff;
-
   display:flex;
-
   align-items:center;
-
   justify-content:space-between;
-
   gap:30px;
-
   overflow:hidden;
-
   position:relative;
-
-  box-shadow:
-    var(--shadow-lg);
-
+  box-shadow:var(--shadow-lg);
 }
-
-
-.cta-box::after{
-
-  content:"";
-
-  position:absolute;
-
-  width:320px;
-
-  height:320px;
-
-  border-radius:50%;
-
-  right:-120px;
-
-  top:-110px;
-
-  background:
-    rgba(185,220,82,.12);
-
-  filter:blur(28px);
-
-  animation:
-    ctaOrb
-    8s
-    infinite
-    alternate
-    ease-in-out;
-
-}
-
-
-@keyframes ctaOrb{
-
-  from{
-
-    transform:
-      translate(0,0)
-      scale(1);
-
-  }
-
-  to{
-
-    transform:
-      translate(-50px,55px)
-      scale(1.25);
-
-  }
-
-}
-
 
 .cta-box h2{
-
-  font-size:
-    clamp(
-      2.1rem,
-      4vw,
-      3.5rem
-    );
-
+  font-size:clamp(2.1rem,4vw,3.5rem);
   line-height:1.02;
-
 }
 
-
 .cta-box p{
-
   color:#d8e8de;
-
   max-width:680px;
-
   margin-top:10px;
-
 }
 
 
@@ -3061,693 +1004,258 @@ header.scrolled{
 ========================================================= */
 
 footer{
-
   background:#062515;
-
   color:#d7e6dc;
-
   padding:50px 0 24px;
-
-  position:relative;
-
 }
-
 
 .footer-top{
-
   display:grid;
-
-  grid-template-columns:
-    1.25fr .75fr .75fr 1.1fr;
-
+  grid-template-columns:1.25fr .75fr .75fr 1.1fr;
   gap:30px;
-
   padding-bottom:28px;
-
-  border-bottom:
-    1px solid
-    rgba(255,255,255,.1);
-
+  border-bottom:1px solid rgba(255,255,255,.1);
 }
-
 
 .footer-brand{
-
   font-size:1.18rem;
-
   font-weight:900;
-
   color:#fff;
-
 }
-
 
 .footer-text{
-
   color:#a9bfb2;
-
   margin-top:8px;
-
   max-width:460px;
-
   font-size:.9rem;
-
 }
-
 
 .footer-col h4,
 .footer-contact h4{
-
   color:#fff;
-
   font-size:.9rem;
-
   margin-bottom:10px;
-
 }
-
 
 .footer-col a{
-
   display:block;
-
   color:#b7cabe;
-
   font-size:.88rem;
-
   padding:3px 0;
-
-  transition:
-    color .25s ease,
-    transform .25s ease;
-
+  transition:.25s ease;
 }
-
 
 .footer-col a:hover{
-
   color:#fff;
-
-  transform:
-    translateX(5px);
-
+  transform:translateX(5px);
 }
-
 
 .footer-contact p{
-
   color:#a9bfb2;
-
   font-size:.87rem;
-
   margin:5px 0;
-
 }
-
 
 .footer-contact a{
-
   color:#fff;
-
   font-weight:800;
-
 }
-
 
 .footer-bottom{
-
   display:flex;
-
   justify-content:space-between;
-
   gap:20px;
-
   padding-top:20px;
-
   color:#8ea79a;
-
   font-size:.78rem;
-
 }
 
 
 /* =========================================================
-   TOAST
-========================================================= */
-
-.toast{
-
-  position:fixed;
-
-  left:50%;
-
-  bottom:26px;
-
-  transform:
-    translate(-50%,35px)
-    scale(.95);
-
-  opacity:0;
-
-  pointer-events:none;
-
-  background:#062515;
-
-  color:#fff;
-
-  padding:13px 18px;
-
-  border-radius:12px;
-
-  transition:
-    opacity .4s ease,
-    transform .4s var(--ease);
-
-  z-index:3000;
-
-  box-shadow:
-    0 15px 40px
-    rgba(0,0,0,.22);
-
-}
-
-
-.toast.show{
-
-  opacity:1;
-
-  transform:
-    translate(-50%,0)
-    scale(1);
-
-}
-
-
-/* =========================================================
-   REVEAL ANIMATIONS
+   REVEAL
 ========================================================= */
 
 .reveal{
-
   opacity:0;
-
-  transform:
-    translateY(70px)
-    scale(.96);
-
+  transform:translateY(70px) scale(.96);
   filter:blur(5px);
-
   transition:
     opacity 1s var(--ease),
     transform 1s var(--ease),
     filter 1s ease;
-
-  transition-delay:
-    var(--delay,0ms);
-
 }
-
 
 .reveal.visible{
-
   opacity:1;
-
-  transform:
-    translateY(0)
-    scale(1);
-
+  transform:translateY(0) scale(1);
   filter:blur(0);
-
-}
-
-
-.reveal-left{
-
-  opacity:0;
-
-  transform:
-    translateX(-80px)
-    scale(.96);
-
-  filter:blur(5px);
-
-  transition:
-    opacity 1s var(--ease),
-    transform 1s var(--ease),
-    filter 1s ease;
-
-}
-
-
-.reveal-left.visible{
-
-  opacity:1;
-
-  transform:
-    translateX(0)
-    scale(1);
-
-  filter:blur(0);
-
-}
-
-
-.reveal-right{
-
-  opacity:0;
-
-  transform:
-    translateX(80px)
-    scale(.96);
-
-  filter:blur(5px);
-
-  transition:
-    opacity 1s var(--ease),
-    transform 1s var(--ease),
-    filter 1s ease;
-
-}
-
-
-.reveal-right.visible{
-
-  opacity:1;
-
-  transform:
-    translateX(0)
-    scale(1);
-
-  filter:blur(0);
-
 }
 
 
 /* =========================================================
-   GENERAL KEYFRAMES
-========================================================= */
-
-@keyframes fadeUp{
-
-  from{
-
-    opacity:0;
-
-    transform:
-      translateY(28px);
-
-  }
-
-  to{
-
-    opacity:1;
-
-    transform:
-      translateY(0);
-
-  }
-
-}
-
-
-/* =========================================================
-   TABLET
+   RESPONSIVE
 ========================================================= */
 
 @media(max-width:980px){
 
   .menu{
-
     display:block;
-
   }
-
 
   .nav-links{
-
     position:absolute;
-
     left:4%;
-
     right:4%;
-
     top:74px;
-
     display:none;
-
     flex-direction:column;
-
     align-items:stretch;
-
     padding:12px;
-
     background:#fff;
-
-    border:
-      1px solid
-      var(--line);
-
+    border:1px solid var(--line);
     border-radius:18px;
-
     box-shadow:var(--shadow);
-
-    max-height:
-      calc(100vh - 90px);
-
+    max-height:calc(100vh - 90px);
     overflow-y:auto;
-
   }
-
 
   .nav-links.open{
-
     display:flex;
-
-    animation:
-      mobileMenuIn
-      .35s
-      var(--ease)
-      both;
-
   }
-
-
-  @keyframes mobileMenuIn{
-
-    from{
-
-      opacity:0;
-
-      transform:
-        translateY(-12px)
-        scale(.98);
-
-    }
-
-    to{
-
-      opacity:1;
-
-      transform:
-        translateY(0)
-        scale(1);
-
-    }
-
-  }
-
-
-  .nav-links>li>a{
-
-    padding:13px;
-
-  }
-
 
   .dropdown-menu{
-
     position:static;
-
-    width:100% !important;
-
+    width:100%!important;
     display:none;
-
     opacity:1;
-
     visibility:visible;
-
+    pointer-events:auto;
     transform:none;
-
     box-shadow:none;
-
     border:0;
-
     background:#f7faf7;
-
     margin-top:5px;
-
   }
 
-
-  .dropdown.mobile-open
-  .dropdown-menu{
-
+  .dropdown.mobile-open .dropdown-menu{
     display:block;
-
-    animation:
-      mobileDropdown
-      .3s
-      var(--ease)
-      both;
-
   }
-
-
-  @keyframes mobileDropdown{
-
-    from{
-
-      opacity:0;
-
-      transform:
-        translateY(-5px);
-
-    }
-
-    to{
-
-      opacity:1;
-
-      transform:
-        translateY(0);
-
-    }
-
-  }
-
 
   .hero{
-
     min-height:auto;
-
     padding:88px 0 110px;
-
   }
-
 
   .hero-grid,
   .feature-grid,
   .area-grid,
   .contact-grid{
-
     grid-template-columns:1fr;
-
   }
-
 
   .stats-grid{
-
-    grid-template-columns:
-      repeat(2,1fr);
-
+    grid-template-columns:repeat(2,1fr);
   }
-
 
   .services-grid{
-
-    grid-template-columns:
-      repeat(2,1fr);
-
+    grid-template-columns:repeat(2,1fr);
   }
-
 
   .process-grid{
-
-    grid-template-columns:
-      repeat(2,1fr);
-
+    grid-template-columns:repeat(2,1fr);
   }
 
-
   .footer-top{
-
-    grid-template-columns:
-      1fr 1fr;
-
+    grid-template-columns:1fr 1fr;
   }
 
 }
-
-
-/* =========================================================
-   MOBILE
-========================================================= */
 
 @media(max-width:640px){
 
   .topbar-inner{
-
     justify-content:center;
-
     text-align:center;
-
   }
-
 
   .topbar-inner a{
-
     display:none;
-
   }
-
 
   .brand{
-
     font-size:.92rem;
-
   }
-
 
   .hero{
-
-    padding:
-      76px 0
-      96px;
-
+    padding:76px 0 96px;
   }
-
 
   .hero h1{
-
-    font-size:
-      clamp(
-        2.7rem,
-        12vw,
-        4rem
-      );
-
+    font-size:clamp(2.7rem,12vw,4rem);
   }
-
 
   .actions .btn{
-
     width:100%;
-
   }
-
 
   .stats-grid,
   .services-grid,
   .process-grid{
-
     grid-template-columns:1fr;
-
   }
-
 
   .section,
   .contact-section{
-
-    padding:
-      74px 0;
-
+    padding:74px 0;
   }
-
 
   .feature-img img{
-
     height:320px;
-
   }
-
 
   .cta-box{
-
-    padding:
-      30px 24px;
-
+    padding:30px 24px;
     flex-direction:column;
-
     align-items:flex-start;
-
   }
-
 
   .cta-box .btn{
-
     width:100%;
-
   }
-
 
   .footer-top,
   .footer-bottom{
-
     display:grid;
-
     grid-template-columns:1fr;
-
   }
-
 
   .footer-top{
-
     gap:22px;
-
   }
-
 
   .quote-card{
-
     padding:22px;
-
-  }
-
-
-  .particle{
-
-    display:none;
-
   }
 
 }
 
-
-/* =========================================================
-   REDUCED MOTION
-========================================================= */
-
 @media(prefers-reduced-motion:reduce){
 
   html{
-
     scroll-behavior:auto;
-
   }
 
   *,
   *::before,
   *::after{
-
-    animation-duration:.01ms !important;
-
-    animation-iteration-count:1 !important;
-
-    transition-duration:.01ms !important;
-
+    animation:none!important;
+    transition:none!important;
   }
 
-
-  .reveal,
-  .reveal-left,
-  .reveal-right{
-
+  .reveal{
     opacity:1;
-
     transform:none;
-
     filter:none;
-
   }
 
 }
@@ -3759,25 +1267,6 @@ footer{
 
 <body>
 
-
-<!-- =======================================================
-     BACKGROUND PARTICLES
-======================================================= -->
-
-<div class="page-particles">
-
-  <span class="particle"></span>
-
-  <span class="particle"></span>
-
-  <span class="particle"></span>
-
-  <span class="particle"></span>
-
-</div>
-
-
-<!-- SCROLL PROGRESS -->
 
 <div
   class="scroll-progress"
@@ -3808,7 +1297,7 @@ footer{
 
 
 <!-- =======================================================
-     HEADER
+     HEADER / NAVIGATION
 ======================================================= -->
 
 <header id="siteHeader">
@@ -3825,6 +1314,7 @@ footer{
         <svg
           viewBox="0 0 24 24"
           fill="none"
+          aria-hidden="true"
         >
 
           <path
@@ -3855,14 +1345,13 @@ footer{
       id="menuBtn"
       aria-label="Open navigation"
       aria-expanded="false"
+      type="button"
     >
-
       ☰
-
     </button>
 
 
-    <nav>
+    <nav aria-label="Primary navigation">
 
       <ul
         class="nav-links"
@@ -3880,7 +1369,6 @@ footer{
           >
 
             Services
-
             <span>⌄</span>
 
           </a>
@@ -3889,6 +1377,8 @@ footer{
           <div
             class="dropdown-menu services-menu"
           >
+
+            <!-- STANDARDIZED FILENAMES -->
 
             <a href="lawn-care-service.html">
               Lawn Care Service
@@ -3961,7 +1451,6 @@ footer{
           >
 
             Service Areas
-
             <span>⌄</span>
 
           </a>
@@ -4022,16 +1511,12 @@ footer{
 
 
         <li>
-
           <a
             class="quote"
             href="get-a-quote.html"
           >
-
             Get a Quote
-
           </a>
-
         </li>
 
 
@@ -4051,9 +1536,7 @@ footer{
 <main>
 
 
-<!-- =======================================================
-     HERO
-======================================================= -->
+<!-- HERO -->
 
 <section
   class="hero"
@@ -4066,20 +1549,13 @@ footer{
     <div>
 
       <span class="eyebrow">
-
         Houston, Texas • Lawn &amp; Yard Care
-
       </span>
 
 
       <h1>
-
         Lawn Care Service in
-
-        <span>
-          Houston, TX
-        </span>
-
+        <span>Houston, TX</span>
       </h1>
 
 
@@ -4098,9 +1574,7 @@ footer{
           class="btn btn-primary"
           href="get-a-quote.html"
         >
-
           Get a Free Quote
-
         </a>
 
 
@@ -4108,9 +1582,7 @@ footer{
           class="btn btn-dark"
           href="services.html"
         >
-
           Explore Services
-
         </a>
 
       </div>
@@ -4119,29 +1591,21 @@ footer{
       <div class="hero-trust">
 
         <span class="trust-pill">
-
           Straightforward quotes
-
         </span>
 
         <span class="trust-pill">
-
           Recurring or one-time service
-
         </span>
 
         <span class="trust-pill">
-
           Clean finish
-
         </span>
 
       </div>
 
     </div>
 
-
-    <!-- QUOTE -->
 
     <aside class="quote-card">
 
@@ -4151,10 +1615,7 @@ footer{
 
 
       <p>
-
-        Start with a few details and make your quote request
-        quick and easy.
-
+        Start with a few details and make your quote request quick and easy.
       </p>
 
 
@@ -4232,19 +1693,15 @@ footer{
             width:100%;
           "
         >
-
           Start My Quote
-
         </button>
 
       </form>
 
 
       <div class="form-note">
-
         Request a service estimate and we'll use these details
         to understand what your property needs.
-
       </div>
 
     </aside>
@@ -4254,75 +1711,30 @@ footer{
 </section>
 
 
-<!-- =======================================================
-     STATS
-======================================================= -->
+<!-- STATS -->
 
 <section class="stats">
 
   <div class="container stats-grid">
 
-    <div
-      class="stat reveal"
-      style="--delay:0ms"
-    >
-
-      <strong>
-        Clean &amp; Tidy
-      </strong>
-
-      <span>
-        Mowing, edging and property cleanup
-      </span>
-
+    <div class="stat reveal">
+      <strong>Clean &amp; Tidy</strong>
+      <span>Mowing, edging and property cleanup</span>
     </div>
 
-
-    <div
-      class="stat reveal"
-      style="--delay:90ms"
-    >
-
-      <strong>
-        Flexible
-      </strong>
-
-      <span>
-        One-time or recurring maintenance
-      </span>
-
+    <div class="stat reveal">
+      <strong>Flexible</strong>
+      <span>One-time or recurring maintenance</span>
     </div>
 
-
-    <div
-      class="stat reveal"
-      style="--delay:180ms"
-    >
-
-      <strong>
-        Local Focus
-      </strong>
-
-      <span>
-        Houston-area residential service
-      </span>
-
+    <div class="stat reveal">
+      <strong>Local Focus</strong>
+      <span>Houston-area residential service</span>
     </div>
 
-
-    <div
-      class="stat reveal"
-      style="--delay:270ms"
-    >
-
-      <strong>
-        Easy Start
-      </strong>
-
-      <span>
-        Request a quote online
-      </span>
-
+    <div class="stat reveal">
+      <strong>Easy Start</strong>
+      <span>Request a quote online</span>
     </div>
 
   </div>
@@ -4330,14 +1742,11 @@ footer{
 </section>
 
 
-<!-- =======================================================
-     SERVICES
-======================================================= -->
+<!-- SERVICES -->
 
 <section class="section">
 
   <div class="container">
-
 
     <div class="section-head reveal">
 
@@ -4345,17 +1754,13 @@ footer{
         What we do
       </span>
 
-
       <h2>
         Lawn and property services built around your needs
       </h2>
 
-
       <p>
-
         From regular lawn maintenance to seasonal outdoor projects,
         choose the service that fits your property.
-
       </p>
 
     </div>
@@ -4364,10 +1769,7 @@ footer{
     <div class="services-grid">
 
 
-      <article
-        class="service-card reveal"
-        style="--delay:70ms"
-      >
+      <article class="service-card reveal">
 
         <div class="service-image">
 
@@ -4375,7 +1777,6 @@ footer{
             src="https://images.unsplash.com/photo-1558904541-efa843a96f01?auto=format&fit=crop&w=1200&q=85"
             alt="Professional lawn mowing service"
             loading="lazy"
-            class="safe-image"
           >
 
         </div>
@@ -4387,24 +1788,19 @@ footer{
             01
           </div>
 
-
           <h3>
             Lawn Mowing &amp; Edging
           </h3>
-
 
           <p>
             Even cuts, defined edges and a cleaner overall appearance.
           </p>
 
-
           <a
             class="service-link"
             href="lawn-mowing-service.html"
           >
-
             View service →
-
           </a>
 
         </div>
@@ -4412,10 +1808,7 @@ footer{
       </article>
 
 
-      <article
-        class="service-card reveal"
-        style="--delay:150ms"
-      >
+      <article class="service-card reveal">
 
         <div class="service-image">
 
@@ -4423,7 +1816,6 @@ footer{
             src="https://images.unsplash.com/photo-1585320806297-9794b3e4eeae?auto=format&fit=crop&w=1200&q=85"
             alt="Yard cleanup and lawn maintenance"
             loading="lazy"
-            class="safe-image"
           >
 
         </div>
@@ -4435,24 +1827,19 @@ footer{
             02
           </div>
 
-
           <h3>
             Yard Cleanup
           </h3>
-
 
           <p>
             Leaves, clippings and outdoor mess cleared for a neater property.
           </p>
 
-
           <a
             class="service-link"
             href="yard-cleanup-service.html"
           >
-
             View service →
-
           </a>
 
         </div>
@@ -4460,10 +1847,7 @@ footer{
       </article>
 
 
-      <article
-        class="service-card reveal"
-        style="--delay:230ms"
-      >
+      <article class="service-card reveal">
 
         <div class="service-image">
 
@@ -4471,7 +1855,6 @@ footer{
             src="https://images.unsplash.com/photo-1598902108854-10e335adac99?auto=format&fit=crop&w=1200&q=85"
             alt="Shrub trimming and mulch landscaping service"
             loading="lazy"
-            class="safe-image"
           >
 
         </div>
@@ -4483,24 +1866,19 @@ footer{
             03
           </div>
 
-
           <h3>
             Shrub Trimming &amp; Mulch
           </h3>
-
 
           <p>
             Shape overgrown shrubs and refresh landscape beds with mulch.
           </p>
 
-
           <a
             class="service-link"
             href="shrub-bush-trimming.html"
           >
-
             View service →
-
           </a>
 
         </div>
@@ -4508,10 +1886,7 @@ footer{
       </article>
 
 
-      <article
-        class="service-card reveal"
-        style="--delay:310ms"
-      >
+      <article class="service-card reveal">
 
         <div class="service-image">
 
@@ -4519,7 +1894,6 @@ footer{
             src="https://images.unsplash.com/photo-1599685315640-7a4b1c2d0d8f?auto=format&fit=crop&w=1200&q=85"
             alt="Residential outdoor property care"
             loading="lazy"
-            class="safe-image"
           >
 
         </div>
@@ -4531,24 +1905,19 @@ footer{
             04
           </div>
 
-
           <h3>
             Outdoor Property Care
           </h3>
-
 
           <p>
             Seasonal planting, pressure washing and other exterior improvements.
           </p>
 
-
           <a
             class="service-link"
             href="services.html"
           >
-
             View all services →
-
           </a>
 
         </div>
@@ -4563,38 +1932,30 @@ footer{
 </section>
 
 
-<!-- =======================================================
-     FEATURE
-======================================================= -->
+<!-- FEATURE -->
 
 <section class="section feature">
 
   <div class="container feature-grid">
 
-
-    <div class="feature-img reveal-left">
-
+    <div class="feature-img reveal">
       <img
         src="https://images.unsplash.com/photo-1558904541-efa843a96f01?auto=format&fit=crop&w=1400&q=90"
         alt="Well maintained residential lawn"
         loading="lazy"
-        class="safe-image"
       >
-
     </div>
 
 
-    <div class="reveal-right">
+    <div class="reveal">
 
       <span class="kicker">
         Why homeowners choose us
       </span>
 
-
       <h2>
         A better lawn-care experience starts with the details.
       </h2>
-
 
       <p>
         Great lawn care is about more than cutting grass.
@@ -4605,92 +1966,50 @@ footer{
 
       <div class="bullets">
 
-
         <div class="bullet">
-
-          <div class="check">
-            ✓
-          </div>
-
+          <div class="check">✓</div>
           <div>
-
-            <strong>
-              Clear quote process
-            </strong>
-
+            <strong>Clear quote process</strong>
             <span>
               Make it easy for customers to understand what happens next.
             </span>
-
           </div>
-
         </div>
 
 
         <div class="bullet">
-
-          <div class="check">
-            ✓
-          </div>
-
+          <div class="check">✓</div>
           <div>
-
-            <strong>
-              Flexible service options
-            </strong>
-
+            <strong>Flexible service options</strong>
             <span>
               Promote recurring maintenance while still welcoming one-time jobs.
             </span>
-
           </div>
-
         </div>
 
 
         <div class="bullet">
-
-          <div class="check">
-            ✓
-          </div>
-
+          <div class="check">✓</div>
           <div>
-
-            <strong>
-              Respect for the property
-            </strong>
-
+            <strong>Respect for the property</strong>
             <span>
               Finish the job with attention to walkways, driveways,
               landscape beds and the surrounding yard.
             </span>
-
           </div>
-
         </div>
 
 
         <div class="bullet">
-
-          <div class="check">
-            ✓
-          </div>
-
+          <div class="check">✓</div>
           <div>
-
-            <strong>
-              Local Houston service
-            </strong>
-
+            <strong>Local Houston service</strong>
             <span>
               Build your service around Houston-area homeowners
               and nearby communities.
             </span>
-
           </div>
-
         </div>
-
 
       </div>
 
@@ -4699,9 +2018,7 @@ footer{
         class="btn btn-primary"
         href="about.html"
       >
-
         Learn About Us
-
       </a>
 
     </div>
@@ -4711,14 +2028,11 @@ footer{
 </section>
 
 
-<!-- =======================================================
-     PROCESS
-======================================================= -->
+<!-- PROCESS -->
 
 <section class="section">
 
   <div class="container">
-
 
     <div class="section-head reveal">
 
@@ -4726,11 +2040,9 @@ footer{
         How it works
       </span>
 
-
       <h2>
         Simple from quote request to finished yard
       </h2>
-
 
       <p>
         A straightforward process helps customers know exactly
@@ -4742,86 +2054,29 @@ footer{
 
     <div class="process-grid">
 
-
-      <div
-        class="step reveal"
-        style="--delay:60ms"
-      >
-
-        <div class="step-num">
-          1
-        </div>
-
-        <h3>
-          Tell us what you need
-        </h3>
-
-        <p>
-          Share your property details and service request.
-        </p>
-
+      <div class="step reveal">
+        <div class="step-num">1</div>
+        <h3>Tell us what you need</h3>
+        <p>Share your property details and service request.</p>
       </div>
 
-
-      <div
-        class="step reveal"
-        style="--delay:140ms"
-      >
-
-        <div class="step-num">
-          2
-        </div>
-
-        <h3>
-          Choose your service
-        </h3>
-
-        <p>
-          Select the maintenance or outdoor service that fits your property.
-        </p>
-
+      <div class="step reveal">
+        <div class="step-num">2</div>
+        <h3>Choose your service</h3>
+        <p>Select the maintenance or outdoor service that fits your property.</p>
       </div>
 
-
-      <div
-        class="step reveal"
-        style="--delay:220ms"
-      >
-
-        <div class="step-num">
-          3
-        </div>
-
-        <h3>
-          Review your quote
-        </h3>
-
-        <p>
-          Make the pricing and scheduling details easy to understand.
-        </p>
-
+      <div class="step reveal">
+        <div class="step-num">3</div>
+        <h3>Review your quote</h3>
+        <p>Make the pricing and scheduling details easy to understand.</p>
       </div>
 
-
-      <div
-        class="step reveal"
-        style="--delay:300ms"
-      >
-
-        <div class="step-num">
-          4
-        </div>
-
-        <h3>
-          Enjoy the result
-        </h3>
-
-        <p>
-          Your lawn is serviced and the property is left looking neat and cared for.
-        </p>
-
+      <div class="step reveal">
+        <div class="step-num">4</div>
+        <h3>Enjoy the result</h3>
+        <p>Your lawn is serviced and the property is left looking neat and cared for.</p>
       </div>
-
 
     </div>
 
@@ -4830,14 +2085,11 @@ footer{
 </section>
 
 
-<!-- =======================================================
-     SERVICE AREAS
-======================================================= -->
+<!-- AREAS -->
 
 <section class="section areas">
 
   <div class="container">
-
 
     <div class="section-head reveal">
 
@@ -4845,11 +2097,9 @@ footer{
         Locations We Service
       </span>
 
-
       <h2>
         Serving homeowners across Houston and nearby Texas communities
       </h2>
-
 
       <p>
         We provide lawn care and outdoor property services in Houston
@@ -4868,7 +2118,6 @@ footer{
           Texas Service Areas
         </h3>
 
-
         <p>
           Current service locations include Atascocita, Friendswood,
           Houston and Pearland.
@@ -4877,21 +2126,47 @@ footer{
 
         <div class="area-tags">
 
-          <span class="area-tag">
-            Atascocita
-          </span>
-
-          <span class="area-tag">
-            Friendswood
-          </span>
-
-          <span class="area-tag">
+          <a
+            class="area-tag"
+            href="houston.html"
+          >
             Houston
-          </span>
+          </a>
 
-          <span class="area-tag">
-            Pearland
-          </span>
+          <a
+            class="area-tag"
+            href="east-houston.html"
+          >
+            East Houston
+          </a>
+
+          <a
+            class="area-tag"
+            href="northside.html"
+          >
+            Northside
+          </a>
+
+          <a
+            class="area-tag"
+            href="kashmere-gardens.html"
+          >
+            Kashmere Gardens
+          </a>
+
+          <a
+            class="area-tag"
+            href="denver-harbor.html"
+          >
+            Denver Harbor
+          </a>
+
+          <a
+            class="area-tag"
+            href="greater-fifth-ward.html"
+          >
+            Greater Fifth Ward
+          </a>
 
         </div>
 
@@ -4914,22 +2189,16 @@ footer{
       </div>
 
 
-      <div
-        class="area-side reveal"
-        style="--delay:150ms"
-      >
+      <div class="area-side reveal">
 
         <h3>
           Local Houston lawn care
         </h3>
 
-
         <p>
-          Use dedicated area pages to provide useful local
-          information and help customers find the right service
-          for their neighborhood.
+          Use dedicated area pages to provide useful local information
+          and help customers find the right service for their neighborhood.
         </p>
-
 
         <a
           class="service-link"
@@ -4948,14 +2217,11 @@ footer{
 </section>
 
 
-<!-- =======================================================
-     CONTACT INFORMATION
-======================================================= -->
+<!-- CONTACT -->
 
 <section class="contact-section">
 
   <div class="container">
-
 
     <div class="section-head reveal">
 
@@ -4963,11 +2229,9 @@ footer{
         Contact Info
       </span>
 
-
       <h2>
         Get in touch with Houston Lawn Care
       </h2>
-
 
       <p>
         Have a lawn project in mind? Contact us for service information,
@@ -4989,9 +2253,7 @@ footer{
 
         <div class="contact-item">
 
-          <div class="contact-icon">
-            ☎
-          </div>
+          <div class="contact-icon">☎</div>
 
           <div>
 
@@ -5010,9 +2272,7 @@ footer{
 
         <div class="contact-item">
 
-          <div class="contact-icon">
-            @
-          </div>
+          <div class="contact-icon">@</div>
 
           <div>
 
@@ -5052,10 +2312,7 @@ footer{
       </div>
 
 
-      <div
-        class="contact-card reveal"
-        style="--delay:150ms"
-      >
+      <div class="contact-card reveal">
 
         <h3>
           Office Hours &amp; Service Locations
@@ -5123,21 +2380,47 @@ footer{
 
             <div class="service-locations">
 
-              <span class="location-tag">
-                Atascocita
-              </span>
-
-              <span class="location-tag">
-                Friendswood
-              </span>
-
-              <span class="location-tag">
+              <a
+                class="location-tag"
+                href="houston.html"
+              >
                 Houston
-              </span>
+              </a>
 
-              <span class="location-tag">
-                Pearland
-              </span>
+              <a
+                class="location-tag"
+                href="east-houston.html"
+              >
+                East Houston
+              </a>
+
+              <a
+                class="location-tag"
+                href="northside.html"
+              >
+                Northside
+              </a>
+
+              <a
+                class="location-tag"
+                href="kashmere-gardens.html"
+              >
+                Kashmere Gardens
+              </a>
+
+              <a
+                class="location-tag"
+                href="denver-harbor.html"
+              >
+                Denver Harbor
+              </a>
+
+              <a
+                class="location-tag"
+                href="greater-fifth-ward.html"
+              >
+                Greater Fifth Ward
+              </a>
 
             </div>
 
@@ -5155,14 +2438,11 @@ footer{
 </section>
 
 
-<!-- =======================================================
-     CTA
-======================================================= -->
+<!-- CTA -->
 
 <section class="cta">
 
   <div class="container">
-
 
     <div class="cta-box reveal">
 
@@ -5197,7 +2477,6 @@ footer{
         Request a Quote →
       </a>
 
-
     </div>
 
   </div>
@@ -5208,9 +2487,7 @@ footer{
 </main>
 
 
-<!-- =======================================================
-     FOOTER
-======================================================= -->
+<!-- FOOTER -->
 
 <footer>
 
@@ -5226,7 +2503,6 @@ footer{
           Houston Lawn Care
         </div>
 
-
         <p class="footer-text">
           Professional lawn care and outdoor property maintenance
           for Houston-area homeowners.
@@ -5238,20 +2514,31 @@ footer{
       <div class="footer-col">
 
         <h4>
-          Explore
+          Services
         </h4>
 
-
-        <a href="services.html">
-          Services
+        <a href="lawn-care-service.html">
+          Lawn Care Service
         </a>
 
-        <a href="service-areas.html">
-          Service Areas
+        <a href="lawn-mowing-service.html">
+          Lawn Mowing
         </a>
 
-        <a href="reviews.html">
-          Reviews
+        <a href="lawn-edging-service.html">
+          Lawn Edging
+        </a>
+
+        <a href="yard-cleanup-service.html">
+          Yard Cleanup
+        </a>
+
+        <a href="shrub-bush-trimming.html">
+          Shrub &amp; Bush Trimming
+        </a>
+
+        <a href="mulching-service.html">
+          Mulching
         </a>
 
       </div>
@@ -5263,6 +2550,13 @@ footer{
           Company
         </h4>
 
+        <a href="service-areas.html">
+          Service Areas
+        </a>
+
+        <a href="reviews.html">
+          Reviews
+        </a>
 
         <a href="about.html">
           About
@@ -5285,13 +2579,11 @@ footer{
           Contact Info
         </h4>
 
-
         <p>
           <a href="tel:346-656-5111">
             346-656-5111
           </a>
         </p>
-
 
         <p>
           <a href="mailto:LawnTrimllc@gmail.com">
@@ -5299,16 +2591,13 @@ footer{
           </a>
         </p>
 
-
         <p>
           Houston, Texas
         </p>
 
-
         <p>
           Mon - Fri: 7am - 7pm
         </p>
-
 
         <p>
           Sat / Sun: Office Closed
@@ -5329,35 +2618,21 @@ footer{
         All rights reserved.
       </span>
 
-
       <span>
-        Houston • Atascocita • Friendswood • Pearland
+        Lawn Care Service in Houston, TX
       </span>
 
     </div>
-
 
   </div>
 
 </footer>
 
 
-<!-- TOAST -->
-
-<div
-  class="toast"
-  id="toast"
-  role="status"
-  aria-live="polite"
->
-  Demo request received — connect this form to your real quote system.
-</div>
-
-
 <script>
 
 /* =========================================================
-   ELEMENTS
+   MOBILE MENU
 ========================================================= */
 
 const menuBtn =
@@ -5366,25 +2641,12 @@ const menuBtn =
 const navLinks =
   document.getElementById("navLinks");
 
-const toast =
-  document.getElementById("toast");
-
-const hero =
-  document.querySelector(".hero");
-
 const header =
   document.getElementById("siteHeader");
 
 const progress =
   document.getElementById("scrollProgress");
 
-const quickQuote =
-  document.getElementById("quickQuote");
-
-
-/* =========================================================
-   MOBILE MENU
-========================================================= */
 
 if(menuBtn && navLinks){
 
@@ -5455,86 +2717,38 @@ document
 
 
 /* =========================================================
-   SCROLL SYSTEM
+   SCROLL
 ========================================================= */
-
-let ticking = false;
-
-
-function updateScrollUI(){
-
-  const scrollTop =
-    window.scrollY ||
-    document.documentElement.scrollTop;
-
-  const maxScroll =
-    document.documentElement.scrollHeight -
-    window.innerHeight;
-
-  const percent =
-    maxScroll > 0
-      ? (scrollTop / maxScroll) * 100
-      : 0;
-
-  if(progress){
-
-    progress.style.width =
-      percent + "%";
-
-  }
-
-  if(header){
-
-    if(scrollTop > 25){
-
-      header.classList.add(
-        "scrolled"
-      );
-
-    }else{
-
-      header.classList.remove(
-        "scrolled"
-      );
-
-    }
-
-  }
-
-  if(hero &&
-     window.innerWidth > 980){
-
-    const heroHeight =
-      hero.offsetHeight;
-
-    if(scrollTop <= heroHeight){
-
-      const shift =
-        scrollTop * .025;
-
-      hero.style.backgroundPosition =
-        `center calc(50% + ${shift}px)`;
-
-    }
-
-  }
-
-  ticking = false;
-
-}
-
 
 window.addEventListener(
   "scroll",
   () => {
 
-    if(!ticking){
+    const scrollTop =
+      window.scrollY || 0;
 
-      window.requestAnimationFrame(
-        updateScrollUI
+    const maxScroll =
+      document.documentElement.scrollHeight -
+      window.innerHeight;
+
+    const percent =
+      maxScroll > 0
+        ? (scrollTop / maxScroll) * 100
+        : 0;
+
+    if(progress){
+
+      progress.style.width =
+        percent + "%";
+
+    }
+
+    if(header){
+
+      header.classList.toggle(
+        "scrolled",
+        scrollTop > 25
       );
-
-      ticking = true;
 
     }
 
@@ -5545,63 +2759,12 @@ window.addEventListener(
 );
 
 
-updateScrollUI();
-
-
 /* =========================================================
-   HERO MOUSE PARALLAX
-========================================================= */
-
-if(hero){
-
-  hero.addEventListener(
-    "mousemove",
-    e => {
-
-      if(window.innerWidth <= 980){
-        return;
-      }
-
-      const x =
-        (e.clientX /
-          window.innerWidth -
-          .5) * 8;
-
-      const y =
-        (e.clientY /
-          window.innerHeight -
-          .5) * 5;
-
-      hero.style.backgroundPosition =
-        `calc(50% + ${x}px)
-         calc(50% + ${y}px)`;
-
-    }
-  );
-
-  hero.addEventListener(
-    "mouseleave",
-    () => {
-
-      hero.style.backgroundPosition =
-        "center center";
-
-    }
-  );
-
-}
-
-
-/* =========================================================
-   REVEAL OBSERVER
+   REVEAL
 ========================================================= */
 
 const revealElements =
-  document.querySelectorAll(
-    ".reveal,"
-    + ".reveal-left,"
-    + ".reveal-right"
-  );
+  document.querySelectorAll(".reveal");
 
 
 const observer =
@@ -5630,7 +2793,7 @@ const observer =
     {
       threshold:.08,
       rootMargin:
-        "0px 0px -55px 0px"
+        "0px 0px -50px 0px"
     }
   );
 
@@ -5645,81 +2808,26 @@ revealElements.forEach(
 
 
 /* =========================================================
-   SAFE IMAGE FALLBACK
-========================================================= */
-
-const fallbackImages = [
-
-  "https://images.unsplash.com/photo-1558904541-efa843a96f01?auto=format&fit=crop&w=1400&q=80",
-
-  "https://images.unsplash.com/photo-1598902108854-10e335adac99?auto=format&fit=crop&w=1400&q=80"
-
-];
-
-
-let fallbackIndex = 0;
-
-
-document
-  .querySelectorAll(".safe-image")
-  .forEach(image => {
-
-    image.addEventListener(
-      "error",
-      () => {
-
-        const nextImage =
-          fallbackImages[
-            fallbackIndex %
-            fallbackImages.length
-          ];
-
-        fallbackIndex++;
-
-        if(
-          !image.dataset.fallbackUsed
-        ){
-
-          image.dataset.fallbackUsed =
-            "true";
-
-          image.src =
-            nextImage;
-
-        }
-
-      }
-    );
-
-  });
-
-
-/* =========================================================
    FORM
 ========================================================= */
+
+const quickQuote =
+  document.getElementById("quickQuote");
+
 
 if(quickQuote){
 
   quickQuote.addEventListener(
     "submit",
-    e => {
+    event => {
 
-      e.preventDefault();
+      event.preventDefault();
 
-      toast.classList.add("show");
-
-      setTimeout(
-        () => {
-
-          toast.classList.remove(
-            "show"
-          );
-
-        },
-        3500
+      alert(
+        "Thank you! Your quote request has been received."
       );
 
-      e.target.reset();
+      quickQuote.reset();
 
     }
   );
@@ -5728,38 +2836,18 @@ if(quickQuote){
 
 
 /* =========================================================
-   YEAR
-========================================================= */
-
-const yearElement =
-  document.getElementById("year");
-
-
-if(yearElement){
-
-  yearElement.textContent =
-    new Date().getFullYear();
-
-}
-
-
-/* =========================================================
-   CLOSE MOBILE NAV
+   CLOSE MOBILE MENU
 ========================================================= */
 
 document
-  .querySelectorAll(
-    "#navLinks a"
-  )
+  .querySelectorAll("#navLinks a")
   .forEach(link => {
 
     link.addEventListener(
       "click",
       () => {
 
-        if(
-          window.innerWidth <= 980
-        ){
+        if(window.innerWidth <= 980){
 
           navLinks.classList.remove(
             "open"
@@ -5782,16 +2870,14 @@ document
 
 
 /* =========================================================
-   RESET MOBILE NAV ON RESIZE
+   RESIZE RESET
 ========================================================= */
 
 window.addEventListener(
   "resize",
   () => {
 
-    if(
-      window.innerWidth > 980
-    ){
+    if(window.innerWidth > 980){
 
       navLinks.classList.remove(
         "open"
@@ -5824,616 +2910,22 @@ window.addEventListener(
 
 
 /* =========================================================
-   IMAGE LOAD FADE
+   YEAR
 ========================================================= */
 
-document
-  .querySelectorAll(
-    ".service-card img,"
-    + ".feature-img img"
-  )
-  .forEach(
-    image => {
-
-      image.style.transition =
-        "opacity .8s ease,"
-        + "transform 1s cubic-bezier(.22,1,.36,1)";
-
-      if(image.complete){
-
-        image.style.opacity =
-          "1";
-
-      }else{
-
-        image.style.opacity =
-          "0";
-
-        image.addEventListener(
-          "load",
-          () => {
-
-            image.style.opacity =
-              "1";
-
-          }
-        );
-
-      }
-
-    }
-  );
+const yearElement =
+  document.getElementById("year");
 
 
-/* =========================================================
-   PARALLAX IMAGES
-========================================================= */
+if(yearElement){
 
-const parallaxImages =
-  document.querySelectorAll(
-    ".feature-img img,"
-    + ".service-card img"
-  );
-
-
-function animateImages(){
-
-  const viewportHeight =
-    window.innerHeight;
-
-  parallaxImages.forEach(
-    image => {
-
-      const rect =
-        image.getBoundingClientRect();
-
-      if(
-        rect.bottom < 0 ||
-        rect.top > viewportHeight
-      ){
-
-        return;
-
-      }
-
-      const center =
-        rect.top +
-        rect.height / 2;
-
-      const distance =
-        center -
-        viewportHeight / 2;
-
-      const move =
-        Math.max(
-          -18,
-          Math.min(
-            18,
-            distance * -.025
-          )
-        );
-
-      image.style.transform =
-        `translateY(${move}px) scale(1.04)`;
-
-    }
-  );
+  yearElement.textContent =
+    new Date().getFullYear();
 
 }
-
-
-window.addEventListener(
-  "scroll",
-  () => {
-
-    window.requestAnimationFrame(
-      animateImages
-    );
-
-  },
-  {
-    passive:true
-  }
-);
-
-
-/* =========================================================
-   3D TILT FOR SERVICE CARDS
-========================================================= */
-
-const cards =
-  document.querySelectorAll(
-    ".service-card"
-  );
-
-
-cards.forEach(card => {
-
-  card.addEventListener(
-    "mousemove",
-    e => {
-
-      if(window.innerWidth <= 980){
-        return;
-      }
-
-      const rect =
-        card.getBoundingClientRect();
-
-      const x =
-        e.clientX -
-        rect.left;
-
-      const y =
-        e.clientY -
-        rect.top;
-
-      const centerX =
-        rect.width / 2;
-
-      const centerY =
-        rect.height / 2;
-
-      const rotateY =
-        ((x - centerX) /
-          centerX) * 3;
-
-      const rotateX =
-        ((centerY - y) /
-          centerY) * 3;
-
-      card.style.transform =
-        `translateY(-12px)
-         rotateX(${rotateX}deg)
-         rotateY(${rotateY}deg)
-         scale(1.015)`;
-
-    }
-  );
-
-  card.addEventListener(
-    "mouseleave",
-    () => {
-
-      card.style.transform =
-        "";
-
-    }
-  );
-
-});
-
-
-/* =========================================================
-   CONTACT CARD TILT
-========================================================= */
-
-const contactCards =
-  document.querySelectorAll(
-    ".contact-card"
-  );
-
-
-contactCards.forEach(card => {
-
-  card.addEventListener(
-    "mousemove",
-    e => {
-
-      if(window.innerWidth <= 980){
-        return;
-      }
-
-      const rect =
-        card.getBoundingClientRect();
-
-      const x =
-        (e.clientX -
-          rect.left) /
-        rect.width;
-
-      const y =
-        (e.clientY -
-          rect.top) /
-        rect.height;
-
-      const rotateY =
-        (x -.5) * 3;
-
-      const rotateX =
-        (.5 - y) * 3;
-
-      card.style.transform =
-        `translateY(-8px)
-         rotateX(${rotateX}deg)
-         rotateY(${rotateY}deg)`;
-
-    }
-  );
-
-  card.addEventListener(
-    "mouseleave",
-    () => {
-
-      card.style.transform =
-        "";
-
-    }
-  );
-
-});
-
-
-/* =========================================================
-   MOUSE GLOW FOLLOWER
-========================================================= */
-
-const glowCursor =
-  document.createElement("div");
-
-
-glowCursor.style.position =
-  "fixed";
-
-glowCursor.style.width =
-  "180px";
-
-glowCursor.style.height =
-  "180px";
-
-glowCursor.style.borderRadius =
-  "50%";
-
-glowCursor.style.pointerEvents =
-  "none";
-
-glowCursor.style.background =
-  "radial-gradient(circle,"
-  + "rgba(185,220,82,.10),"
-  + "transparent 70%)";
-
-glowCursor.style.transform =
-  "translate(-50%,-50%)";
-
-glowCursor.style.zIndex =
-  "-1";
-
-
-document.body.appendChild(
-  glowCursor
-);
-
-
-window.addEventListener(
-  "mousemove",
-  e => {
-
-    glowCursor.style.left =
-      e.clientX + "px";
-
-    glowCursor.style.top =
-      e.clientY + "px";
-
-  },
-  {
-    passive:true
-  }
-);
-
-
-/* =========================================================
-   SMOOTH ANIMATED STAT FLOAT
-========================================================= */
-
-const statElements =
-  document.querySelectorAll(
-    ".stat"
-  );
-
-
-statElements.forEach(
-  (stat, index) => {
-
-    stat.style.animation =
-      `statFloat
-       ${4 + index * .5}s
-       infinite
-       ease-in-out`;
-
-    stat.style.animationDelay =
-      `${index * -.7}s`;
-
-  }
-);
-
-
-const statStyle =
-  document.createElement(
-    "style"
-  );
-
-
-statStyle.textContent = `
-
-@keyframes statFloat{
-
-  0%,
-  100%{
-
-    transform:translateY(0);
-
-  }
-
-  50%{
-
-    transform:translateY(-4px);
-
-  }
-
-}
-
-`;
-
-
-document.head.appendChild(
-  statStyle
-);
-
-
-/* =========================================================
-   BUTTON RIPPLE
-========================================================= */
-
-document
-  .querySelectorAll(".btn")
-  .forEach(button => {
-
-    button.addEventListener(
-      "click",
-      function(e){
-
-        const ripple =
-          document.createElement("span");
-
-        const rect =
-          this.getBoundingClientRect();
-
-        const size =
-          Math.max(
-            rect.width,
-            rect.height
-          );
-
-        ripple.style.position =
-          "absolute";
-
-        ripple.style.width =
-          size + "px";
-
-        ripple.style.height =
-          size + "px";
-
-        ripple.style.borderRadius =
-          "50%";
-
-        ripple.style.background =
-          "rgba(255,255,255,.28)";
-
-        ripple.style.left =
-          (e.clientX -
-            rect.left -
-            size / 2) + "px";
-
-        ripple.style.top =
-          (e.clientY -
-            rect.top -
-            size / 2) + "px";
-
-        ripple.style.transform =
-          "scale(0)";
-
-        ripple.style.pointerEvents =
-          "none";
-
-        ripple.style.animation =
-          "rippleEffect .7s ease-out";
-
-        this.appendChild(
-          ripple
-        );
-
-        setTimeout(
-          () => {
-
-            ripple.remove();
-
-          },
-          700
-        );
-
-      }
-    );
-
-  });
-
-
-const rippleStyle =
-  document.createElement(
-    "style"
-  );
-
-
-rippleStyle.textContent = `
-
-@keyframes rippleEffect{
-
-  to{
-
-    transform:scale(2.5);
-
-    opacity:0;
-
-  }
-
-}
-
-`;
-
-
-document.head.appendChild(
-  rippleStyle
-);
-
-
-/* =========================================================
-   SMOOTH SECTION CAMERA EFFECT
-========================================================= */
-
-const cameraSections =
-  document.querySelectorAll(
-    ".section,"
-    + ".contact-section,"
-    + ".cta"
-  );
-
-
-function sectionCamera(){
-
-  const viewport =
-    window.innerHeight;
-
-  cameraSections.forEach(
-    section => {
-
-      const rect =
-        section.getBoundingClientRect();
-
-      if(
-        rect.bottom < 0 ||
-        rect.top > viewport
-      ){
-
-        return;
-
-      }
-
-      const progress =
-        1 -
-        Math.min(
-          1,
-          Math.max(
-            0,
-            rect.top / viewport
-          )
-        );
-
-      section.style.setProperty(
-        "--section-progress",
-        progress
-      );
-
-    }
-  );
-
-}
-
-
-window.addEventListener(
-  "scroll",
-  sectionCamera,
-  {
-    passive:true
-  }
-);
-
-
-/* =========================================================
-   RANDOM MICRO FLOAT
-========================================================= */
-
-const floatingItems =
-  document.querySelectorAll(
-    ".trust-pill,"
-    + ".location-tag,"
-    + ".area-tag"
-  );
-
-
-floatingItems.forEach(
-  (item,index) => {
-
-    item.animate(
-      [
-        {
-          transform:"translateY(0px)"
-        },
-        {
-          transform:
-            "translateY(-3px)"
-        },
-        {
-          transform:"translateY(0px)"
-        }
-      ],
-      {
-        duration:
-          3500 +
-          (index % 5) * 400,
-
-        delay:
-          index * 180,
-
-        iterations:
-          Infinity,
-
-        easing:
-          "ease-in-out"
-      }
-    );
-
-  }
-);
-
-
-/* =========================================================
-   PRELOAD MAIN IMAGES
-========================================================= */
-
-const preloadImages = [
-
-  "https://images.unsplash.com/photo-1558904541-efa843a96f01?auto=format&fit=crop&w=2200&q=90",
-
-  "https://images.unsplash.com/photo-1598902108854-10e335adac99?auto=format&fit=crop&w=1600&q=85",
-
-  "https://images.unsplash.com/photo-1585320806297-9794b3e4eeae?auto=format&fit=crop&w=1200&q=85",
-
-  "https://images.unsplash.com/photo-1599685315640-7a4b1c2d0d8f?auto=format&fit=crop&w=1200&q=85"
-
-];
-
-
-preloadImages.forEach(
-  src => {
-
-    const img =
-      new Image();
-
-    img.src =
-      src;
-
-  }
-);
-
-
-/* =========================================================
-   INITIALIZE
-========================================================= */
-
-animateImages();
-
-sectionCamera();
 
 </script>
+
 
 </body>
 </html>
