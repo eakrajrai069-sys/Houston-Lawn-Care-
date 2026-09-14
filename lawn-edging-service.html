@@ -1,2147 +1,1395 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Lawn Edging Service in Houston, TX</title>
-
-<meta name="description" content="Professional lawn edging service in Houston, TX for clean lawn borders around sidewalks, driveways, walkways, flower beds and landscape areas.">
-<meta name="keywords" content="lawn edging service, lawn edging Houston TX, grass edging Houston, lawn border service, yard edging, lawn care Houston, lawn maintenance Houston">
-<meta name="robots" content="index, follow">
-
-<link rel="canonical" href="https://eakrajrai069-sys.github.io/Houston-Lawn-Care-/lawnedgingservice.html">
-
-<!-- Open Graph -->
-<meta property="og:type" content="website">
-<meta property="og:title" content="Lawn Edging Service in Houston, TX">
-<meta property="og:description" content="Professional lawn edging service in Houston, TX for clean and defined lawn borders.">
-<meta property="og:url" content="https://eakrajrai069-sys.github.io/Houston-Lawn-Care-/lawnedgingservice.html">
-<meta property="og:image" content="https://images.pexels.com/photos/11400235/pexels-photo-11400235.jpeg?auto=compress&cs=tinysrgb&w=1600">
-<meta property="og:image:alt" content="Professional lawn edging service">
-
-<!-- Twitter / X -->
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Lawn Edging Service in Houston, TX">
-<meta name="twitter:description" content="Professional lawn edging service in Houston, TX.">
-<meta name="twitter:image" content="https://images.pexels.com/photos/11400235/pexels-photo-11400235.jpeg?auto=compress&cs=tinysrgb&w=1600">
-
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
-
-<style>
-:root{
-  --green:#176b37;
-  --green-dark:#0d4424;
-  --green-light:#e7f5eb;
-  --lime:#8bd450;
-  --dark:#102116;
-  --text:#34443a;
-  --muted:#718077;
-  --white:#fff;
-  --border:#e2ebe5;
-  --soft:#f4f9f5;
-  --shadow:0 18px 50px rgba(16,33,22,.09);
-  --shadow-hover:0 28px 70px rgba(16,33,22,.14);
-}
-
-*{
-  margin:0;
-  padding:0;
-  box-sizing:border-box;
-}
-
-html{
-  scroll-behavior:smooth;
-}
-
-body{
-  font-family:"Inter",sans-serif;
-  background:#fff;
-  color:var(--text);
-  line-height:1.7;
-  overflow-x:hidden;
-}
-
-body::before{
-  content:"";
-  position:fixed;
-  inset:0;
-  pointer-events:none;
-  z-index:-2;
-  background:
-    radial-gradient(circle at 10% 15%,rgba(139,212,80,.05),transparent 25%),
-    radial-gradient(circle at 90% 75%,rgba(23,107,55,.045),transparent 28%);
-}
-
-img{
-  width:100%;
-  display:block;
-}
-
-a{
-  color:inherit;
-  text-decoration:none;
-}
-
-button{
-  font-family:inherit;
-}
-
-.container{
-  width:min(1180px,92%);
-  margin:auto;
-}
-
-/* TOP PROGRESS */
-.progress-bar{
-  position:fixed;
-  top:0;
-  left:0;
-  width:0;
-  height:4px;
-  background:linear-gradient(90deg,var(--lime),var(--green));
-  box-shadow:0 0 15px rgba(139,212,80,.5);
-  z-index:99999;
-}
-
-/* LOADER */
-.loader{
-  position:fixed;
-  inset:0;
-  background:#fff;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  z-index:99998;
-  transition:.65s ease;
-}
-
-.loader.hide{
-  opacity:0;
-  visibility:hidden;
-}
-
-.loader-circle{
-  width:55px;
-  height:55px;
-  border:5px solid #dceee2;
-  border-top-color:var(--green);
-  border-radius:50%;
-  animation:spin .9s linear infinite;
-}
-
-@keyframes spin{
-  to{
-    transform:rotate(360deg);
-  }
-}
-
-/* HEADER */
-header{
-  position:sticky;
-  top:0;
-  z-index:5000;
-  background:rgba(255,255,255,.91);
-  backdrop-filter:blur(18px);
-  border-bottom:1px solid rgba(23,107,55,.07);
-  transition:.35s ease;
-}
-
-header.scrolled{
-  background:rgba(255,255,255,.98);
-  box-shadow:0 12px 35px rgba(16,33,22,.08);
-}
-
-.nav{
-  min-height:76px;
-  display:flex;
-  align-items:center;
-  justify-content:space-between;
-}
-
-.logo{
-  font-size:1.28rem;
-  font-weight:900;
-  letter-spacing:-.03em;
-  color:var(--green-dark);
-}
-
-.logo span{
-  color:var(--green);
-}
-
-.nav-links{
-  display:flex;
-  align-items:center;
-  gap:20px;
-  list-style:none;
-}
-
-.nav-links a{
-  position:relative;
-  color:#2d3f34;
-  font-size:.91rem;
-  font-weight:700;
-  transition:.3s ease;
-}
-
-.nav-links a:not(.nav-cta)::after{
-  content:"";
-  position:absolute;
-  left:0;
-  bottom:-6px;
-  height:2px;
-  width:0;
-  background:var(--green);
-  transition:.3s ease;
-}
-
-.nav-links a:not(.nav-cta):hover{
-  color:var(--green);
-}
-
-.nav-links a:not(.nav-cta):hover::after{
-  width:100%;
-}
-
-.nav-cta{
-  padding:11px 18px;
-  border-radius:999px;
-  background:var(--green);
-  color:#fff !important;
-  box-shadow:0 10px 25px rgba(23,107,55,.20);
-}
-
-.nav-cta:hover{
-  background:var(--green-dark);
-  transform:translateY(-2px);
-}
-
-.mobile-toggle{
-  display:none;
-  border:0;
-  background:transparent;
-  color:var(--dark);
-  font-size:28px;
-  cursor:pointer;
-}
-
-/* HERO */
-.hero{
-  min-height:690px;
-  position:relative;
-  overflow:hidden;
-  display:flex;
-  align-items:center;
-
-  background:
-    linear-gradient(90deg,rgba(6,28,14,.88),rgba(6,28,14,.47)),
-    url("https://images.pexels.com/photos/11400235/pexels-photo-11400235.jpeg?auto=compress&cs=tinysrgb&w=1800")
-    center/cover no-repeat;
-}
-
-.hero::before{
-  content:"";
-  position:absolute;
-  width:470px;
-  height:470px;
-  right:-150px;
-  top:-120px;
-  border-radius:50%;
-  background:rgba(139,212,80,.10);
-  filter:blur(15px);
-  animation:heroFloat 7s ease-in-out infinite;
-}
-
-.hero::after{
-  content:"";
-  position:absolute;
-  width:350px;
-  height:350px;
-  left:-150px;
-  bottom:-180px;
-  border-radius:50%;
-  background:rgba(139,212,80,.06);
-  filter:blur(12px);
-  animation:heroFloat 8s ease-in-out 1s infinite;
-}
-
-@keyframes heroFloat{
-  0%,100%{
-    transform:translateY(0) scale(1);
-  }
-  50%{
-    transform:translateY(-25px) scale(1.08);
-  }
-}
-
-.hero-content{
-  max-width:850px;
-  color:#fff;
-  position:relative;
-  z-index:2;
-}
-
-.eyebrow{
-  display:inline-flex;
-  padding:8px 14px;
-  border-radius:999px;
-  background:rgba(255,255,255,.10);
-  border:1px solid rgba(255,255,255,.20);
-  backdrop-filter:blur(10px);
-  font-size:.82rem;
-  font-weight:800;
-  margin-bottom:20px;
-  animation:heroIn .8s ease both;
-}
-
-.hero h1{
-  font-size:clamp(2.5rem,6vw,5rem);
-  line-height:1.02;
-  letter-spacing:-.055em;
-  margin-bottom:22px;
-  animation:heroIn 1s ease .1s both;
-}
-
-.hero h1 span{
-  color:var(--lime);
-}
-
-.hero p{
-  max-width:740px;
-  color:rgba(255,255,255,.88);
-  font-size:1.07rem;
-  margin-bottom:30px;
-  animation:heroIn 1s ease .2s both;
-}
-
-.hero-buttons{
-  display:flex;
-  flex-wrap:wrap;
-  gap:13px;
-  animation:heroIn 1s ease .3s both;
-}
-
-@keyframes heroIn{
-  from{
-    opacity:0;
-    transform:translateY(35px);
-  }
-  to{
-    opacity:1;
-    transform:translateY(0);
-  }
-}
-
-.btn{
-  min-height:52px;
-  padding:0 22px;
-  border-radius:999px;
-  display:inline-flex;
-  align-items:center;
-  justify-content:center;
-  font-weight:800;
-  transition:.35s cubic-bezier(.2,.8,.2,1);
-}
-
-.btn-primary{
-  background:var(--lime);
-  color:#16311d;
-  box-shadow:0 15px 34px rgba(139,212,80,.23);
-}
-
-.btn-primary:hover{
-  transform:translateY(-4px) scale(1.02);
-  box-shadow:0 20px 45px rgba(139,212,80,.31);
-}
-
-.btn-light{
-  color:#fff;
-  background:rgba(255,255,255,.08);
-  border:1px solid rgba(255,255,255,.28);
-  backdrop-filter:blur(10px);
-}
-
-.btn-light:hover{
-  transform:translateY(-4px);
-  background:rgba(255,255,255,.16);
-}
-
-/* INTRO */
-.intro{
-  position:relative;
-  z-index:5;
-  margin-top:-62px;
-}
-
-.intro-grid{
-  display:grid;
-  grid-template-columns:repeat(3,1fr);
-  gap:18px;
-}
-
-.intro-card{
-  background:#fff;
-  border:1px solid var(--border);
-  border-radius:22px;
-  padding:25px;
-  box-shadow:var(--shadow);
-  transition:.45s cubic-bezier(.2,.8,.2,1);
-}
-
-.intro-card:hover{
-  transform:translateY(-11px);
-  box-shadow:var(--shadow-hover);
-}
-
-.intro-icon{
-  width:50px;
-  height:50px;
-  border-radius:15px;
-  display:grid;
-  place-items:center;
-  background:var(--green-light);
-  color:var(--green);
-  font-size:22px;
-  margin-bottom:15px;
-  transition:.4s ease;
-}
-
-.intro-card:hover .intro-icon{
-  transform:scale(1.08) rotate(-7deg);
-}
-
-.intro-card h3{
-  color:var(--dark);
-  margin-bottom:7px;
-  font-size:1.07rem;
-}
-
-.intro-card p{
-  color:var(--muted);
-  font-size:.93rem;
-}
-
-/* SECTIONS */
-section{
-  padding:100px 0;
-}
-
-.section-soft{
-  background:#f4f9f5;
-}
-
-.section-heading{
-  max-width:780px;
-  margin-bottom:43px;
-}
-
-.mini{
-  color:var(--green);
-  font-size:.75rem;
-  font-weight:900;
-  letter-spacing:.14em;
-  text-transform:uppercase;
-  margin-bottom:8px;
-}
-
-.section-heading h2{
-  color:var(--dark);
-  font-size:clamp(2rem,4vw,3.1rem);
-  line-height:1.1;
-  letter-spacing:-.045em;
-  margin-bottom:13px;
-}
-
-.section-heading p{
-  color:var(--muted);
-}
-
-/* CONTENT */
-.content-grid{
-  display:grid;
-  grid-template-columns:1.7fr .8fr;
-  gap:28px;
-  align-items:start;
-}
-
-.article{
-  background:#fff;
-  border:1px solid var(--border);
-  border-radius:24px;
-  padding:40px;
-  box-shadow:var(--shadow);
-}
-
-.article h2{
-  color:var(--dark);
-  font-size:1.9rem;
-  line-height:1.2;
-  margin:30px 0 13px;
-}
-
-.article h2:first-child{
-  margin-top:0;
-}
-
-.article h3{
-  color:var(--green-dark);
-  margin:27px 0 10px;
-}
-
-.article p{
-  margin-bottom:17px;
-}
-
-.article strong{
-  color:var(--dark);
-}
-
-.article ul{
-  padding-left:23px;
-  margin:14px 0 22px;
-}
-
-.article li{
-  margin:8px 0;
-}
-
-.highlight{
-  margin:26px 0;
-  padding:22px;
-  background:#edf8f1;
-  border-left:4px solid var(--green);
-  border-radius:16px;
-}
-
-/* SIDEBAR */
-.sidebar{
-  position:sticky;
-  top:95px;
-  display:grid;
-  gap:20px;
-}
-
-.sidebar-card{
-  overflow:hidden;
-  background:#fff;
-  border:1px solid var(--border);
-  border-radius:22px;
-  box-shadow:var(--shadow);
-  transition:.45s ease;
-}
-
-.sidebar-card:hover{
-  transform:translateY(-7px);
-  box-shadow:var(--shadow-hover);
-}
-
-.sidebar-card img{
-  height:220px;
-  object-fit:cover;
-  transition:transform .8s ease;
-}
-
-.sidebar-card:hover img{
-  transform:scale(1.07);
-}
-
-.sidebar-body{
-  padding:23px;
-}
-
-.sidebar-body h3{
-  color:var(--dark);
-  margin-bottom:10px;
-}
-
-.side-list{
-  list-style:none;
-  display:grid;
-  gap:9px;
-  margin:15px 0;
-}
-
-.side-list li{
-  position:relative;
-  padding-left:23px;
-  font-size:.92rem;
-}
-
-.side-list li::before{
-  content:"✓";
-  position:absolute;
-  left:0;
-  color:var(--green);
-  font-weight:900;
-}
-
-/* FEATURES */
-.feature-grid{
-  display:grid;
-  grid-template-columns:repeat(3,1fr);
-  gap:20px;
-}
-
-.feature-card{
-  position:relative;
-  overflow:hidden;
-  padding:29px;
-  background:#fff;
-  border:1px solid var(--border);
-  border-radius:22px;
-  box-shadow:var(--shadow);
-  transition:.45s cubic-bezier(.2,.8,.2,1);
-}
-
-.feature-card::before{
-  content:"";
-  position:absolute;
-  width:150px;
-  height:150px;
-  right:-70px;
-  top:-70px;
-  border-radius:50%;
-  background:rgba(139,212,80,.10);
-  transition:.5s ease;
-}
-
-.feature-card:hover{
-  transform:translateY(-10px) scale(1.01);
-  box-shadow:var(--shadow-hover);
-}
-
-.feature-card:hover::before{
-  transform:scale(1.7);
-}
-
-.feature-number{
-  color:var(--green);
-  font-size:.78rem;
-  font-weight:900;
-  position:relative;
-  margin-bottom:11px;
-}
-
-.feature-card h3{
-  color:var(--dark);
-  position:relative;
-  margin-bottom:8px;
-}
-
-.feature-card p{
-  color:var(--muted);
-  position:relative;
-  font-size:.93rem;
-}
-
-/* IMAGES */
-.image-grid{
-  display:grid;
-  grid-template-columns:1.25fr 1fr 1fr;
-  gap:16px;
-}
-
-.image-card{
-  min-height:275px;
-  overflow:hidden;
-  border-radius:22px;
-  position:relative;
-  background:#ddd;
-  box-shadow:var(--shadow);
-}
-
-.image-card:first-child{
-  min-height:555px;
-}
-
-.image-card::after{
-  content:"";
-  position:absolute;
-  inset:0;
-  background:linear-gradient(180deg,transparent 45%,rgba(0,0,0,.58));
-  pointer-events:none;
-}
-
-.image-card img{
-  height:100%;
-  object-fit:cover;
-  transition:transform 1s cubic-bezier(.2,.8,.2,1);
-}
-
-.image-card:hover img{
-  transform:scale(1.08);
-}
-
-.image-label{
-  position:absolute;
-  left:17px;
-  bottom:17px;
-  z-index:2;
-  padding:10px 14px;
-  border-radius:12px;
-  color:#fff;
-  background:rgba(7,27,14,.74);
-  backdrop-filter:blur(8px);
-  font-size:.86rem;
-  font-weight:800;
-}
-
-/* AREA */
-.area-grid{
-  display:grid;
-  grid-template-columns:repeat(4,1fr);
-  gap:14px;
-}
-
-.area-item{
-  background:#fff;
-  border:1px solid var(--border);
-  border-radius:16px;
-  padding:18px;
-  color:var(--dark);
-  font-weight:800;
-  box-shadow:0 7px 20px rgba(16,33,22,.05);
-  transition:.35s ease;
-}
-
-.area-item:hover{
-  transform:translateY(-5px);
-  border-color:#b9d9c1;
-  box-shadow:var(--shadow);
-}
-
-/* FAQ */
-.faq-wrap{
-  display:grid;
-  gap:14px;
-}
-
-.faq-item{
-  overflow:hidden;
-  background:#fff;
-  border:1px solid var(--border);
-  border-radius:20px;
-  box-shadow:0 8px 25px rgba(16,33,22,.06);
-}
-
-.faq-question{
-  width:100%;
-  padding:22px 24px;
-  border:0;
-  background:transparent;
-  color:var(--dark);
-  text-align:left;
-  font-weight:800;
-  cursor:pointer;
-  display:flex;
-  align-items:center;
-  justify-content:space-between;
-}
-
-.faq-symbol{
-  font-size:1.45rem;
-  transition:.35s ease;
-}
-
-.faq-answer{
-  max-height:0;
-  overflow:hidden;
-  color:var(--muted);
-  padding:0 24px;
-  transition:max-height .45s ease,padding .45s ease;
-}
-
-.faq-item.active .faq-answer{
-  max-height:280px;
-  padding-bottom:20px;
-}
-
-.faq-item.active .faq-symbol{
-  transform:rotate(45deg);
-}
-
-/* CTA */
-.cta{
-  position:relative;
-  overflow:hidden;
-  padding:62px;
-  border-radius:30px;
-  color:#fff;
-  background:
-    linear-gradient(90deg,rgba(6,29,15,.93),rgba(13,83,40,.82)),
-    url("https://images.pexels.com/photos/6728930/pexels-photo-6728930.jpeg?auto=compress&cs=tinysrgb&w=1800")
-    center/cover no-repeat;
-  box-shadow:0 30px 80px rgba(16,33,22,.16);
-}
-
-.cta::before{
-  content:"";
-  position:absolute;
-  width:350px;
-  height:350px;
-  right:-130px;
-  top:-170px;
-  border-radius:50%;
-  border:1px solid rgba(255,255,255,.12);
-  box-shadow:
-    0 0 0 40px rgba(255,255,255,.03),
-    0 0 0 80px rgba(255,255,255,.02);
-  animation:slowRotate 15s linear infinite;
-}
-
-@keyframes slowRotate{
-  to{
-    transform:rotate(360deg);
-  }
-}
-
-.cta-content{
-  position:relative;
-  z-index:2;
-  max-width:770px;
-}
-
-.cta h2{
-  font-size:clamp(2rem,4vw,3.1rem);
-  line-height:1.1;
-  letter-spacing:-.04em;
-  margin-bottom:15px;
-}
-
-.cta p{
-  color:rgba(255,255,255,.83);
-  margin-bottom:25px;
-}
-
-.contact-row{
-  display:flex;
-  flex-wrap:wrap;
-  gap:11px;
-}
-
-.contact-pill{
-  padding:10px 14px;
-  border-radius:999px;
-  border:1px solid rgba(255,255,255,.17);
-  background:rgba(255,255,255,.09);
-  backdrop-filter:blur(8px);
-  font-size:.88rem;
-}
-
-/* FOOTER */
-footer{
-  background:#09180e;
-  color:rgba(255,255,255,.75);
-  padding:55px 0 25px;
-  margin-top:100px;
-}
-
-.footer-grid{
-  display:grid;
-  grid-template-columns:1.3fr 1fr 1fr;
-  gap:35px;
-}
-
-.footer-title{
-  color:#fff;
-  font-weight:800;
-  margin-bottom:12px;
-}
-
-.footer-grid p,
-.footer-grid a{
-  color:rgba(255,255,255,.67);
-  font-size:.89rem;
-}
-
-.footer-links{
-  display:grid;
-  gap:8px;
-}
-
-.footer-links a{
-  transition:.3s ease;
-}
-
-.footer-links a:hover{
-  color:#fff;
-  transform:translateX(4px);
-}
-
-.copyright{
-  border-top:1px solid rgba(255,255,255,.09);
-  margin-top:30px;
-  padding-top:18px;
-  font-size:.82rem;
-  color:rgba(255,255,255,.50);
-}
-
-/* REVEAL ANIMATIONS */
-.reveal{
-  opacity:0;
-  transform:translateY(60px) scale(.97);
-  transition:
-    opacity .9s cubic-bezier(.2,.8,.2,1),
-    transform .9s cubic-bezier(.2,.8,.2,1);
-}
-
-.reveal.visible{
-  opacity:1;
-  transform:translateY(0) scale(1);
-}
-
-.reveal-left{
-  opacity:0;
-  transform:translateX(-70px);
-  transition:
-    opacity .9s ease,
-    transform .9s cubic-bezier(.2,.8,.2,1);
-}
-
-.reveal-left.visible{
-  opacity:1;
-  transform:translateX(0);
-}
-
-.reveal-right{
-  opacity:0;
-  transform:translateX(70px);
-  transition:
-    opacity .9s ease,
-    transform .9s cubic-bezier(.2,.8,.2,1);
-}
-
-.reveal-right.visible{
-  opacity:1;
-  transform:translateX(0);
-}
-
-.delay-1{
-  transition-delay:.08s;
-}
-
-.delay-2{
-  transition-delay:.16s;
-}
-
-.delay-3{
-  transition-delay:.24s;
-}
-
-.delay-4{
-  transition-delay:.32s;
-}
-
-/* MOBILE */
-@media(max-width:980px){
-
-  .nav-links{
-    position:absolute;
-    left:4%;
-    right:4%;
-    top:83px;
-    display:none;
-    flex-direction:column;
-    align-items:stretch;
-    padding:18px;
-    background:#fff;
-    border:1px solid var(--border);
-    border-radius:18px;
-    box-shadow:var(--shadow);
-  }
-
-  .nav-links.active{
-    display:flex;
-  }
-
-  .nav-links a{
-    padding:9px 3px;
-  }
-
-  .mobile-toggle{
-    display:block;
-  }
-
-  .content-grid{
-    grid-template-columns:1fr;
-  }
-
-  .sidebar{
-    position:static;
-  }
-
-  .feature-grid{
-    grid-template-columns:repeat(2,1fr);
-  }
-
-  .area-grid{
-    grid-template-columns:repeat(2,1fr);
-  }
-
-  .footer-grid{
-    grid-template-columns:1fr 1fr;
-  }
-}
-
-@media(max-width:700px){
-
-  .hero{
-    min-height:620px;
-  }
-
-  .intro{
-    margin-top:-35px;
-  }
-
-  .intro-grid,
-  .feature-grid,
-  .image-grid,
-  .footer-grid{
-    grid-template-columns:1fr;
-  }
-
-  .image-card,
-  .image-card:first-child{
-    min-height:310px;
-  }
-
-  .area-grid{
-    grid-template-columns:1fr;
-  }
-
-  .article{
-    padding:25px;
-  }
-
-  .cta{
-    padding:36px 24px;
-    border-radius:23px;
-  }
-
-  section{
-    padding:75px 0;
-  }
-
-  .hero h1{
-    font-size:2.8rem;
-  }
-}
-
-@media(prefers-reduced-motion:reduce){
-
-  *,
-  *::before,
-  *::after{
-    animation-duration:.01ms !important;
-    animation-iteration-count:1 !important;
-    scroll-behavior:auto !important;
-    transition-duration:.01ms !important;
-  }
-}
-</style>
-
-<!-- SERVICE SCHEMA -->
-<script type="application/ld+json">
-{
-  "@context":"https://schema.org",
-  "@type":"Service",
-  "name":"Lawn Edging Service in Houston, TX",
-  "serviceType":"Lawn Edging Service",
-  "description":"Professional lawn edging services in Houston, Texas for sidewalks, driveways, walkways, flower beds and landscape borders.",
-  "areaServed":{
-    "@type":"City",
-    "name":"Houston",
-    "address":{
-      "@type":"PostalAddress",
-      "addressLocality":"Houston",
-      "addressRegion":"TX",
-      "addressCountry":"US"
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Lawn Edging Service in Houston, TX</title>
+
+  <meta name="description" content="Professional lawn edging service in Houston, TX. We edge sidewalks, driveways, flower beds, walkways, patios and curbs for a clean, sharp lawn appearance.">
+  <meta name="keywords" content="lawn edging, lawn edging service, lawn edging Houston TX, grass edging, sidewalk edging, driveway edging, flower bed edging, Houston lawn service">
+
+  <meta property="og:title" content="Lawn Edging Service in Houston, TX">
+  <meta property="og:description" content="Professional lawn edging service in Houston, TX for clean lawn borders, sidewalks, driveways, flower beds and walkways.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://images.pexels.com/photos/11400235/pexels-photo-11400235.jpeg?auto=compress&cs=tinysrgb&w=1900">
+
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
     }
-  },
-  "provider":{
-    "@type":"LocalBusiness",
-    "name":"LawnTrim LLC",
-    "telephone":"+1-346-656-5111",
-    "email":"LawnTrimllc@gmail.com",
-    "address":{
-      "@type":"PostalAddress",
-      "addressLocality":"Houston",
-      "addressRegion":"TX",
-      "addressCountry":"US"
-    }
-  }
-}
-</script>
 
-<!-- FAQ SCHEMA -->
-<script type="application/ld+json">
-{
-  "@context":"https://schema.org",
-  "@type":"FAQPage",
-  "mainEntity":[
-    {
-      "@type":"Question",
-      "name":"What is lawn edging?",
-      "acceptedAnswer":{
-        "@type":"Answer",
-        "text":"Lawn edging creates a defined border between grass and sidewalks, driveways, walkways, flower beds, patios and other landscape areas."
+    html{
+      scroll-behavior:smooth;
+    }
+
+    body{
+      font-family:Arial, Helvetica, sans-serif;
+      background:
+        radial-gradient(circle at 10% 10%, rgba(34,197,94,.08), transparent 30%),
+        radial-gradient(circle at 90% 30%, rgba(22,163,74,.07), transparent 28%),
+        linear-gradient(180deg,#f8fff8 0%,#ffffff 48%,#f2fbf4 100%);
+      color:#18251c;
+      line-height:1.7;
+      overflow-x:hidden;
+    }
+
+    img{
+      max-width:100%;
+      display:block;
+    }
+
+    a{
+      color:inherit;
+      text-decoration:none;
+    }
+
+    .container{
+      width:min(1160px,92%);
+      margin:auto;
+    }
+
+    /* SCROLL PROGRESS */
+    .scroll-progress{
+      position:fixed;
+      top:0;
+      left:0;
+      height:4px;
+      width:0;
+      background:linear-gradient(90deg,#166534,#22c55e,#86efac);
+      z-index:9999;
+      box-shadow:0 0 14px rgba(34,197,94,.7);
+    }
+
+    /* HERO */
+    .hero{
+      position:relative;
+      min-height:760px;
+      display:flex;
+      align-items:center;
+      overflow:hidden;
+      background:#102417;
+    }
+
+    .hero-bg{
+      position:absolute;
+      inset:0;
+      background:
+        linear-gradient(rgba(8,30,15,.46),rgba(8,30,15,.64)),
+        url("https://images.pexels.com/photos/11400235/pexels-photo-11400235.jpeg?auto=compress&cs=tinysrgb&w=1900")
+        center/cover no-repeat;
+      transform:scale(1.08);
+      transition:transform .2s linear;
+    }
+
+    .hero::after{
+      content:"";
+      position:absolute;
+      inset:0;
+      background:
+        linear-gradient(180deg,rgba(0,0,0,.05),rgba(0,0,0,.22)),
+        linear-gradient(120deg,rgba(20,83,45,.32),transparent 45%);
+      pointer-events:none;
+    }
+
+    .hero-content{
+      position:relative;
+      z-index:2;
+      color:white;
+      padding:100px 0 80px;
+      max-width:860px;
+      animation:heroIn 1s ease both;
+    }
+
+    .hero-tag{
+      display:inline-block;
+      padding:9px 16px;
+      border:1px solid rgba(255,255,255,.25);
+      background:rgba(255,255,255,.11);
+      backdrop-filter:blur(10px);
+      border-radius:999px;
+      font-weight:700;
+      font-size:.88rem;
+      margin-bottom:22px;
+    }
+
+    .hero h1{
+      font-size:clamp(2.7rem,6vw,5.3rem);
+      line-height:1.04;
+      letter-spacing:-2px;
+      margin-bottom:24px;
+      max-width:900px;
+      text-shadow:0 10px 30px rgba(0,0,0,.28);
+    }
+
+    .hero p{
+      font-size:1.12rem;
+      max-width:750px;
+      color:rgba(255,255,255,.9);
+      margin-bottom:32px;
+    }
+
+    .hero-buttons{
+      display:flex;
+      flex-wrap:wrap;
+      gap:14px;
+    }
+
+    .btn{
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      padding:14px 22px;
+      border-radius:14px;
+      font-weight:800;
+      transition:.3s ease;
+      border:1px solid transparent;
+    }
+
+    .btn-primary{
+      background:#22c55e;
+      color:#08351a;
+      box-shadow:0 14px 30px rgba(34,197,94,.28);
+    }
+
+    .btn-primary:hover{
+      transform:translateY(-4px);
+      box-shadow:0 20px 40px rgba(34,197,94,.4);
+    }
+
+    .btn-light{
+      background:rgba(255,255,255,.12);
+      border-color:rgba(255,255,255,.35);
+      backdrop-filter:blur(10px);
+      color:white;
+    }
+
+    .btn-light:hover{
+      transform:translateY(-4px);
+      background:rgba(255,255,255,.18);
+    }
+
+    /* HERO ORBS */
+    .orb{
+      position:absolute;
+      border-radius:50%;
+      filter:blur(8px);
+      opacity:.3;
+      z-index:1;
+      pointer-events:none;
+      animation:floatOrb 7s ease-in-out infinite;
+    }
+
+    .orb1{
+      width:180px;
+      height:180px;
+      background:#4ade80;
+      top:16%;
+      right:8%;
+    }
+
+    .orb2{
+      width:120px;
+      height:120px;
+      background:#86efac;
+      bottom:15%;
+      right:18%;
+      animation-delay:1.7s;
+    }
+
+    /* QUICK CARDS */
+    .quick-grid{
+      display:grid;
+      grid-template-columns:repeat(3,1fr);
+      gap:20px;
+      margin-top:-58px;
+      position:relative;
+      z-index:5;
+    }
+
+    .quick-card{
+      background:rgba(255,255,255,.92);
+      border:1px solid #dceee0;
+      border-radius:24px;
+      padding:28px;
+      box-shadow:0 20px 45px rgba(13,60,25,.1);
+      transition:transform .35s ease,box-shadow .35s ease;
+      transform-style:preserve-3d;
+    }
+
+    .quick-card:hover{
+      transform:translateY(-10px) rotateX(2deg) rotateY(-2deg);
+      box-shadow:0 30px 60px rgba(13,60,25,.16);
+    }
+
+    .quick-icon{
+      width:54px;
+      height:54px;
+      border-radius:16px;
+      display:grid;
+      place-items:center;
+      font-size:1.4rem;
+      background:#e7f9eb;
+      margin-bottom:17px;
+    }
+
+    .quick-card h3{
+      margin-bottom:8px;
+      color:#14532d;
+    }
+
+    .quick-card p{
+      color:#587061;
+    }
+
+    /* MAIN ARTICLE */
+    .main-section{
+      padding:100px 0 80px;
+    }
+
+    .content-grid{
+      display:grid;
+      grid-template-columns:minmax(0,1fr) 340px;
+      gap:42px;
+      align-items:start;
+    }
+
+    .article{
+      background:rgba(255,255,255,.82);
+      border:1px solid #e1eee4;
+      border-radius:30px;
+      padding:42px;
+      box-shadow:0 24px 60px rgba(18,58,26,.07);
+    }
+
+    .article h2{
+      color:#14532d;
+      font-size:2rem;
+      margin-bottom:15px;
+      line-height:1.2;
+    }
+
+    .article h3{
+      color:#166534;
+      font-size:1.35rem;
+      margin:34px 0 12px;
+    }
+
+    .article p{
+      color:#4c6254;
+      margin-bottom:18px;
+    }
+
+    .article ul{
+      margin:16px 0 22px 22px;
+      color:#4c6254;
+    }
+
+    .article li{
+      margin-bottom:9px;
+    }
+
+    .service-image{
+      margin:25px 0 35px;
+      border-radius:24px;
+      overflow:hidden;
+      box-shadow:0 18px 40px rgba(12,60,25,.12);
+    }
+
+    .service-image img{
+      width:100%;
+      height:420px;
+      object-fit:cover;
+      transition:transform .7s ease;
+    }
+
+    .service-image:hover img{
+      transform:scale(1.045);
+    }
+
+    .edging-grid{
+      display:grid;
+      grid-template-columns:repeat(2,1fr);
+      gap:16px;
+      margin-top:20px;
+    }
+
+    .edging-item{
+      background:#f4fbf5;
+      border:1px solid #dceee0;
+      border-radius:18px;
+      padding:20px;
+      transition:.3s ease;
+    }
+
+    .edging-item:hover{
+      transform:translateY(-6px);
+      background:#ecfdf1;
+      box-shadow:0 14px 28px rgba(22,101,52,.08);
+    }
+
+    .edging-item h4{
+      color:#166534;
+      margin-bottom:6px;
+    }
+
+    .edging-item p{
+      margin-bottom:0;
+      font-size:.95rem;
+    }
+
+    /* SIDEBAR */
+    .sidebar{
+      position:sticky;
+      top:25px;
+    }
+
+    .side-card{
+      background:white;
+      border:1px solid #e0ece2;
+      border-radius:24px;
+      overflow:hidden;
+      box-shadow:0 18px 40px rgba(13,60,25,.08);
+      margin-bottom:20px;
+    }
+
+    .side-image{
+      height:215px;
+      overflow:hidden;
+    }
+
+    .side-image img{
+      width:100%;
+      height:100%;
+      object-fit:cover;
+      transition:transform .6s ease;
+    }
+
+    .side-card:hover .side-image img{
+      transform:scale(1.06);
+    }
+
+    .side-body{
+      padding:24px;
+    }
+
+    .side-body h3{
+      color:#14532d;
+      margin-bottom:14px;
+    }
+
+    .check-list{
+      list-style:none;
+      display:grid;
+      gap:10px;
+      margin-bottom:20px;
+    }
+
+    .check-list li{
+      display:flex;
+      gap:9px;
+      color:#4f6457;
+      font-size:.95rem;
+    }
+
+    .check-list span{
+      color:#16a34a;
+      font-weight:900;
+    }
+
+    .contact-box{
+      background:#effcf2;
+      border:1px solid #d6eedb;
+      border-radius:18px;
+      padding:20px;
+    }
+
+    .contact-box strong{
+      color:#14532d;
+    }
+
+    .contact-box p{
+      margin:6px 0;
+      color:#506558;
+    }
+
+    /* AREAS */
+    .areas{
+      padding:80px 0;
+    }
+
+    .section-title{
+      text-align:center;
+      margin-bottom:34px;
+    }
+
+    .section-title span{
+      color:#16a34a;
+      text-transform:uppercase;
+      letter-spacing:2px;
+      font-size:.78rem;
+      font-weight:800;
+    }
+
+    .section-title h2{
+      font-size:2.3rem;
+      color:#14532d;
+      margin-top:9px;
+    }
+
+    .area-grid{
+      display:grid;
+      grid-template-columns:repeat(4,1fr);
+      gap:16px;
+    }
+
+    .area{
+      background:white;
+      border:1px solid #dfece1;
+      border-radius:18px;
+      padding:19px;
+      text-align:center;
+      color:#365442;
+      font-weight:700;
+      transition:.3s ease;
+    }
+
+    .area:hover{
+      transform:translateY(-6px);
+      box-shadow:0 16px 30px rgba(15,80,30,.09);
+    }
+
+    /* FAQ */
+    .faq-section{
+      padding:70px 0 100px;
+    }
+
+    .faq-wrap{
+      max-width:900px;
+      margin:auto;
+    }
+
+    .faq-item{
+      border:1px solid #dfece1;
+      border-radius:18px;
+      background:white;
+      margin-bottom:14px;
+      overflow:hidden;
+      box-shadow:0 8px 24px rgba(14,60,28,.04);
+    }
+
+    .faq-question{
+      width:100%;
+      border:0;
+      background:none;
+      padding:20px 23px;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      cursor:pointer;
+      font-size:1rem;
+      font-weight:800;
+      color:#14532d;
+      text-align:left;
+    }
+
+    .faq-question span{
+      transition:transform .3s ease;
+      font-size:1.3rem;
+    }
+
+    .faq-answer{
+      max-height:0;
+      overflow:hidden;
+      transition:max-height .4s ease,padding .4s ease;
+      padding:0 23px;
+      color:#5a6f61;
+    }
+
+    .faq-item.active .faq-answer{
+      max-height:300px;
+      padding:0 23px 20px;
+    }
+
+    .faq-item.active .faq-question span{
+      transform:rotate(45deg);
+    }
+
+    /* CTA */
+    .cta{
+      position:relative;
+      padding:95px 0;
+      background:
+        linear-gradient(rgba(6,38,17,.76),rgba(6,38,17,.82)),
+        url("https://images.pexels.com/photos/11400235/pexels-photo-11400235.jpeg?auto=compress&cs=tinysrgb&w=1900")
+        center/cover no-repeat;
+      color:white;
+      overflow:hidden;
+    }
+
+    .cta-content{
+      position:relative;
+      z-index:2;
+      text-align:center;
+      max-width:800px;
+      margin:auto;
+    }
+
+    .cta h2{
+      font-size:clamp(2rem,4vw,3.4rem);
+      margin-bottom:16px;
+      line-height:1.1;
+    }
+
+    .cta p{
+      color:rgba(255,255,255,.84);
+      margin-bottom:28px;
+      font-size:1.05rem;
+    }
+
+    /* FOOTER */
+    footer{
+      background:#0d2816;
+      color:#dcebe0;
+      padding:38px 0;
+    }
+
+    .footer-grid{
+      display:grid;
+      grid-template-columns:1.2fr 1fr 1fr;
+      gap:30px;
+    }
+
+    footer h3{
+      color:#86efac;
+      margin-bottom:12px;
+    }
+
+    footer p{
+      color:#b5c9ba;
+      margin:5px 0;
+    }
+
+    .copyright{
+      border-top:1px solid rgba(255,255,255,.1);
+      margin-top:28px;
+      padding-top:20px;
+      text-align:center;
+      color:#95ad9d;
+      font-size:.9rem;
+    }
+
+    /* REVEAL */
+    .reveal{
+      opacity:0;
+      transform:translateY(45px);
+      transition:opacity .8s ease,transform .8s ease;
+    }
+
+    .reveal-left{
+      opacity:0;
+      transform:translateX(-45px);
+      transition:opacity .8s ease,transform .8s ease;
+    }
+
+    .reveal-right{
+      opacity:0;
+      transform:translateX(45px);
+      transition:opacity .8s ease,transform .8s ease;
+    }
+
+    .visible{
+      opacity:1;
+      transform:none;
+    }
+
+    @keyframes heroIn{
+      from{
+        opacity:0;
+        transform:translateY(30px);
       }
-    },
-    {
-      "@type":"Question",
-      "name":"How often should lawn edging be done in Houston?",
-      "acceptedAnswer":{
-        "@type":"Answer",
-        "text":"The ideal frequency depends on grass growth, weather and property conditions. Many homeowners include edging with regular lawn maintenance."
-      }
-    },
-    {
-      "@type":"Question",
-      "name":"Does lawn edging improve curb appeal?",
-      "acceptedAnswer":{
-        "@type":"Answer",
-        "text":"Yes. Defined lawn borders can make a yard look cleaner, more organized and better maintained."
-      }
-    },
-    {
-      "@type":"Question",
-      "name":"Can lawn edging be combined with mowing?",
-      "acceptedAnswer":{
-        "@type":"Answer",
-        "text":"Yes. Lawn mowing, trimming and edging can be combined as part of complete lawn maintenance."
+      to{
+        opacity:1;
+        transform:none;
       }
     }
-  ]
-}
-</script>
+
+    @keyframes floatOrb{
+      0%,100%{
+        transform:translate3d(0,0,0);
+      }
+      50%{
+        transform:translate3d(20px,-24px,0);
+      }
+    }
+
+    @media(max-width:980px){
+      .content-grid{
+        grid-template-columns:1fr;
+      }
+
+      .sidebar{
+        position:relative;
+        top:auto;
+      }
+
+      .area-grid{
+        grid-template-columns:repeat(2,1fr);
+      }
+
+      .quick-grid{
+        grid-template-columns:1fr;
+        margin-top:30px;
+      }
+
+      .footer-grid{
+        grid-template-columns:1fr;
+      }
+    }
+
+    @media(max-width:680px){
+      .hero{
+        min-height:700px;
+      }
+
+      .hero h1{
+        font-size:2.7rem;
+      }
+
+      .article{
+        padding:25px;
+      }
+
+      .edging-grid{
+        grid-template-columns:1fr;
+      }
+
+      .area-grid{
+        grid-template-columns:1fr;
+      }
+
+      .service-image img{
+        height:300px;
+      }
+
+      .hero-content{
+        padding:80px 0 60px;
+      }
+    }
+  </style>
 </head>
 
 <body>
 
-<div class="loader" id="loader">
-  <div class="loader-circle"></div>
-</div>
+  <div class="scroll-progress" id="progress"></div>
 
-<div class="progress-bar" id="progressBar"></div>
+  <!-- HERO IMAGE STARTS THE PAGE -->
+  <section class="hero">
+    <div class="hero-bg" id="heroBg"></div>
 
-<header id="header">
+    <div class="orb orb1"></div>
+    <div class="orb orb2"></div>
 
-  <div class="container nav">
+    <div class="container">
+      <div class="hero-content">
+        <div class="hero-tag">Professional Lawn Edging</div>
 
-    <a href="index.html" class="logo">
-      Lawn<span>Trim</span> LLC
-    </a>
-
-    <button class="mobile-toggle" id="mobileToggle" aria-label="Open navigation">
-      ☰
-    </button>
-
-    <nav class="nav-links" id="navLinks">
-
-      <a href="index.html">Home</a>
-      <a href="services.html">Services</a>
-      <a href="service-areas.html">Service Areas</a>
-      <a href="reviews.html">Reviews</a>
-      <a href="about.html">About</a>
-      <a href="contact.html">Contact</a>
-      <a href="get-a-quote.html" class="nav-cta">Get a Quote</a>
-
-    </nav>
-
-  </div>
-
-</header>
-
-<!-- HERO -->
-<section class="hero">
-
-  <div class="container">
-
-    <div class="hero-content">
-
-      <div class="eyebrow">
-        Professional Lawn & Yard Maintenance
-      </div>
-
-      <h1>
-        Lawn Edging Service in <span>Houston, TX</span>
-      </h1>
-
-      <p>
-        Professional lawn edging service in Houston, TX for clean,
-        defined and attractive lawn borders around sidewalks, driveways,
-        walkways, patios, flower beds and landscape areas.
-      </p>
-
-      <div class="hero-buttons">
-
-        <a href="get-a-quote.html" class="btn btn-primary">
-          Get a Free Quote
-        </a>
-
-        <a href="tel:346-656-5111" class="btn btn-light">
-          Call 346-656-5111
-        </a>
-
-      </div>
-
-    </div>
-
-  </div>
-
-</section>
-
-<!-- INTRO -->
-<div class="container intro">
-
-  <div class="intro-grid">
-
-    <div class="intro-card reveal">
-      <div class="intro-icon">✂</div>
-
-      <h3>
-        Sharp Lawn Borders
-      </h3>
-
-      <p>
-        Keep grass edges clean around sidewalks, driveways,
-        walkways and landscape beds.
-      </p>
-    </div>
-
-    <div class="intro-card reveal delay-1">
-      <div class="intro-icon">🌿</div>
-
-      <h3>
-        Cleaner Curb Appeal
-      </h3>
-
-      <p>
-        Proper edging creates a more organized and professionally
-        maintained appearance.
-      </p>
-    </div>
-
-    <div class="intro-card reveal delay-2">
-      <div class="intro-icon">📅</div>
-
-      <h3>
-        Recurring Maintenance
-      </h3>
-
-      <p>
-        Add edging to your regular lawn maintenance plan or book
-        one-time lawn edging.
-      </p>
-    </div>
-
-  </div>
-
-</div>
-
-<!-- ARTICLE -->
-<section>
-
-  <div class="container">
-
-    <div class="section-heading reveal">
-
-      <div class="mini">
-        Houston Lawn Edging
-      </div>
-
-      <h2>
-        Clean Lawn Edges Make Your Houston Yard Look Better
-      </h2>
-
-      <p>
-        Professional lawn edging helps create clear borders between
-        grass and hard surfaces while improving the finished appearance
-        of your property.
-      </p>
-
-    </div>
-
-    <div class="content-grid">
-
-      <article class="article reveal-left">
-
-        <h2>
-          Professional Lawn Edging Service in Houston, TX
-        </h2>
+        <h1>Lawn Edging Service in Houston, TX</h1>
 
         <p>
-          Lawn edging is an important part of
-          <strong>lawn care and lawn maintenance in Houston, TX.</strong>
-          While mowing manages grass height, edging creates the defined
-          lines that separate grass from sidewalks, driveways, walkways,
-          flower beds and other landscape areas.
-        </p>
-
-        <p>
-          A professionally edged lawn can make a property look cleaner,
-          more organized and better maintained. Our lawn edging service
-          is suitable for residential properties, rental homes and other
-          outdoor spaces that need clearly defined lawn borders.
-        </p>
-
-        <div class="highlight">
-          <strong>Why edging matters:</strong>
-          Lawn mowing cuts grass to the correct height, while edging
-          creates the clean border that gives your yard a finished look.
-        </div>
-
-        <h2>
-          What Is Lawn Edging?
-        </h2>
-
-        <p>
-          Lawn edging is the process of creating a defined boundary
-          where grass meets another surface or landscape feature.
-          It helps prevent grass from making sidewalks, driveways and
-          garden borders look uneven or overgrown.
-        </p>
-
-        <h3>
-          Common Areas for Lawn Edging
-        </h3>
-
-        <ul>
-          <li>Sidewalks and walkways</li>
-          <li>Driveways</li>
-          <li>Flower beds</li>
-          <li>Garden borders</li>
-          <li>Patios</li>
-          <li>Curbs</li>
-          <li>Landscape beds</li>
-          <li>Areas around trees and hardscaping</li>
-        </ul>
-
-        <h2>
-          Benefits of Professional Lawn Edging
-        </h2>
-
-        <p>
-          Regular edging gives your lawn sharper lines and helps improve
-          the overall appearance of your property.
-        </p>
-
-        <ul>
-          <li>Creates clean and defined lawn borders</li>
-          <li>Improves curb appeal</li>
-          <li>Makes sidewalks and driveways look cleaner</li>
-          <li>Defines flower beds and garden areas</li>
-          <li>Complements regular lawn mowing</li>
-          <li>Creates a more finished yard appearance</li>
-        </ul>
-
-        <h2>
-          Lawn Edging vs. String Trimming
-        </h2>
-
-        <p>
-          Lawn edging and string trimming are different parts of lawn
-          maintenance. String trimming is commonly used around fences,
-          trees, posts and other areas where a mower cannot easily reach.
-        </p>
-
-        <p>
-          <strong>Lawn edging focuses on creating a defined border.</strong>
-          Both services can be combined with mowing to create a cleaner
-          overall lawn appearance.
-        </p>
-
-        <h2>
-          Residential Lawn Edging in Houston
-        </h2>
-
-        <p>
-          Houston properties can experience significant grass growth
-          during warm and wet periods. Regular lawn maintenance can help
-          keep grass from becoming untidy along sidewalks, driveways and
-          landscape areas.
-        </p>
-
-        <p>
-          Residential lawn edging can be useful for front yards,
-          backyards, side yards, rental properties and homes with
-          flower beds or paved walkways.
-        </p>
-
-        <h2>
-          One-Time or Recurring Lawn Edging
-        </h2>
-
-        <p>
-          A one-time edging service can help prepare your property for
-          an event, property showing, seasonal cleanup or general yard
-          improvement.
-        </p>
-
-        <p>
-          Recurring lawn edging can help maintain consistent borders as
-          grass continues to grow. Many homeowners combine edging with
-          regular lawn mowing and yard maintenance.
-        </p>
-
-        <h2>
-          Lawn Edging for Better Curb Appeal
-        </h2>
-
-        <p>
-          Your front lawn is one of the first features people notice
-          when they arrive at your property. Clean edges around the
-          driveway and sidewalk can make a noticeable difference in
-          the appearance of your yard.
-        </p>
-
-        <h2>
-          Related Lawn Care Services
-        </h2>
-
-        <ul>
-          <li>Lawn Care Service</li>
-          <li>Lawn Mowing Service</li>
-          <li>Yard Cleanup Service</li>
-          <li>Shrub &amp; Bush Trimming</li>
-          <li>Mulching Service</li>
-          <li>Lawn Fertilization</li>
-          <li>Lawn Weed Control</li>
-          <li>Lawn Seeding Service</li>
-          <li>Pressure Washing</li>
-        </ul>
-
-      </article>
-
-      <aside class="sidebar">
-
-        <div class="sidebar-card reveal-right">
-
-          <img
-            src="https://images.pexels.com/photos/11400235/pexels-photo-11400235.jpeg?auto=compress&cs=tinysrgb&w=1100"
-            alt="Professional lawn edging service"
-            loading="lazy"
-          >
-
-          <div class="sidebar-body">
-
-            <h3>
-              Professional Lawn Edging
-            </h3>
-
-            <p>
-              Keep the borders around your yard clean and clearly defined.
-            </p>
-
-            <ul class="side-list">
-              <li>Sidewalk edging</li>
-              <li>Driveway edging</li>
-              <li>Flower bed edging</li>
-              <li>Walkway edging</li>
-              <li>Recurring maintenance</li>
-            </ul>
-
-            <a href="get-a-quote.html" class="btn btn-primary">
-              Request a Quote
-            </a>
-
-          </div>
-
-        </div>
-
-        <div class="sidebar-card reveal-right delay-2">
-
-          <div class="sidebar-body">
-
-            <h3>
-              Contact Information
-            </h3>
-
-            <ul class="side-list">
-
-              <li>
-                <a href="tel:346-656-5111">
-                  346-656-5111
-                </a>
-              </li>
-
-              <li>
-                <a href="mailto:LawnTrimllc@gmail.com">
-                  LawnTrimllc@gmail.com
-                </a>
-              </li>
-
-              <li>
-                Houston, Texas
-              </li>
-
-              <li>
-                Mon - Fri: 7am - 7pm
-              </li>
-
-              <li>
-                Sat / Sun: Office Closed
-              </li>
-
-            </ul>
-
-          </div>
-
-        </div>
-
-      </aside>
-
-    </div>
-
-  </div>
-
-</section>
-
-<!-- FEATURES -->
-<section class="section-soft">
-
-  <div class="container">
-
-    <div class="section-heading reveal">
-
-      <div class="mini">
-        Our Approach
-      </div>
-
-      <h2>
-        What You Get With Professional Lawn Edging
-      </h2>
-
-      <p>
-        Proper edging works together with mowing and trimming to give
-        your yard a cleaner finished appearance.
-      </p>
-
-    </div>
-
-    <div class="feature-grid">
-
-      <div class="feature-card reveal">
-        <div class="feature-number">01</div>
-        <h3>Defined Borders</h3>
-        <p>
-          Clean separation between grass, sidewalks, driveways and
-          landscape beds.
-        </p>
-      </div>
-
-      <div class="feature-card reveal delay-1">
-        <div class="feature-number">02</div>
-        <h3>Improved Appearance</h3>
-        <p>
-          Create sharper visual lines throughout your property.
-        </p>
-      </div>
-
-      <div class="feature-card reveal delay-2">
-        <div class="feature-number">03</div>
-        <h3>Consistent Maintenance</h3>
-        <p>
-          Keep lawn borders looking maintained as grass continues to grow.
-        </p>
-      </div>
-
-      <div class="feature-card reveal">
-        <div class="feature-number">04</div>
-        <h3>Landscape Definition</h3>
-        <p>
-          Define flower beds, garden areas and other landscape features.
-        </p>
-      </div>
-
-      <div class="feature-card reveal delay-1">
-        <div class="feature-number">05</div>
-        <h3>Better Curb Appeal</h3>
-        <p>
-          Make the front yard look cleaner and more polished.
-        </p>
-      </div>
-
-      <div class="feature-card reveal delay-2">
-        <div class="feature-number">06</div>
-        <h3>Flexible Scheduling</h3>
-        <p>
-          Choose one-time service or recurring lawn maintenance.
-        </p>
-      </div>
-
-    </div>
-
-  </div>
-
-</section>
-
-<!-- IMAGES -->
-<section>
-
-  <div class="container">
-
-    <div class="section-heading reveal">
-
-      <div class="mini">
-        Lawn Care Work
-      </div>
-
-      <h2>
-        Clean Lawn Borders Around Your Property
-      </h2>
-
-      <p>
-        Combine lawn mowing, trimming and edging for a cleaner overall
-        lawn maintenance result.
-      </p>
-
-    </div>
-
-    <div class="image-grid">
-
-      <div class="image-card reveal-left">
-
-        <img
-          src="https://images.pexels.com/photos/11400235/pexels-photo-11400235.jpeg?auto=compress&cs=tinysrgb&w=1400"
-          alt="Professional lawn edging"
-          loading="lazy"
-        >
-
-        <div class="image-label">
-          Lawn Edging
-        </div>
-
-      </div>
-
-      <div class="image-card reveal delay-1">
-
-        <img
-          src="https://images.pexels.com/photos/6728930/pexels-photo-6728930.jpeg?auto=compress&cs=tinysrgb&w=1200"
-          alt="Professional lawn mowing service"
-          loading="lazy"
-        >
-
-        <div class="image-label">
-          Lawn Maintenance
-        </div>
-
-      </div>
-
-      <div class="image-card reveal-right delay-2">
-
-        <img
-          src="https://images.pexels.com/photos/479814/pexels-photo-479814.jpeg?auto=compress&cs=tinysrgb&w=1200"
-          alt="Green residential lawn"
-          loading="lazy"
-        >
-
-        <div class="image-label">
-          Yard Care
-        </div>
-
-      </div>
-
-    </div>
-
-  </div>
-
-</section>
-
-<!-- AREAS -->
-<section class="section-soft">
-
-  <div class="container">
-
-    <div class="section-heading reveal">
-
-      <div class="mini">
-        Locations We Service
-      </div>
-
-      <h2>
-        Lawn Edging Service Areas
-      </h2>
-
-      <p>
-        Lawn edging and lawn maintenance services are available in
-        Houston and nearby communities.
-      </p>
-
-    </div>
-
-    <div class="area-grid">
-
-      <div class="area-item reveal">Houston, TX</div>
-      <div class="area-item reveal delay-1">Atascocita, TX</div>
-      <div class="area-item reveal delay-2">Friendswood, TX</div>
-      <div class="area-item reveal delay-3">Pearland, TX</div>
-
-      <div class="area-item reveal">East Houston</div>
-      <div class="area-item reveal delay-1">Northside Houston</div>
-      <div class="area-item reveal delay-2">Kashmere Gardens</div>
-      <div class="area-item reveal delay-3">Greater Fifth Ward</div>
-
-    </div>
-
-  </div>
-
-</section>
-
-<!-- FAQ -->
-<section>
-
-  <div class="container">
-
-    <div class="section-heading reveal">
-
-      <div class="mini">
-        Frequently Asked Questions
-      </div>
-
-      <h2>
-        Lawn Edging Service FAQ
-      </h2>
-
-      <p>
-        Common questions about professional lawn edging in Houston, TX.
-      </p>
-
-    </div>
-
-    <div class="faq-wrap">
-
-      <div class="faq-item reveal">
-
-        <button class="faq-question">
-          What is lawn edging?
-          <span class="faq-symbol">+</span>
-        </button>
-
-        <div class="faq-answer">
-          <p>
-            Lawn edging creates a defined border between grass and
-            sidewalks, driveways, walkways, flower beds, patios and
-            other landscape areas.
-          </p>
-        </div>
-
-      </div>
-
-      <div class="faq-item reveal delay-1">
-
-        <button class="faq-question">
-          How often should lawn edging be done?
-          <span class="faq-symbol">+</span>
-        </button>
-
-        <div class="faq-answer">
-          <p>
-            The ideal frequency depends on grass growth, weather,
-            property conditions and your preferred appearance.
-          </p>
-        </div>
-
-      </div>
-
-      <div class="faq-item reveal delay-2">
-
-        <button class="faq-question">
-          Does lawn edging improve curb appeal?
-          <span class="faq-symbol">+</span>
-        </button>
-
-        <div class="faq-answer">
-          <p>
-            Yes. Cleanly defined lawn edges can make a yard look more
-            organized, polished and well maintained.
-          </p>
-        </div>
-
-      </div>
-
-      <div class="faq-item reveal delay-3">
-
-        <button class="faq-question">
-          Can lawn edging be combined with mowing?
-          <span class="faq-symbol">+</span>
-        </button>
-
-        <div class="faq-answer">
-          <p>
-            Yes. Mowing, trimming and edging can be combined as part
-            of a complete lawn care and maintenance service.
-          </p>
-        </div>
-
-      </div>
-
-    </div>
-
-  </div>
-
-</section>
-
-<!-- CTA -->
-<section>
-
-  <div class="container">
-
-    <div class="cta reveal">
-
-      <div class="cta-content">
-
-        <h2>
-          Need Clean, Professional Lawn Edging in Houston?
-        </h2>
-
-        <p>
-          Get cleaner lawn borders and a more polished yard with
-          professional lawn edging service in Houston, TX.
+          Give your lawn a clean, finished appearance with professional
+          lawn edging in Houston, TX. We create sharp borders around
+          sidewalks, driveways, walkways, flower beds, patios, curbs,
+          and other landscape areas.
         </p>
 
         <div class="hero-buttons">
-
-          <a href="get-a-quote.html" class="btn btn-primary">
+          <a href="tel:346-656-5111" class="btn btn-primary">
             Get a Free Quote
           </a>
 
           <a href="tel:346-656-5111" class="btn btn-light">
             346-656-5111
           </a>
+        </div>
+      </div>
+    </div>
+  </section>
 
+  <!-- QUICK SERVICE FEATURES -->
+  <section class="container">
+    <div class="quick-grid">
+
+      <div class="quick-card reveal">
+        <div class="quick-icon">✂️</div>
+        <h3>Sharp Lawn Borders</h3>
+        <p>
+          Clean and defined lawn edges around sidewalks,
+          driveways, beds, and landscape areas.
+        </p>
+      </div>
+
+      <div class="quick-card reveal">
+        <div class="quick-icon">🏡</div>
+        <h3>Better Curb Appeal</h3>
+        <p>
+          Professional edging makes your property look
+          cleaner, more organized, and well maintained.
+        </p>
+      </div>
+
+      <div class="quick-card reveal">
+        <div class="quick-icon">🔄</div>
+        <h3>Recurring Edging</h3>
+        <p>
+          Keep your lawn borders looking sharp with regular
+          edging as part of your lawn maintenance routine.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- MAIN CONTENT -->
+  <section class="main-section">
+    <div class="container">
+      <div class="content-grid">
+
+        <article class="article reveal-left">
+
+          <h2>Professional Lawn Edging Service in Houston, TX</h2>
+
+          <p>
+            Professional lawn edging is one of the details that can make
+            a well-maintained yard look significantly cleaner. Over time,
+            grass can spread over sidewalks, driveways, flower beds,
+            walkways, and other hard surfaces. Lawn edging creates a
+            defined border between the grass and surrounding landscape
+            features.
+          </p>
+
+          <div class="service-image">
+            <img
+              src="https://images.pexels.com/photos/11400235/pexels-photo-11400235.jpeg?auto=compress&cs=tinysrgb&w=1600"
+              alt="Professional lawn edging and grass trimming service"
+              loading="lazy"
+            >
+          </div>
+
+          <h3>What Is Lawn Edging?</h3>
+
+          <p>
+            Lawn edging is the process of creating a clean, defined line
+            between your grass and another surface or landscape area.
+            It helps prevent grass from growing into sidewalks, driveways,
+            flower beds, patios, and other parts of your property.
+          </p>
+
+          <p>
+            A sharp lawn edge can make the entire yard appear more
+            organized. It also gives mowing and lawn maintenance work
+            a more finished appearance.
+          </p>
+
+          <h3>Lawn Edging Services</h3>
+
+          <div class="edging-grid">
+
+            <div class="edging-item">
+              <h4>Sidewalk Edging</h4>
+              <p>
+                We create clean borders between grass and sidewalks
+                to keep walkways looking neat.
+              </p>
+            </div>
+
+            <div class="edging-item">
+              <h4>Driveway Edging</h4>
+              <p>
+                Define the grass line along your driveway for a
+                cleaner and sharper property appearance.
+              </p>
+            </div>
+
+            <div class="edging-item">
+              <h4>Flower Bed Edging</h4>
+              <p>
+                Keep grass from spreading into flower beds and
+                create a clear landscape border.
+              </p>
+            </div>
+
+            <div class="edging-item">
+              <h4>Walkway Edging</h4>
+              <p>
+                Maintain crisp grass borders around walkways,
+                paths, and garden entrances.
+              </p>
+            </div>
+
+            <div class="edging-item">
+              <h4>Patio Edging</h4>
+              <p>
+                Help maintain clean grass boundaries around patios
+                and outdoor living areas.
+              </p>
+            </div>
+
+            <div class="edging-item">
+              <h4>Curb Edging</h4>
+              <p>
+                Define your lawn along street curbs to improve
+                the overall finished appearance.
+              </p>
+            </div>
+
+          </div>
+
+          <h3>Benefits of Professional Lawn Edging</h3>
+
+          <p>
+            Regular lawn edging provides more than just a cleaner look.
+            It helps define the different areas of your landscape while
+            creating a more finished appearance after mowing.
+          </p>
+
+          <ul>
+            <li>Creates clean and visible lawn borders</li>
+            <li>Improves curb appeal</li>
+            <li>Helps prevent grass from spreading into hard surfaces</li>
+            <li>Makes lawns look freshly maintained</li>
+            <li>Complements regular lawn mowing</li>
+            <li>Improves the overall appearance of landscape beds</li>
+          </ul>
+
+          <h3>Lawn Edging vs String Trimming</h3>
+
+          <p>
+            String trimming and edging are related but different lawn
+            maintenance tasks. String trimming helps cut grass around
+            obstacles, fences, trees, posts, and areas that a mower
+            cannot easily reach.
+          </p>
+
+          <p>
+            Edging focuses on creating a defined border between turf and
+            another surface, such as a sidewalk or driveway. Using both
+            services together can produce a more complete lawn finish.
+          </p>
+
+          <h3>Residential Lawn Edging in Houston</h3>
+
+          <p>
+            Houston homeowners deal with warm weather and active grass
+            growth for much of the year. Without regular maintenance,
+            grass can quickly begin spreading over sidewalks,
+            driveways, and landscape borders.
+          </p>
+
+          <p>
+            Professional edging can help keep these boundaries looking
+            clean while complementing mowing and other lawn maintenance
+            services.
+          </p>
+
+          <h3>One-Time Lawn Edging</h3>
+
+          <p>
+            A one-time edging service can be useful when your lawn needs
+            a quick appearance upgrade before an event, property showing,
+            seasonal cleanup, or general yard improvement.
+          </p>
+
+          <h3>Recurring Lawn Edging</h3>
+
+          <p>
+            Recurring edging is a convenient option for homeowners who
+            want their lawn borders to stay consistently defined.
+            Regular service can be included with mowing or lawn
+            maintenance visits.
+          </p>
+
+          <h3>Lawn Edging for Better Curb Appeal</h3>
+
+          <p>
+            Sharp lawn borders can make a noticeable difference from the
+            street. Clean edges around driveways, sidewalks, flower beds,
+            and curbs can make a property look more polished and cared for.
+          </p>
+
+        </article>
+
+        <!-- SIDEBAR -->
+        <aside class="sidebar reveal-right">
+
+          <div class="side-card">
+
+            <div class="side-image">
+              <img
+                src="https://images.pexels.com/photos/11400235/pexels-photo-11400235.jpeg?auto=compress&cs=tinysrgb&w=1000"
+                alt="Grass edging service"
+                loading="lazy"
+              >
+            </div>
+
+            <div class="side-body">
+
+              <h3>Professional Lawn Edging</h3>
+
+              <ul class="check-list">
+                <li><span>✓</span> Sidewalk edging</li>
+                <li><span>✓</span> Driveway edging</li>
+                <li><span>✓</span> Flower bed edging</li>
+                <li><span>✓</span> Walkway edging</li>
+                <li><span>✓</span> Patio edging</li>
+                <li><span>✓</span> Curb edging</li>
+              </ul>
+
+              <div class="contact-box">
+                <strong>Contact LawnTrim LLC</strong>
+
+                <p>
+                  <a href="tel:346-656-5111">
+                    346-656-5111
+                  </a>
+                </p>
+
+                <p>
+                  LawnTrimllc@gmail.com
+                </p>
+
+                <p>
+                  Houston, Texas
+                </p>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="side-card">
+            <div class="side-body">
+              <h3>Office Hours</h3>
+
+              <p>
+                <strong>Mon - Fri:</strong>
+                7am - 7pm
+              </p>
+
+              <p>
+                <strong>Sat / Sun:</strong>
+                Office Closed
+              </p>
+
+              <div class="contact-box" style="margin-top:16px;">
+                <strong>Lawn Activity</strong>
+
+                <p>
+                  Mon - Sun
+                </p>
+              </div>
+            </div>
+          </div>
+
+        </aside>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICE AREAS -->
+  <section class="areas">
+    <div class="container">
+
+      <div class="section-title reveal">
+        <span>Service Areas</span>
+        <h2>Lawn Edging Across Houston</h2>
+      </div>
+
+      <div class="area-grid">
+
+        <div class="area reveal">Houston, TX</div>
+        <div class="area reveal">Atascocita, TX</div>
+        <div class="area reveal">Friendswood, TX</div>
+        <div class="area reveal">Pearland, TX</div>
+
+        <div class="area reveal">East Houston</div>
+        <div class="area reveal">Northside Houston</div>
+        <div class="area reveal">Kashmere Gardens</div>
+        <div class="area reveal">Greater Fifth Ward</div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="faq-section">
+    <div class="container">
+
+      <div class="section-title reveal">
+        <span>Frequently Asked Questions</span>
+        <h2>Lawn Edging Questions</h2>
+      </div>
+
+      <div class="faq-wrap">
+
+        <div class="faq-item reveal">
+          <button class="faq-question">
+            What is lawn edging?
+            <span>+</span>
+          </button>
+
+          <div class="faq-answer">
+            Lawn edging creates a defined border between grass and
+            sidewalks, driveways, flower beds, walkways, patios,
+            curbs, and other landscape surfaces.
+          </div>
         </div>
 
-        <br>
+        <div class="faq-item reveal">
+          <button class="faq-question">
+            How often should lawn edging be done?
+            <span>+</span>
+          </button>
 
-        <div class="contact-row">
-
-          <div class="contact-pill">
-            📞 346-656-5111
+          <div class="faq-answer">
+            The ideal frequency depends on grass growth and the season.
+            Many homeowners include edging as part of a recurring lawn
+            mowing or maintenance schedule.
           </div>
+        </div>
 
-          <div class="contact-pill">
-            ✉ LawnTrimllc@gmail.com
+        <div class="faq-item reveal">
+          <button class="faq-question">
+            Does lawn edging improve curb appeal?
+            <span>+</span>
+          </button>
+
+          <div class="faq-answer">
+            Yes. Clean lawn borders can make a property look more
+            organized, maintained, and visually polished.
           </div>
+        </div>
 
-          <div class="contact-pill">
-            📍 Houston, Texas
+        <div class="faq-item reveal">
+          <button class="faq-question">
+            Can lawn edging be combined with mowing?
+            <span>+</span>
+          </button>
+
+          <div class="faq-answer">
+            Yes. Lawn edging can be performed along with mowing,
+            trimming, and other lawn maintenance services.
           </div>
+        </div>
 
+        <div class="faq-item reveal">
+          <button class="faq-question">
+            Do you provide lawn edging in Houston?
+            <span>+</span>
+          </button>
+
+          <div class="faq-answer">
+            Yes. LawnTrim LLC provides lawn edging services throughout
+            Houston and nearby service areas.
+          </div>
         </div>
 
       </div>
 
     </div>
+  </section>
 
-  </div>
+  <!-- CTA -->
+  <section class="cta">
 
-</section>
+    <div class="container">
 
-<!-- FOOTER -->
-<footer>
+      <div class="cta-content reveal">
 
-  <div class="container">
-
-    <div class="footer-grid">
-
-      <div>
-
-        <div class="footer-title">
-          LawnTrim LLC
-        </div>
+        <h2>Need Professional Lawn Edging in Houston?</h2>
 
         <p>
-          Professional lawn care, lawn mowing, edging and yard
-          maintenance services in Houston, Texas.
+          Get clean, defined lawn borders around your property.
+          Contact LawnTrim LLC for professional lawn edging service
+          in Houston, TX.
         </p>
 
-      </div>
+        <div class="hero-buttons" style="justify-content:center;">
 
-      <div>
-
-        <div class="footer-title">
-          Services
-        </div>
-
-        <div class="footer-links">
-
-          <a href="lawncareservice.html">
-            Lawn Care Service
+          <a href="tel:346-656-5111" class="btn btn-primary">
+            Call 346-656-5111
           </a>
 
-          <a href="lawnmovingservice.html">
-            Lawn Mowing Service
-          </a>
-
-          <a href="lawnedgingservice.html">
-            Lawn Edging Service
-          </a>
-
-          <a href="yardcleanupservice.html">
-            Yard Cleanup
+          <a href="mailto:LawnTrimllc@gmail.com" class="btn btn-light">
+            Email LawnTrim LLC
           </a>
 
         </div>
 
       </div>
 
-      <div>
+    </div>
 
-        <div class="footer-title">
-          Contact
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+
+    <div class="container">
+
+      <div class="footer-grid">
+
+        <div>
+          <h3>LawnTrim LLC</h3>
+
+          <p>
+            Professional lawn edging and lawn maintenance
+            services in Houston, Texas.
+          </p>
         </div>
 
-        <div class="footer-links">
+        <div>
+          <h3>Contact Info</h3>
 
-          <a href="tel:346-656-5111">
-            346-656-5111
-          </a>
+          <p>
+            <a href="tel:346-656-5111">
+              346-656-5111
+            </a>
+          </p>
 
-          <a href="mailto:LawnTrimllc@gmail.com">
+          <p>
             LawnTrimllc@gmail.com
-          </a>
+          </p>
 
-          <a href="contact.html">
+          <p>
             Houston, Texas
-          </a>
+          </p>
+        </div>
 
-          <a href="get-a-quote.html">
-            Get a Quote
-          </a>
+        <div>
+          <h3>Office Hours</h3>
 
+          <p>Mon - Fri: 7am - 7pm</p>
+          <p>Sat / Sun: Office Closed</p>
+          <p>Mon - Sun: Lawn Activity</p>
         </div>
 
       </div>
 
+      <div class="copyright">
+        © 2026 LawnTrim LLC. All Rights Reserved.
+      </div>
+
     </div>
 
-    <div class="copyright">
-      © <span id="year"></span> LawnTrim LLC. All Rights Reserved.
-    </div>
+  </footer>
 
-  </div>
+  <script>
+    /* SCROLL PROGRESS */
+    const progress = document.getElementById("progress");
 
-</footer>
+    window.addEventListener("scroll", () => {
+      const scrollTop = window.scrollY;
+      const docHeight =
+        document.documentElement.scrollHeight - window.innerHeight;
 
-<script>
+      const percentage =
+        docHeight > 0
+          ? (scrollTop / docHeight) * 100
+          : 0;
 
-/* PAGE LOADER */
-window.addEventListener("load",function(){
+      progress.style.width = percentage + "%";
+    });
 
-  setTimeout(function(){
+    /* HERO PARALLAX */
+    const heroBg = document.getElementById("heroBg");
 
-    document.getElementById("loader").classList.add("hide");
+    window.addEventListener("scroll", () => {
+      const y = window.scrollY;
 
-  },450);
-
-});
-
-
-/* MOBILE MENU */
-const mobileToggle=document.getElementById("mobileToggle");
-const navLinks=document.getElementById("navLinks");
-
-mobileToggle.addEventListener("click",function(){
-
-  navLinks.classList.toggle("active");
-
-});
-
-document.querySelectorAll(".nav-links a").forEach(function(link){
-
-  link.addEventListener("click",function(){
-
-    navLinks.classList.remove("active");
-
-  });
-
-});
-
-
-/* HEADER SCROLL */
-const header=document.getElementById("header");
-
-window.addEventListener("scroll",function(){
-
-  if(window.scrollY>30){
-    header.classList.add("scrolled");
-  }else{
-    header.classList.remove("scrolled");
-  }
-
-});
-
-
-/* SCROLL PROGRESS */
-const progressBar=document.getElementById("progressBar");
-
-window.addEventListener("scroll",function(){
-
-  const scrollTop=window.scrollY;
-
-  const total=
-    document.documentElement.scrollHeight-window.innerHeight;
-
-  const progress=
-    total>0 ? (scrollTop/total)*100 : 0;
-
-  progressBar.style.width=progress+"%";
-
-});
-
-
-/* REVEAL */
-const revealElements=document.querySelectorAll(
-  ".reveal,.reveal-left,.reveal-right"
-);
-
-const revealObserver=new IntersectionObserver(
-  function(entries){
-
-    entries.forEach(function(entry){
-
-      if(entry.isIntersecting){
-
-        entry.target.classList.add("visible");
-
-        revealObserver.unobserve(entry.target);
-
+      if(heroBg){
+        heroBg.style.transform =
+          "scale(1.08) translateY(" + (y * 0.12) + "px)";
       }
+    });
+
+    /* REVEAL */
+    const revealElements =
+      document.querySelectorAll(
+        ".reveal, .reveal-left, .reveal-right"
+      );
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if(entry.isIntersecting){
+            entry.target.classList.add("visible");
+            observer.unobserve(entry.target);
+          }
+        });
+      },
+      {
+        threshold:0.12
+      }
+    );
+
+    revealElements.forEach((el) => {
+      observer.observe(el);
+    });
+
+    /* FAQ */
+    const faqQuestions =
+      document.querySelectorAll(".faq-question");
+
+    faqQuestions.forEach((question) => {
+
+      question.addEventListener("click", () => {
+
+        const item =
+          question.closest(".faq-item");
+
+        document
+          .querySelectorAll(".faq-item")
+          .forEach((faq) => {
+
+            if(faq !== item){
+              faq.classList.remove("active");
+            }
+
+          });
+
+        item.classList.toggle("active");
+
+      });
 
     });
 
-  },
+    /* 3D HOVER */
+    const cards =
+      document.querySelectorAll(
+        ".quick-card, .edging-item"
+      );
+
+    cards.forEach((card) => {
+
+      card.addEventListener("mousemove", (e) => {
+
+        const rect =
+          card.getBoundingClientRect();
+
+        const x =
+          e.clientX - rect.left;
+
+        const y =
+          e.clientY - rect.top;
+
+        const centerX =
+          rect.width / 2;
+
+        const centerY =
+          rect.height / 2;
+
+        const rotateX =
+          ((y - centerY) / centerY) * -3;
+
+        const rotateY =
+          ((x - centerX) / centerX) * 3;
+
+        card.style.transform =
+          `translateY(-7px) rotateX(${rotateX}deg) rotateY(${rotateY}deg)`;
+
+      });
+
+      card.addEventListener("mouseleave", () => {
+        card.style.transform = "";
+      });
+
+    });
+  </script>
+
+  <!-- STRUCTURED DATA -->
+  <script type="application/ld+json">
   {
-    threshold:.10,
-    rootMargin:"0px 0px -55px 0px"
+    "@context":"https://schema.org",
+    "@type":"Service",
+    "name":"Lawn Edging Service in Houston, TX",
+    "provider":{
+      "@type":"LocalBusiness",
+      "name":"LawnTrim LLC",
+      "telephone":"346-656-5111",
+      "email":"LawnTrimllc@gmail.com",
+      "address":{
+        "@type":"PostalAddress",
+        "addressLocality":"Houston",
+        "addressRegion":"TX",
+        "addressCountry":"US"
+      }
+    },
+    "areaServed":[
+      "Houston, TX",
+      "Atascocita, TX",
+      "Friendswood, TX",
+      "Pearland, TX",
+      "East Houston",
+      "Northside Houston",
+      "Kashmere Gardens",
+      "Greater Fifth Ward"
+    ],
+    "serviceType":"Lawn Edging"
   }
-);
+  </script>
 
-revealElements.forEach(function(element){
-
-  revealObserver.observe(element);
-
-});
-
-
-/* HERO PARALLAX */
-const hero=document.querySelector(".hero");
-
-window.addEventListener("scroll",function(){
-
-  const y=window.scrollY;
-
-  if(y<850){
-
-    hero.style.backgroundPosition=
-      "center calc(50% + "+(y*.15)+"px)";
-
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"FAQPage",
+    "mainEntity":[
+      {
+        "@type":"Question",
+        "name":"What is lawn edging?",
+        "acceptedAnswer":{
+          "@type":"Answer",
+          "text":"Lawn edging creates a defined border between grass and sidewalks, driveways, flower beds, walkways, patios, curbs, and other landscape surfaces."
+        }
+      },
+      {
+        "@type":"Question",
+        "name":"How often should lawn edging be done?",
+        "acceptedAnswer":{
+          "@type":"Answer",
+          "text":"The ideal frequency depends on grass growth and the season. Many homeowners include edging as part of a recurring lawn mowing or maintenance schedule."
+        }
+      },
+      {
+        "@type":"Question",
+        "name":"Does lawn edging improve curb appeal?",
+        "acceptedAnswer":{
+          "@type":"Answer",
+          "text":"Yes. Clean lawn borders can make a property look more organized, maintained, and visually polished."
+        }
+      },
+      {
+        "@type":"Question",
+        "name":"Can lawn edging be combined with mowing?",
+        "acceptedAnswer":{
+          "@type":"Answer",
+          "text":"Yes. Lawn edging can be performed along with mowing, trimming, and other lawn maintenance services."
+        }
+      },
+      {
+        "@type":"Question",
+        "name":"Do you provide lawn edging in Houston?",
+        "acceptedAnswer":{
+          "@type":"Answer",
+          "text":"Yes. LawnTrim LLC provides lawn edging services throughout Houston and nearby service areas."
+        }
+      }
+    ]
   }
-
-});
-
-
-/* CARD 3D EFFECT */
-document.querySelectorAll(".feature-card,.intro-card").forEach(function(card){
-
-  card.addEventListener("mousemove",function(e){
-
-    const rect=card.getBoundingClientRect();
-
-    const x=e.clientX-rect.left;
-    const y=e.clientY-rect.top;
-
-    const rotateX=((y/rect.height)-.5)*-5;
-    const rotateY=((x/rect.width)-.5)*5;
-
-    card.style.transform=
-      "perspective(900px) rotateX("+rotateX+"deg) rotateY("+rotateY+"deg) translateY(-8px)";
-
-  });
-
-  card.addEventListener("mouseleave",function(){
-
-    card.style.transform="";
-
-  });
-
-});
-
-
-/* IMAGE DEPTH */
-document.querySelectorAll(".image-card").forEach(function(card){
-
-  card.addEventListener("mousemove",function(e){
-
-    const rect=card.getBoundingClientRect();
-
-    const x=e.clientX-rect.left;
-    const y=e.clientY-rect.top;
-
-    const moveX=((x/rect.width)-.5)*7;
-    const moveY=((y/rect.height)-.5)*7;
-
-    const img=card.querySelector("img");
-
-    if(img){
-
-      img.style.transform=
-        "scale(1.07) translate("+moveX+"px,"+moveY+"px)";
-
-    }
-
-  });
-
-  card.addEventListener("mouseleave",function(){
-
-    const img=card.querySelector("img");
-
-    if(img){
-
-      img.style.transform="";
-
-    }
-
-  });
-
-});
-
-
-/* FAQ */
-document.querySelectorAll(".faq-question").forEach(function(button){
-
-  button.addEventListener("click",function(){
-
-    const item=button.parentElement;
-    const active=item.classList.contains("active");
-
-    document.querySelectorAll(".faq-item").forEach(function(faq){
-
-      faq.classList.remove("active");
-
-    });
-
-    if(!active){
-
-      item.classList.add("active");
-
-    }
-
-  });
-
-});
-
-
-/* YEAR */
-document.getElementById("year").textContent=
-  new Date().getFullYear();
-
-</script>
+  </script>
 
 </body>
 </html>
