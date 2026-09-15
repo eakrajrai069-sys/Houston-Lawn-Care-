@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://eakrajrai069-sys.github.io/Houston-Lawn-Care-/sitemap.xml
